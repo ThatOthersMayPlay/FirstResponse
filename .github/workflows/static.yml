@@ -23,6 +23,10 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
+# Clean up old artifacts
+env:
+  ARTIFACT_NAME: github-pages
+
 jobs:
   # Single deploy job since we're just deploying
   deploy:
@@ -48,6 +52,8 @@ jobs:
         with:
           # Upload prepared deploy directory
           path: './deploy'
+          # Use unique artifact name to avoid conflicts
+          name: github-pages-${{ github.run_number }}
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
