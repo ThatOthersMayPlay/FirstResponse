@@ -1,0 +1,5 @@
+Trigger Pages deploy
+
+Timestamp: 2026-01-30
+
+This file was added to trigger the GitHub Actions workflow that deploys the site.
