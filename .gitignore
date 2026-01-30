@@ -1,0 +1,81 @@
+# Unity
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userfiles
+*.sln.docstates
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Package Manager
+Packages/packages-lock.json
+
+# Unity Cloud Build
+.cloud/
+
+# Unity Collab
+Collab/
+
+# Unity Analytics
+ProjectSettings/ProjectSettings.asset
+
+# Unity Ads
+Assets/UnityAds/
+
+# Unity Purchasing
+Assets/UnityPurchasing/
+
+# Unity Analytics
+Assets/UnityAnalytics/
+
+# Unity Performance Reporting
+Assets/UnityPerformanceReporting/
+
+# Unity Hub
+UnityHub/
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+
+# Gradle
+gradle/
+gradlew
+gradlew.bat
+*.gradle
+
+# Android
+*.apk
+*.aab
+unityLibrary/
+build/
+
+# iOS
+*.xcodeproj/
+*.xcworkspace/
+DerivedData/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Lock files
+*.lock
