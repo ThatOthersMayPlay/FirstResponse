@@ -1,10 +1,12 @@
 # Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+name: Deploy Strategy Interface to Pages
 
 on:
   # Runs on pushes targeting the default branch
   push:
     branches: ["master"]
+    paths:
+      - "Assets/ProjectManagement/StrategyInterface/**"
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -36,8 +38,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
-          path: '.'
+          # Upload only Strategy Interface directory
+          path: './Assets/ProjectManagement/StrategyInterface'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
