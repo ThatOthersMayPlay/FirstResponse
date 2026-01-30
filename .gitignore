@@ -8,6 +8,17 @@
 [Uu]ser[Ss]ettings/
 [Mm]emoryCaptures/
 
+# Unity generated files
+Assets/InputSystem_Actions.inputactions*
+Assets/Readme.asset*
+Assets/Scenes/SampleScene.unity*
+Assets/Settings/
+Assets/TutorialInfo/
+Assets/ProjectManagement.meta
+Assets/Scenes.meta
+Assets/Settings.meta
+Assets/TutorialInfo.meta
+
 # Visual Studio
 .vs/
 *.user
