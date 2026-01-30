@@ -40,17 +40,11 @@ jobs:
           # Automatically enable GitHub Pages if not already enabled
           enablement: true
           
-      - name: Prepare deployment structure
-        run: |
-          mkdir -p ./deploy
-          cp -r ./Assets/ProjectManagement/StrategyInterface/* ./deploy/
-          
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload prepared deploy directory
-          path: './deploy'
-          # Use retention to avoid conflicts
+          # Upload Strategy Interface directory directly
+          path: './Assets/ProjectManagement/StrategyInterface'
           retention-days: 1
           
       - name: Deploy to GitHub Pages
