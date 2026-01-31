@@ -1,792 +1,131 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First Response - Strategy Interface</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>First Response – Strategy Interface</title>
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-        }
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      min-height: 100vh;
+      margin: 0;
+      padding: 2rem;
+      color: #2c3e50;
+    }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      border-radius: 16px;
+      padding: 2.5rem;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
 
-        header {
-            background: rgba(255, 255, 255, 0.95);
-            padding: 2rem;
-            border-radius: 15px;
-            margin-bottom: 2rem;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
+    h1 {
+      margin-top: 0;
+      font-size: 2.2rem;
+    }
 
-        h1 {
-            color: #2c3e50;
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
+    .subtitle {
+      color: #7f8c8d;
+      margin-bottom: 2rem;
+    }
 
-        .subtitle {
-            color: #7f8c8d;
-            font-size: 1.1rem;
-            margin-bottom: 1rem;
-        }
+    .info-box {
+      background: #f8f9fa;
+      border-left: 5px solid #3498db;
+      padding: 1.2rem 1.5rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+    }
 
-        .status-badge {
-            display: inline-block;
-            background: #27ae60;
-            color: white;
-            padding: 0.3rem 1rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            font-weight: bold;
-        }
+    .info-box strong {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
 
-        .main-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
+    .edit-section {
+      text-align: center;
+      margin-top: 3rem;
+    }
 
-        @media (max-width: 768px) {
-            .main-content {
-                grid-template-columns: 1fr;
-            }
-        }
+    .edit-button {
+      display: inline-block;
+      background: #3498db;
+      color: white;
+      text-decoration: none;
+      padding: 1rem 2rem;
+      border-radius: 999px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
 
-        .card {
-            background: rgba(255, 255, 255, 0.95);
-            padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+    .edit-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(52,152,219,0.35);
+      background: #2980b9;
+    }
 
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-        }
+    .note {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #7f8c8d;
+    }
 
-        .card h2 {
-            color: #2c3e50;
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
-            border-bottom: 3px solid #3498db;
-            padding-bottom: 0.5rem;
-        }
-
-        .project-status {
-            background: rgba(255, 255, 255, 0.95);
-            padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            margin-bottom: 2rem;
-        }
-
-        .status-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        .status-item {
-            background: #f8f9fa;
-            padding: 1rem;
-            border-radius: 10px;
-            border-left: 4px solid #3498db;
-        }
-
-        .status-item h3 {
-            color: #2c3e50;
-            font-size: 0.9rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .status-value {
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: #3498db;
-        }
-
-        .progress-bar {
-            width: 100%;
-            height: 20px;
-            background: #ecf0f1;
-            border-radius: 10px;
-            overflow: hidden;
-            margin: 1rem 0;
-        }
-
-        .progress-fill {
-            height: 100%;
-            background: linear-gradient(90deg, #3498db, #2ecc71);
-            border-radius: 10px;
-            transition: width 0.5s ease;
-        }
-
-        .epic-list {
-            list-style: none;
-            margin-top: 1rem;
-        }
-
-        .epic-item {
-            background: #f8f9fa;
-            margin: 0.5rem 0;
-            padding: 1rem;
-            border-radius: 8px;
-            border-left: 4px solid #e74c3c;
-            transition: background 0.3s ease;
-        }
-
-        .epic-item:hover {
-            background: #e8f4f8;
-        }
-
-        .epic-title {
-            font-weight: bold;
-            color: #2c3e50;
-            margin-bottom: 0.3rem;
-        }
-
-        .epic-status {
-            font-size: 0.9rem;
-            color: #7f8c8d;
-        }
-
-        .character-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        .character-card {
-            background: #f8f9fa;
-            padding: 1rem;
-            border-radius: 8px;
-            text-align: center;
-            border: 2px solid transparent;
-            transition: all 0.3s ease;
-        }
-
-        .character-card:hover {
-            border-color: #3498db;
-            transform: scale(1.05);
-        }
-
-        .character-name {
-            font-weight: bold;
-            color: #2c3e50;
-            margin-bottom: 0.3rem;
-        }
-
-        .character-role {
-            font-size: 0.8rem;
-            color: #7f8c8d;
-        }
-
-        .collaboration-section {
-            background: rgba(255, 255, 255, 0.95);
-            padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            margin-bottom: 2rem;
-        }
-
-        .collaboration-links {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        .link-card {
-            background: #f8f9fa;
-            padding: 1.5rem;
-            border-radius: 10px;
-            text-align: center;
-            text-decoration: none;
-            color: #2c3e50;
-            transition: all 0.3s ease;
-            border: 2px solid #ecf0f1;
-        }
-
-        .link-card:hover {
-            background: #3498db;
-            color: white;
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
-        }
-
-        .link-icon {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .footer {
-            text-align: center;
-            color: white;
-            padding: 2rem;
-            background: rgba(0, 0, 0, 0.2);
-            border-radius: 15px;
-            margin-top: 2rem;
-        }
-
-        .last-updated {
-            font-size: 0.9rem;
-            opacity: 0.8;
-        }
-
-        .priority-high { border-left-color: #e74c3c; }
-        .priority-medium { border-left-color: #f39c12; }
-        .priority-low { border-left-color: #95a5a6; }
-
-        .status-planning { color: #f39c12; }
-        .status-active { color: #27ae60; }
-        .status-completed { color: #3498db; }
-        
-        .strategy-toggle-btn {
-            background: #3498db;
-            color: white;
-            border: none;
-            padding: 0.8rem 1.5rem;
-            border-radius: 25px;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-weight: bold;
-            margin-top: 1rem;
-        }
-        
-        .strategy-toggle-btn:hover {
-            background: #2980b9;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
-        }
-        
-        .strategy-editor {
-            display: none;
-            background: rgba(255, 255, 255, 0.98);
-            padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            margin-bottom: 2rem;
-        }
-        
-        .strategy-editor.active {
-            display: block;
-        }
-        
-        .strategy-textarea {
-            width: 100%;
-            min-height: 500px;
-            padding: 1rem;
-            border: 2px solid #ecf0f1;
-            border-radius: 10px;
-            font-family: 'Courier New', monospace;
-            font-size: 14px;
-            line-height: 1.6;
-            resize: vertical;
-        }
-        
-        .strategy-controls {
-            display: flex;
-            gap: 1rem;
-            margin-top: 1rem;
-            justify-content: flex-end;
-        }
-        
-        .strategy-btn {
-            padding: 0.5rem 1rem;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: bold;
-            transition: all 0.3s ease;
-        }
-        
-        .strategy-btn.save {
-            background: #27ae60;
-            color: white;
-        }
-        
-        .strategy-btn.save:hover {
-            background: #229954;
-        }
-        
-        .strategy-btn.cancel {
-            background: #95a5a6;
-            color: white;
-        }
-        
-        .strategy-btn.cancel:hover {
-            background: #7f8c8d;
-        }
-        
-        .main-content {
-            transition: opacity 0.3s ease;
-        }
-        
-        .main-content.hidden {
-            display: none;
-        }
-    </style>
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #95a5a6;
+    }
+  </style>
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <h1>🚑 First Response</h1>
-            <p class="subtitle">Strategy Interface - Projektstrategie & Kollaboration</p>
-            <span class="status-badge">🟢 Active Development</span>
-            <div style="margin-top: 1rem;">
-                <button onclick="toggleStrategyView()" class="strategy-toggle-btn">
-                    📋 Strategie-Dokument bearbeiten
-                </button>
-            </div>
-        </header>
+  <div class="container">
+    <h1>🚑 First Response</h1>
+    <p class="subtitle">
+      Strategy Interface – Projektübersicht & Bearbeitung
+    </p>
 
-        <!-- Strategy Editor (initially hidden) -->
-        <div id="strategyEditor" class="strategy-editor">
-            <h2>📝 Aktuelle Strategie bearbeiten</h2>
-            <textarea id="strategyTextarea" class="strategy-textarea" placeholder="Strategie-Inhalt wird geladen..."></textarea>
-            <div class="strategy-controls">
-                <button onclick="saveStrategy()" class="strategy-btn save">💾 Speichern</button>
-                <button onclick="cancelStrategyEdit()" class="strategy-btn cancel">❌ Abbrechen</button>
-            </div>
-        </div>
-
-        <div id="mainContent" class="main-content">
-            <div class="project-status">
-                <h2>📊 Projektstatus</h2>
-            <div class="status-grid">
-                <div class="status-item">
-                    <h3>Aktueller Sprint</h3>
-                    <div class="status-value">Sprint 1</div>
-                </div>
-                <div class="status-item">
-                    <h3>Phase</h3>
-                    <div class="status-value">Prototyp</div>
-                </div>
-                <div class="status-item">
-                    <h3>Team</h3>
-                    <div class="status-value">1 Developer</div>
-                </div>
-                <div class="status-item">
-                    <h3>Engine</h3>
-                    <div class="status-value">Unity URP</div>
-                </div>
-            </div>
-            <div class="progress-bar">
-                <div class="progress-fill" style="width: 15%;"></div>
-            </div>
-            <p style="text-align: center; margin-top: 0.5rem; color: #7f8c8d;">15% Gesamtfortschritt</p>
-        </div>
-
-        <div class="main-content">
-            <div class="card">
-                <h2>🎯 Epics & Backlog</h2>
-                <ul class="epic-list">
-                    <li class="epic-item priority-high">
-                        <div class="epic-title">Epic 1: Prototyp</div>
-                        <div class="epic-status status-active">🔄 Sprint 1 - Grundlegende Unfallszene</div>
-                    </li>
-                    <li class="epic-item priority-medium">
-                        <div class="epic-title">Epic 2: Charakter-Perspektiven</div>
-                        <div class="epic-status status-planning">📋 Geplant</div>
-                    </li>
-                    <li class="epic-item priority-medium">
-                        <div class="epic-title">Epic 3: Erste-Hilfe-Simulation</div>
-                        <div class="epic-status status-planning">📋 Geplant</div>
-                    </li>
-                    <li class="epic-item priority-low">
-                        <div class="epic-title">Epic 4: Dynamisches Story-System</div>
-                        <div class="epic-status status-planning">📋 Geplant</div>
-                    </li>
-                    <li class="epic-item priority-low">
-                        <div class="epic-title">Epic 5: Atmosphäre & Immersion</div>
-                        <div class="epic-status status-planning">📋 Geplant</div>
-                    </li>
-                    <li class="epic-item priority-low">
-                        <div class="epic-title">Epic 6: Mobile-Plattform</div>
-                        <div class="epic-status status-planning">📋 Geplant</div>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h2>👥 Charakter-Development</h2>
-                <div class="character-grid">
-                    <div class="character-card">
-                        <div class="character-name">Lukas</div>
-                        <div class="character-role">Verursacher (24)</div>
-                    </div>
-                    <div class="character-card">
-                        <div class="character-name">Viktor</div>
-                        <div class="character-role">Opfer (45)</div>
-                    </div>
-                    <div class="character-card">
-                        <div class="character-name">Kilian</div>
-                        <div class="character-role">Ersthelfer (28)</div>
-                    </div>
-                    <div class="character-card">
-                        <div class="character-name">Stefania</div>
-                        <div class="character-role">Verletzt (32)</div>
-                    </div>
-                    <div class="character-card">
-                        <div class="character-name">Regina</div>
-                        <div class="character-role">Zeugin (58)</div>
-                    </div>
-                    <div class="character-card">
-                        <div class="character-name">Norman</div>
-                        <div class="character-role">Profi-Retter (35)</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="collaboration-section">
-            <h2>🤝 Kollaboration & Ressourcen</h2>
-            <div class="collaboration-links">
-                <a href="https://github.com" class="link-card" target="_blank">
-                    <div class="link-icon">📚</div>
-                    <h3>GitHub Repository</h3>
-                    <p>Quellcode & Version Control</p>
-                </a>
-                <a href="#" class="link-card" onclick="showVision(); return false;">
-                    <div class="link-icon">👁️</div>
-                    <h3>Vision & Strategie</h3>
-                    <p>Projektvision und Ziele</p>
-                </a>
-                <a href="#" class="link-card" onclick="showBacklog(); return false;">
-                    <div class="link-icon">📋</div>
-                    <h3>Product Backlog</h3>
-                    <p>User Stories & Epics</p>
-                </a>
-                <a href="#" class="link-card" onclick="showCharacters(); return false;">
-                    <div class="link-icon">🎭</div>
-                    <h3>Charaktere</h3>
-                    <p>Character Development</p>
-                </a>
-            </div>
-        </div>
-
-        <div class="card">
-            <h2>🎮 Spiel-Information</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;">
-                <div>
-                    <strong>Genre:</strong> Serious Game / Adventure
-                </div>
-                <div>
-                    <strong>Engine:</strong> Unity URP
-                </div>
-                <div>
-                    <strong>Plattform:</strong> PC, Mobile
-                </div>
-                <div>
-                    <strong>Zielgruppe:</strong> 16+ Jahre
-                </div>
-                <div>
-                    <strong>Sprache:</strong> Deutsch
-                </div>
-                <div>
-                    <strong>Release:</strong> TBA
-                </div>
-            </div>
-        </div>
-
-        <footer class="footer">
-            <p>🚑 First Response - Strategy Interface</p>
-            <p class="last-updated">Letzte Aktualisierung: <span id="update-time"></span></p>
-        </footer>
+    <div class="info-box">
+      <strong>🧭 Zweck dieser Seite</strong>
+      Diese Seite bietet den Kontext zur Projektstrategie.
+      <br />
+      Die eigentliche Bearbeitung des Strategiedokuments erfolgt bewusst
+      direkt auf GitHub – inklusive Login, Versionshistorie und Review.
     </div>
 
-    <script>
-        // Aktuelle Zeit anzeigen
-        function updateTime() {
-            const now = new Date();
-            document.getElementById('update-time').textContent = now.toLocaleString('de-DE');
-        }
-        updateTime();
-        setInterval(updateTime, 60000);
+    <div class="info-box">
+      <strong>🔒 Zugriff & Sicherheit</strong>
+      Zum Bearbeiten ist ein GitHub-Account mit Zugriff auf das Repository
+      erforderlich. Falls du nicht angemeldet bist, wirst du automatisch
+      zu GitHub weitergeleitet.
+    </div>
 
-        // Modal-Funktionen für Detail-Ansichten
-        function showVision() {
-            alert('Vision & Strategie Details:\n\n• Emotionale Tiefe & praktischer Nutzen\n• Adventure-Elemente mit Action-Potenzial\n• Bridge zwischen Serious Game & kommerziellen Titeln\n• Langfristige Partnerschaften mit Gesundheitswesen');
-        }
+    <div class="edit-section">
+      <a
+        class="edit-button"
+        href="https://github.com/USERNAME/REPO/edit/main/Assets/ProjectManagement/StrategyInterface/strategy.md"
+        target="_blank"
+        rel="noopener"
+      >
+        ✏️ Strategie auf GitHub bearbeiten
+      </a>
 
-        function showBacklog() {
-            alert('Product Backlog Details:\n\n• 6 Epics mit klaren Prioritäten\n• Sprint 1: Grundlegende Unfallszene\n• Modularer Aufbau für zukünftige Erweiterungen\n• Agile Entwicklung mit regelmäßigen Reviews');
-        }
+      <div class="note">
+        Öffnet den offiziellen GitHub-Editor (Login erforderlich)
+      </div>
+    </div>
 
-        function showCharacters() {
-            alert('Character Development:\n\n• 6 Hauptcharaktere mit Entwicklungs-Arcs\n• Jeder Charakter hat einzigartige Skills\n• Interaktive Beziehungen und Konflikte\n• Spieler-Entscheidungen beeinflussen Entwicklung');
-        }
-
-        // Automatische Aktualisierung der Progress-Bar (simuliert)
-        setTimeout(() => {
-            document.querySelector('.progress-fill').style.width = '18%';
-        }, 2000);
-
-        // Strategy Editor Funktionen
-        let strategyContent = '';
-        let isEditing = false;
-
-        function toggleStrategyView() {
-            const editor = document.getElementById('strategyEditor');
-            const mainContent = document.getElementById('mainContent');
-            const textarea = document.getElementById('strategyTextarea');
-            
-            if (!isEditing) {
-                // Strategie laden und Editor anzeigen
-                loadStrategy();
-                editor.classList.add('active');
-                mainContent.classList.add('hidden');
-                isEditing = true;
-            } else {
-                // Zurück zur Übersicht
-                editor.classList.remove('active');
-                mainContent.classList.remove('hidden');
-                isEditing = false;
-            }
-        }
-
-        async function loadStrategy() {
-            try {
-                // Für GitHub Pages: Die Markdown-Datei direkt in JavaScript einbetten
-                const strategyContent = `# First Response - Projektstrategie
-
-## 🎯 Vision & Mission
-
-### Vision
-First Response wird zum führenden Serious Game im Bereich Erste-Hilfe-Ausbildung und schafft eine Brücke zwischen Bildung und Unterhaltung.
-
-### Mission
-Wir entwickeln ein innovatives Spiel, das Menschen befähigt, in Notfallsituationen richtig zu handeln und dabei ein fesselndes Spielerlebnis bietet.
-
-## 📅 Zeitliche Ziele
-
-### Kurzfristig (0-6 Monate)
-- **Prototyp-Entwicklung:** Spielbare Demo mit grundlegenden Funktionen
-- **Erste Partner:** Kooperationen mit 2-3 Erste-Hilfe-Organisationen
-- **Funding-Phase:** Seed-Investment sichern
-
-### Mittelfristig (6-18 Monate)
-- **Markteinführung:** Release auf PC und Mobile Plattformen
-- **Partner-Netzwerk:** 10+ strategische Partner im Gesundheitswesen
-- **User-Base:** 50.000+ aktive Nutzer
-
-### Langfristig (18+ Monate)
-- **Marktführerschaft:** Nr. 1 im Serious Game Segment Erste Hilfe
-- **Internationalisierung:** Expansion auf europäische Märkte
-- **Portfolio-Erweiterung:** Additional Szenarien (Feuerwehr, etc.)
-
-## 💰 Finanzierungsstrategie
-
-### Phase 1: Seed Funding (€50.000-100.000)
-- **Quellen:** Business Angels, Gründerförderung
-- **Verwendung:** Prototyp-Entwicklung, Team-Aufbau
-
-### Phase 2: Series A (€500.000-1.000.000)
-- **Quellen:** VCs, Corporate Venture Capital
-- **Verwendung:** Markteinführung, Marketing, Skalierung
-
-### Phase 3: Series B (€2.000.000+)
-- **Quellen:** Growth Capital, Strategische Investoren
-- **Verwendung:** Internationalisierung, Portfolio-Erweiterung
-
-## 🤝 Stakeholder Management
-
-### Primäre Stakeholder
-- **Investoren:** Finanzielle Rückendeckung und strategische Beratung
-- **Partner:** Gesundheitsorganisationen, Krankenkassen, Rettungsdienste
-- **User:** Endanwender (Spieler) und Bildungsinstitutionen
-
-### Sekundäre Stakeholder
-- **Behörden:** Zertifizierungsstellen, Bildungsministerien
-- **Technologie-Partner:** Unity, Cloud-Anbieter
-- **Medien:** Gaming-Presse, Bildungsmedizin
-
-## 📈 Marketing & Vertrieb
-
-### Zielgruppen
-- **B2C:** Gamer, Lernende, Familien
-- **B2B:** Unternehmen, Schulen, Erste-Hilfe-Organisationen
-- **B2G:** Öffentliche Einrichtungen, Bildungsträger
-
-### Marketing-Strategie
-- **Content Marketing:** Educational Content, Success Stories
-- **Partnerschafts-Marketing:** Kooperationen mit Gesundheitsorganisationen
-- **Performance Marketing:** Targeted Ads auf Gaming und Bildungsplattformen
-
-### Vertriebskanäle
-- **Digital:** Steam, App Store, Google Play, Web-Version
-- **B2B:** Direktvertrieb, Lizenzen für Institutionen
-- **B2G:** Ausschreibungen, Framework-Agreements
-
-## 🏢 Projektorganisation
-
-### Team-Struktur
-- **Core Team:** 5-7 Personen (Development, Design, Management)
-- **Advisory Board:** Medizinische Experten, Gaming-Veteranen
-- **Freelancer:** Spezialisten für spezifische Projekte
-
-### Governance
-- **Steering Committee:** Strategische Entscheidungen quartalsweise
-- **Project Management:** Agile Methoden, 2-Wochen Sprints
-- **Quality Assurance:** Regelmäßige Reviews und User-Testing
-
-## 📊 Erfolgsmetriken
-
-### Finanzielle KPIs
-- **Revenue:** Monatlich wiederkehrende Einnahmen
-- **Customer Acquisition Cost:** Kosten pro Neukunde
-- **Lifetime Value:** Kundenwert über gesamten Lebenszyklus
-
-### Operative KPIs
-- **User Engagement:** Aktive Nutzer, Spielzeit
-- **Learning Impact:** Wissenstests vor/nach dem Spiel
-- **Partner Satisfaction:** Partner-Feedback und Retention
-
-### Strategische KPIs
-- **Market Share:** Anteil am Serious Game Markt
-- **Brand Recognition:** Bekanntheitsgrad in Zielgruppen
-- **Innovation Index:** Patentanmeldungen, Unique Features
-
-## 🚀 Go-to-Market Strategie
-
-### Launch-Phasen
-1. **Soft Launch:** Beta-Version mit ausgewählten Partnern
-2. **Market Launch:** Öffentlicher Release auf allen Plattformen
-3. **Scale-Up:** Internationalisierung und Portfolio-Erweiterung
-
-### Pricing-Strategie
-- **Freemium:** Grundversion kostenlos, Premium-Features kostenpflichtig
-- **B2B-Lizenz:** Abonnement-Modell für Institutionen
-- **B2G-Verträge:** Projektbasierte Lizenzierung
-
-## 🔄 Risikomanagement
-
-### Haupt-Risiken
-- **Technisch:** Komplexität der Spielentwicklung
-- **Markt:** Akzeptanz von Serious Games
-- **Regulatorisch:** Zertifizierungsanforderungen
-- **Finanziell:** Cashflow-Management
-
-### Mitigations-Strategien
-- **Technisch:** Modularer Aufbau, iterative Entwicklung
-- **Markt:** Early User Testing, Partner-Validation
-- **Regulatorisch:** Frühzeitige Einbindung von Experten
-- **Finanziell:** Phasenweise Finanzierung, Milestone-basiert
-
----
-
-## 📝 Aktuelle Maßnahmen
-
-### [2026-01-30] Strategie-Initialisierung
-- Grundlegende Projektstrategie definiert
-- Zeitliche Meilensteine festgelegt
-- Finanzierungsphasen konzipiert
-
-### Nächste Schritte
-- [ ] Business Plan ausarbeiten
-- [ ] Erste Investor-Gespräche führen
-- [ ] Partner-Anfragen senden
-- [ ] Legal Structure definieren
-
----
-
-## 📞 Kontakt & Kommunikation
-
-### Strategie-Updates
-- **Wöchentlich:** Internes Team-Update
-- **Monatlich:** Investor-Report
-- **Quartalsweise:** Stakeholder-Review
-
-### Ansprechpartner
-- **CEO:** Strategische Ausrichtung, Investor Relations
-- **CTO:** Technische Roadmap, Product Development
-- **COO:** Operations, Partner Management
-
----
-
-*Letzte Aktualisierung: 2026-01-30*  
-*Nächste Review: 2026-02-06*`;
-                
-                document.getElementById('strategyTextarea').value = strategyContent;
-                strategyContent = strategyContent;
-            } catch (error) {
-                console.error('Fehler beim Laden der Strategie:', error);
-                document.getElementById('strategyTextarea').value = '# Fehler beim Laden der Strategie\n\nBitte stellen Sie sicher, dass die Datei FirstResponseStrategy.md existiert.';
-            }
-        }
-
-        function saveStrategy() {
-            const textarea = document.getElementById('strategyTextarea');
-            const content = textarea.value;
-            
-            // In einer echten Implementierung würde hier der Inhalt gespeichert werden
-            // Für GitHub Pages müsste dies über einen API-Call oder GitHub API erfolgen
-            
-            // Simuliere Speichern
-            localStorage.setItem('strategyContent', content);
-            
-            // Zeige Erfolgsmeldung
-            const successMsg = document.createElement('div');
-            successMsg.textContent = '✅ Strategie erfolgreich gespeichert (lokal)';
-            successMsg.style.cssText = `
-                position: fixed;
-                top: 20px;
-                right: 20px;
-                background: #27ae60;
-                color: white;
-                padding: 1rem;
-                border-radius: 8px;
-                z-index: 1000;
-                animation: fadeInOut 3s ease;
-            `;
-            document.body.appendChild(successMsg);
-            
-            setTimeout(() => {
-                document.body.removeChild(successMsg);
-            }, 3000);
-            
-            // Zurück zur Übersicht
-            toggleStrategyView();
-        }
-
-        function cancelStrategyEdit() {
-            // Originalinhalt wiederherstellen
-            document.getElementById('strategyTextarea').value = strategyContent;
-            toggleStrategyView();
-        }
-
-        // CSS Animation für Erfolgsmeldung
-        const style = document.createElement('style');
-        style.textContent = `
-            @keyframes fadeInOut {
-                0% { opacity: 0; transform: translateY(-20px); }
-                20% { opacity: 1; transform: translateY(0); }
-                80% { opacity: 1; transform: translateY(0); }
-                100% { opacity: 0; transform: translateY(-20px); }
-            }
-        `;
-        document.head.appendChild(style);
-    </script>
+    <footer>
+      First Response – Strategy Interface<br />
+      Letzte Aktualisierung erfolgt über GitHub Commits
+    </footer>
+  </div>
 </body>
 </html>
