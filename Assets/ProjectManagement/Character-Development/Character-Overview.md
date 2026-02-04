@@ -73,7 +73,7 @@ Jeder Charakter hat einzigartige Fähigkeiten, die im Gameplay genutzt werden:
 - **Lukas:** Lernfähigkeit, Technisches Verständnis
 - **Viktor:** Praktische Lösungen, Führung
 - **Kilian:** Medizinisches Wissen, Analyse
-- **Stefania:** Emotionale Intelligenz, Kreativität
+- **Stefania:** Trainiert, handwerklich geschickt
 - **Regina:** Beobachtung, Weisheit
 - **Norman:** Professionelle Kompetenz, Koordination
 
