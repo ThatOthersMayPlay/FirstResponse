@@ -91,6 +91,12 @@
 - **Verantwortlich:** Technical Lead, DevOps
 - **Letzte Aktualisierung:** [Datum]
 
+#### Prototyp-Strategie.md
+- **Inhalt:** Prototyp-Entwicklungsstrategie, Action-Elemente, Prioritäten
+- **Update-Frequenz:** Täglich während Prototyp-Entwicklung
+- **Verantwortlich:** Game Designer, Technical Lead
+- **Letzte Aktualisierung:** [Datum]
+
 ---
 
 ### 🌐 Kollaboration & Interface

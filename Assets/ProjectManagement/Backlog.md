@@ -2,22 +2,27 @@
 
 ## Epics
 
-### Epic 1: Prototyp - Interaktive Unfallszene (Früh spielbare Version)
-**Ziel:** Grundlegende Interaktion und Atmosphäre in 2-3 Sprints erreichbar
+### Epic 1: Prototyp - Action-Adventure Unfallszene im Stil von Detroit: Become Human
+**Ziel:** Spannungsgeladene Action-Adventure-Erfahrung mit subtiler Erste-Hilfe-Integration in 2-3 Sprints erreichbar
+
+> **Hinweis:** Das Spiel kombiniert Action-Adventure-Elemente mit realistischen Erste-Hilfe-Szenarien. Die Erste-Hilfe-Maßnahmen sind natürlich in die Story eingebettet und nicht als Lernmodul erkennbar.
 
 #### User Stories:
-- Als Spieler möchte ich die Unfallszene aus erster Perspektive erleben
-- Als Spieler möchte ich grundlegende Dialogoptionen haben
-- Als Spieler möchte ich einfache Erste-Hilfe-Aktionen ausführen können
-- Als Spieler möchte ich die Konsequenzen meiner Entscheidungen sehen
-- Als Entwickler möchte ich Platzhalter-Assets verwenden können
+- Als Spieler möchte ich eine spannende, action-orientierte Unfallszene erleben
+- Als Spieler möchte ich bedeutungsvolle Entscheidungen mit Konsequenzen treffen
+- Als Spieler möchte ich Charaktere aus verschiedenen Perspektiven steuern
+- Als Spieler möchte ich realistische Erste-Hilfe-Maßnahmen als natürlichen Teil der Story durchführen
+- Als Spieler möchte ich mich durch die Atmosphäre und Spannung gefangen fühlen
+- Als Entwickler möchte ich ein System für multiple Charakter-Perspektiven erstellen
 
 #### Akzeptanzkriterien:
-- Eine spielbare Szene mit Unfallsetting
-- Mindestens 2 Charaktere mit Dialogen
-- 1-2 einfache Erste-Hilfe-Aktionen
-- Grundlegendes Entscheidungssystem
-- Platzhalter-Grafik und -Audio
+- Eine spielbare, spannungsgeladene Unfallszene mit Action-Elementen
+- Mindestens 2-3 steuerbare Charaktere mit unterschiedlichen Perspektiven
+- Bedeutungsvolle Entscheidungen mit spürbaren Konsequenzen (Detroit: Become Human Stil)
+- Subtil integrierte Erste-Hilfe-Maßnahmen als natürlicher Story-Teil
+- Atmosphärische Inszenierung mit Spannungsbogen
+- Grundlegendes Entscheidungssystem mit Verzweigungen
+- Platzhalter-Assets für schnellen Prototypen
 
 ---
 
@@ -189,6 +194,7 @@
 - Strategy Interface (bei Status-Änderungen)
 - PlayerExperienceLog.md (jeden Sprint)
 - GitHub-Setup.md (bei Repository-Änderungen)
+- Prototyp-Strategie.md (täglich während Prototyp-Entwicklung)
 
 ---
 
