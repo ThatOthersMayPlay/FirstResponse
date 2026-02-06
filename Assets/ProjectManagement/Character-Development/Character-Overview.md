@@ -11,8 +11,8 @@
 | **Lukas** | 24 | Verursacher | Schuld und Unsicherheit | Verantwortung übernehmen |
 | **Viktor** | 45 | Opfer (Fahrzeug) | Wut und Kontrolle | Führung und Vergebung |
 | **Kilian** | 28 | Ersthelfer | Theorie vs. Praxis | Menschliche Medizin |
-| **Stefania** | 32 | Opfer (verletzt) | Panik und Schwäche | Eigene Stärke finden |
-| **Regina** | 58 | Zeugin | Alter und Nutzlosigkeit | Neue Identität |
+| **Stefania** | 32 | Opfer (verletzt) | Kontrollverlust und Fremdbestimmung | Selbstwirksamkeit entwickeln |
+| **Regina** | 58 | Zeugin | Professionelle Distanz vs. Emotion | Emotionen zulassen |
 | **Norman** | 35 | Profi-Retter | Distanz und Routine | Menschlichkeit |
 
 ## Interaktions-Matrix
@@ -29,32 +29,32 @@
 - **Lukas:** Panik und Schuld
 - **Viktor:** Wut und Frustration
 - **Kilian:** Professionelle Analyse
-- **Stefania:** Verwirrung und Angst
-- **Regina:** Beobachtung und Zögern
+- **Stefania:** Kontrollverlust und Stress
+- **Regina:** Professionelle Beobachtung, emotionale Zurückhaltung
 - **Norman:** Routine und Distanz
 
 ### Phase 2: Erste Entscheidungen
 - **Lukas:** Zögerliche Hilfe
 - **Viktor:** Besonnenheit
 - **Kilian:** Theoretische Anwendung
-- **Stefania:** Vertrauen entwickeln
-- **Regina:** Innerer Konflikt
+- **Stefania:** Widerstand gegen Anweisungen, vorsichtiges Einlassen
+- **Regina:** Konflikt zwischen Professionalität und Mitgefühl
 - **Norman:** Professionelle Übernahme
 
 ### Phase 3: Aktives Handeln
 - **Lukas:** Überwindung der Angst
 - **Viktor:** Führung übernehmen
 - **Kilian:** Menschliche Verbindung
-- **Stefania:** Eigene Stärke
-- **Regina:** Verantwortung annehmen
+- **Stefania:** Situative Selbstwirksamkeit
+- **Regina:** Verantwortung mit emotionaler Nähe
 - **Norman:** Menschliche Nähe
 
 ### Phase 4: Transformation
 - **Lukas:** Reife und Selbstbewusstsein
 - **Viktor:** Weisheit und Vergebung
 - **Kilian:** Integrierte Heilkunst
-- **Stefania:** Empowerment
-- **Regina:** Neue Sinnhaftigkeit
+- **Stefania:** Selbstbehauptung trotz Verletzlichkeit
+- **Regina:** Menschliche Professionalität
 - **Norman:** Inspirierende Professionalität
 
 ## Gameplay-Integration
@@ -74,7 +74,7 @@ Jeder Charakter hat einzigartige Fähigkeiten, die im Gameplay genutzt werden:
 - **Viktor:** Praktische Lösungen, Führung
 - **Kilian:** Medizinisches Wissen, Analyse
 - **Stefania:** Trainiert, handwerklich geschickt
-- **Regina:** Beobachtung, Weisheit
+- **Regina:** Beobachtung, strukturierte Kommunikation
 - **Norman:** Professionelle Kompetenz, Koordination
 
 ## Story-Verzweigungen
