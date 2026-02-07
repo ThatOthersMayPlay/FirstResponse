@@ -3,90 +3,97 @@
 > **⚠️ Hinweis:** Dieses Dokument enthält Platzhalter und grundlegende Konzepte. Die Charaktereigenschaften, Entwicklungs-Arcs und Dialoge müssen noch detailliert ausgearbeitet und verfeinert werden.
 
 ## Grundlegende Informationen
-- **Alter:** 28 Jahre
-- **Beruf:** Medizinstudent (6. Semester)
-- **Hintergrund:** Akademische Familie, sportlich, ehrenamtlich aktiv
-- **Fahrzeug:** Fahrrad (war auf dem Heimweg vom Sport)
+- **Alter:** 56 Jahre
+- **Beruf:** Pastor einer Freikirche (hauptamtlich angestellt)
+- **Hintergrund:** Spirituelle Familie, tiefgläubig, viel Lebenserfahrung, gewisse Weichheit, selbstsicher, kommt gut im Leben klar, aber stößt an eigenen Grenzen
+- **Fahrzeug:** Kleinwagen (auf dem Heimweg von Gemeindearbeit)
 
 ## Charaktereigenschaften
 
 ### Positive Eigenschaften
-- **Wissbegierig:** Lernfreudig, neugierig auf medizinisches Wissen
-- **Empathisch:** Fühlt mit anderen, will helfen
-- **Selbstbewusst:** Kennt seine Fähigkeiten und Grenzen
-- **Diszipliniert:** Training und Lernen gehören zum Alltag
+- **Empathisch:** Fühlt tief mit anderen, will wirklich helfen
+- **Spirituell:** Starker Glaube, moralische Integrität
+- **Lebenserfahren:** Viel Weisheit und praktische Erfahrung
+- **Weich:** Sanfte Art, aber selbstsicher im Auftreten
+- **Fürsorglich:** Kümmert sich um das Wohl anderer
 
-### Negative Eigenschaften
-- **Überheblich:** Kann manchmal arrogant wirken
-- **Perfektionistisch:** Will alles perfekt machen
-- **Theoretisch:** Manchmal zu sehr im Kopf statt in der Praxis
-- **Impulsiv:** Handelt manchmal ohne vollständige Analyse
+### Herausfordernde Eigenschaften
+- **Gemeinde-Blase:** Lebt in frommer Blase, wenig Kontakt zur Außenwelt
+- **Urteilend:** Neigt dazu, andere nach eigenen Maßstäben zu bewerten
+- **Über-analytisch:** Verliert sich in tiefen Gedanken statt zu handeln
+- **Selbstgenügsam:** Kommt gut klar, hat wenig Anlass zum Wachstum
+- **Zu nachsichtig:** Manchmal zu vergebend
+
+## Hauptkonflikt
+**Gemeinde-Blase vs. authentische Menschlichkeit:** Kilian ist ein erfahrener Pastor, der gut im Leben klar kommt, aber in seiner frommen Gemeinde-Blase lebt. Seine Herausforderung ist es, tieferes Verständnis für Menschen mit anderen Lebenswegen zu entwickeln, ihre Stärken zu sehen und dort abzuholen, wo sie sind. Durch die Krisensituation stößt er an seine eigenen Grenzen und findet zu größerer Authentizität.
 
 ## Ausgangssituation
-Kilian kommt mit dem Fahrrad vom Training und sieht den Unfall. Als Medizinstudent erkennt er sofort die Schwere der Situation und eilt zur Hilfe.
+Kilian kommt von Gemeindearbeit und wird in eine Krisensituation verwickelt. Seine pastorale Natur verlangt nach Hilfe, aber seine zögerliche Art macht es ihm schwer, sofort zu handeln.
 
 ## Entwicklungs-Arc
 
-### Phase 1: Professionelle Analyse
-- **Emotionen:** Konzentration, Adrenalin, Verantwortung
-- **Verhalten:** Strukturierte Vorgehensweise, professionell
-- **Dialoge:** "Ich bin Medizinstudent", "Wer ist verletzt?", "Bewahren Sie Ruhe"
+### Phase 1: Pastorale Perspektive
+- **Emotionen:** Konzentration, Mitgefühl, professionelle Distanz
+- **Verhalten:** Beobachtet, analysiert aus frommer Perspektive, urteilt unbewusst
+- **Dialoge:** "Ich bin hier für Sie", "Wie geht es Ihnen?", "Lasst uns beten"
 
-### Phase 2: Theorie vs. Praxis
-- **Emotionen:** Unsicherheit, Stress, Selbstzweifel
-- **Verhalten:** Theoretisches Wissen anwenden, merkt Schwierigkeiten
-- **Dialoge:** "Okay, was habe ich gelernt?", "Das ist anders als im Buch", "Ich muss mich konzentrieren"
+### Phase 2: Eigene Grenzen erfahren
+- **Emotionen:** Unsicherheit, Stress, stößt an eigene Grenzen
+- **Verhalten:** Merkt, dass seine frommen Ratschläge nicht ausreichen, wird verletzlicher
+- **Dialoge:** "Ich sollte helfen, aber...", "Das überfordert mich", "Ich bin nicht mehr so sicher"
 
-### Phase 3: Menschliche Verbindung
-- **Emotionen:** Empathie, Demut, Verbundenheit
-- **Verhalten:** Verbindet Wissen mit Menschlichkeit, lernt von anderen
-- **Dialoge:** "Es geht nicht nur um Technik", "Jeder Mensch zählt", "Wir sind ein Team"
+### Phase 3: Tiefes Verständnis entwickeln
+- **Emotionen:** Wachsende Empathie, Respekt vor anderen Lebenswegen
+- **Verhalten:** Lernt, Menschen dort abzuholen, wo sie sind, ihre Stärken zu sehen
+- **Dialoge:** "Ich sehe jetzt, wer Sie wirklich sind", "Sie haben Stärken, die ich nicht kannte", "Ich lerne von Ihnen"
 
-### Phase 4: Reife und Weisheit
-- **Emotionen:** Dankbarkeit, Stolz, Demut
-- **Verhalten:** Versteht wahre Heilkunst, wird zum Lehrer
-- **Dialoge:** "Heilen ist mehr als Wissen", "Ich habe heute mehr gelernt als je zuvor"
+### Phase 4: Authentische Menschlichkeit
+- **Emotionen:** Reife, authentische Verletzlichkeit, wahre Weisheit
+- **Verhalten:** Integrierte pastorale Hilfe mit echter menschlicher Verbindung
+- **Dialoge:** "Glaube und Menschlichkeit gehören zusammen", "Ich bin hier und ich lerne mit", "Danke, dass Sie mir gezeigt haben, wer ich wirklich bin"
 
 ## Entscheidungs-Punkte
-1. **Allein helfen oder andere einbeziehen?**
-2. **Theoretisches Wissen oder praktische Intuition?**
-3. **Führen oder unterstützen?**
-4. **Professionelle Distanz oder emotionale Nähe?**
+1. **Spirituelle Hilfe oder menschliche Verbindung?**
+2. **Aus frommer Perspektive urteilen oder verstehen?**
+3. **Eigene Grenzen annehmen oder verleugnen?**
+4. **Authentisch verletzlich sein oder professionelle Fassade wahren?**
 
 ## Beziehungen zu anderen Charakteren
-- **Lukas:** Lehrer-Schüler-Beziehung, gibt Sicherheit
-- **Viktor:** Gegenseitiger Respekt, lernt von praktischer Erfahrung
-- **Stefania:** Medizinische Betreuung, entwickelt Fürsorge
-- **Regina:** Professionelle Anleitung, gibt Vertrauen
-- **Norman:** Kollegialer Austausch, lernt von Profis
+- **Viktor:** Schwelender Konflikt (Tiefe vs. Handeln) → Gegenseitiges Lernen → Respekt
+- **Lukas:** Pastorale Unterstützung, emotionale Stabilität
+- **Norman:** Spirituelle vs. professionelle Perspektiven
+- **Stefania:** Seelsorgerische Unterstützung, Autoritäts-Verständnis
+- **Regina:** Professionelle Zusammenarbeit, emotionale Unterstützung
+- **Milon:** Spirituelle Reflexion über Lebenssinn
 
 ## Lernziele für Spieler
-- Erste-Hilfe-Grundlagen und -fortgeschrittene Techniken
-- Umgang mit Stress in medizinischen Situationen
-- Balance zwischen Theorie und Praxis
-- Teamarbeit in Notfallsituationen
+- Tiefes Verständnis für andere Lebenswege entwickeln
+- Menschen dort abholen, wo sie sind, statt zu urteilen
+- Eigene Grenzen annehmen und authentisch werden
+- Stärken in anderen erkennen, auch wenn sie anders sind
+- Spirituelle Weisheit mit echter Menschlichkeit verbinden
 
 ## Mögliche Endings
-- **Optimal:** Wird zum kompetenten, empathischen Helfer
-- **Neutral:** Helft professionell, bleibt aber distanziert
-- **Schlecht:** Versagt durch Überheblichkeit oder Unsicherheit
+- **Optimal:** Authentische Menschlichkeit (tiefe Verbindung + echtes Verständnis)
+- **Neutral:** Spirituelle Unterstützung ohne echte menschliche Verbindung
+- **Schlecht:** Verbleibt in frommer Urteils-Blase, hilft nicht wirklich
 
 ## Dialog-Beispiele
-- *Anfang:* "Ruhig bleiben! Ich bin Medizinstudent, ich kann helfen. Wer ist wo verletzt?"
-- *Mittendrin:* "Okay, Atmung checken, Puls fühlen, Bewusstsein prüfen... Das ist anders als in der Bibliothek..."
-- *Ende:* "Ich dachte, ich wüsste alles. Aber wahre Hilfe kommt vom Herzen."
+- *Anfang:* "Ich bin hier für Sie. Lasst uns einen Moment beten und überlegen..."
+- *Mittendrin:* "Das überfordert mich. Ich sehe jetzt, dass ich noch viel zu lernen habe."
+- *Ende:* "Danke, dass Sie mir gezeigt haben, wie man wirkjlich barmherzig handelt. Ich lerne von Ihnen."
 
 ## Visuelle Entwicklung
-- **Anfang:** Selbstbewusst, sportlich, konzentriert
-- **Mitte:** Angespannt, schwitzend, aber fokussiert
-- **Ende:** Reif, ruhig, warme Ausstrahlung
+- **Anfang:** Nachdenklich, spirituell, leicht zögerlich
+- **Mitte:** Angespannt, kämpfend zwischen Denken und Handeln
+- **Ende:** Entschlossen, warm, spirituell und praktisch
 
 ## Spezielle Gameplay-Elemente
-- **Medizinisches Wissen:** Erweiterte Dialogoptionen für Erste Hilfe
-- **Diagnose-System:** Kann Verletzungen genauer identifizieren
-- **Lehr-Funktion:** Kann anderen Charakteren beibringen
+- **Moralische Führung:** Erweiterte Dialogoptionen für ethische Entscheidungen
+- **Seelsorgerische Unterstützung:** Kann emotionale Panik reduzieren
+- **Spirituelle Reflexion:** Kann tiefere Bedeutungen in Situationen erkennen
 
 ## Charakter-Skills
-- **Erste-Hilfe-Experte:** +20% Erfolg bei medizinischen Aktionen
-- **Beruhigende Präsenz:** Reduziert Panik bei anderen Charakteren
-- **Schnelle Analyse:** Kann Situationen schneller einschätzen
+- **Empathische Analyse:** +20% Erfolg bei emotionaler Unterstützung
+- **Moralische Integrität:** Reduziert Konflikte zwischen Charakteren
+- **Spirituelle Führung:** Kann andere zu besseren Entscheidungen bewegen

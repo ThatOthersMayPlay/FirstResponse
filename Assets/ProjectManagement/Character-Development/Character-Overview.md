@@ -4,58 +4,66 @@
 
 ## Charakter-Zusammenfassung
 
-### Die Sechs Protagonisten
+### Die Sieben Protagonisten
 
-| Charakter | Alter | Rolle im Unfall | Haupt-Konflikt | Entwicklungs-Thema |
-|-----------|-------|-----------------|----------------|-------------------|
-| **Lukas** | 24 | Verursacher | Schuld und Unsicherheit | Verantwortung übernehmen |
-| **Viktor** | 45 | Opfer (Fahrzeug) | Wut und Kontrolle | Führung und Vergebung |
-| **Kilian** | 28 | Ersthelfer | Theorie vs. Praxis | Menschliche Medizin |
-| **Stefania** | 32 | Opfer (verletzt) | Panik und Schwäche | Eigene Stärke finden |
-| **Regina** | 58 | Zeugin | Alter und Nutzlosigkeit | Neue Identität |
-| **Norman** | 35 | Profi-Retter | Distanz und Routine | Menschlichkeit |
+| Charakter | Alter | Beruf/Hintergrund | Haupt-Konflikt | Herausforderung | Entwicklungs-Thema |
+|-----------|-------|-------------------|----------------|-----------------|-------------------|
+| **Kilian** | 56 | Pastor einer Freikirche (hauptamtlich angestellt) | Gemeinde-Blase vs. authentische Menschlichkeit | Tiefes Verständnis für andere Lebenswege, Stärken erkennen, authentisch werden | Überwindung von frommer Urteils-Blase, echte menschliche Verbindung |
+| **Lukas** | 35 | Von Frau getrennter Familienvater | Überforderung & multiple Verantwortung | Mehrere Dinge gleichzeitig im Blick behalten, kühlen Kopf bewahren | Umgang mit Überforderung und Priorisierung |
+| **Norman** | 54 | Manager | Rationalität vs. Empathie | Empathie zeigen, im Hier und Jetzt bei Gegenüber sein | Menschliche Verbindung über professionelle Analyse |
+| **Regina** | 28 | Leitstellendisponentin | Professionalität vs. Emotionen | Emotionen zulassen ohne Professionalität zu verlieren | Balance zwischen Gefühl und Pflicht |
+| **Stefania** | 32 | Kürzlich aus Haft entlassen | Pflicht vs. Freiheit | Sich auf Menschen einlassen, Gleichgewicht finden | Verantwortung annehmen ohne Unabhängigkeit zu verlieren |
+| **Viktor** | 35 | Rettungssanitäter (Draufgänger) | Souveränität vs. emotionale Offenheit | Locker bleiben oder emotional werden, Bindungsangst überwinden | Balance aus souveräner Führung und echter Verbindung |
+| **Milon** | 50 | LKW-Fahrer | Routine vs. Lebensbejahung | Aus der Routine herauskommen, sich dem Leben stellen | Überwindung von Gleichgültigkeit
 
 ## Interaktions-Matrix
 
 ### Beziehungs-Dynamiken
-- **Lukas ↔ Viktor:** Konflikt → Mentor-Schüler → Respekt
-- **Kilian ↔ Alle:** Lehrer → Lernender → Kollege
-- **Stefania ↔ Regina:** Gemeinsame Unsicherheit → Gegenseitige Stärkung
-- **Norman ↔ Alle:** Professionelle Autorität → Inspirierter Mentor
+- **Kilian ↔ Viktor:** Schwelender Konflikt (Tiefe vs. Handeln) → Gegenseitiges Lernen → Respekt
+- **Lukas ↔ Familie:** Überforderung → Priorisierung → Balance
+- **Norman ↔ Alle:** Professionelle Distanz → Menschliche Verbindung → Inspirierender Mentor
+- **Stefania ↔ Regina:** Verantwortungs-Aversion → Telefonischer Konflikt → Wachstum
+- **Regina ↔ Stefania:** Professionelle Pflicht → Emotionale Verbindung → Balance
+- **Regina ↔ Viktor:** Professionelle Sympathie → Beziehungspotential → Emotionale Barrieren überwinden
+- **Milon ↔ Tochter (Brief):** Gleichgültigkeit → Konfrontation → Lebensbejahung
 
 ## Entwicklungs-Stadien
 
 ### Phase 1: Ausgangssituation
-- **Lukas:** Panik und Schuld
-- **Viktor:** Wut und Frustration
-- **Kilian:** Professionelle Analyse
-- **Stefania:** Verwirrung und Angst
-- **Regina:** Beobachtung und Zögern
-- **Norman:** Routine und Distanz
+- **Kilian:** Pastorale Perspektive, urteilt unbewusst aus frommer Blase
+- **Lukas:** Überfordert, versucht alles zu kontrollieren
+- **Norman:** Rationale Beobachtung, emotionale Distanz
+- **Regina:** Professionelle Routine, unterdrückte Emotionen
+- **Stefania:** Verantwortungs-Aversion, Autoritäts-Probleme
+- **Viktor:** Souveräne Führung, emotionale Distanz, Playboy-Fassade
+- **Milon:** Routine, Gleichgültigkeit, ungeöffneter Brief
 
 ### Phase 2: Erste Entscheidungen
-- **Lukas:** Zögerliche Hilfe
-- **Viktor:** Besonnenheit
-- **Kilian:** Theoretische Anwendung
-- **Stefania:** Vertrauen entwickeln
-- **Regina:** Innerer Konflikt
-- **Norman:** Professionelle Übernahme
+- **Kilian:** Eigene Grenzen erfahren, fromme Perspektive hinterfragen
+- **Lukas:** Priorisierung lernen, kühlen Kopf bewahren
+- **Norman:** Menschliche Verbindung über Analyse
+- **Regina:** Emotionen zulassen, Professionalität behalten
+- **Stefania:** Erste Verantwortung übernehmen
+- **Viktor:** Souveränität wird herausgefordert, emotionale Nähe
+- **Milon:** Aus Routine ausbrechen, Brief beachten
 
 ### Phase 3: Aktives Handeln
-- **Lukas:** Überwindung der Angst
-- **Viktor:** Führung übernehmen
-- **Kilian:** Menschliche Verbindung
-- **Stefania:** Eigene Stärke
-- **Regina:** Verantwortung annehmen
-- **Norman:** Menschliche Nähe
+- **Kilian:** Tiefes Verständnis entwickeln, Menschen dort abholen
+- **Lukas:** Fokus auf Wesentliches, Familie priorisieren
+- **Norman:** Im Hier und Jetzt präsent sein
+- **Regina:** Emotionale Integrität mit Professionalität
+- **Stefania:** Verantwortung annehmen, Unabhängigkeit behalten
+- **Viktor:** Emotionale Investition trotz Distanz, Bindungsangst überwinden
+- **Milon:** Sich dem Leben stellen, Brief öffnen
 
 ### Phase 4: Transformation
-- **Lukas:** Reife und Selbstbewusstsein
-- **Viktor:** Weisheit und Vergebung
-- **Kilian:** Integrierte Heilkunst
-- **Stefania:** Empowerment
-- **Regina:** Neue Sinnhaftigkeit
-- **Norman:** Inspirierende Professionalität
+- **Kilian:** Authentische Menschlichkeit (tiefe Verbindung + echtes Verständnis)
+- **Lukas:** Balancierter Familienvater
+- **Norman:** Menschlicher Manager mit Empathie
+- **Regina:** Emotionale Professionalität mit romantischer Öffnung
+- **Stefania:** Verantwortungsvolle Unabhängigkeit (Opferrolle überwunden)
+- **Viktor:** Authentische Souveränität (Bindungsangst überwunden)
+- **Milon:** Lebensbejahender Vater
 
 ## Gameplay-Integration
 
@@ -70,21 +78,32 @@ Jede Charakter-Entwicklung wird durch Spieler-Entscheidungen beeinflusst:
 ### Charakter-Skills
 Jeder Charakter hat einzigartige Fähigkeiten, die im Gameplay genutzt werden:
 
-- **Lukas:** Lernfähigkeit, Technisches Verständnis
-- **Viktor:** Praktische Lösungen, Führung
-- **Kilian:** Medizinisches Wissen, Analyse
-- **Stefania:** Emotionale Intelligenz, Kreativität
-- **Regina:** Beobachtung, Weisheit
-- **Norman:** Professionelle Kompetenz, Koordination
+- **Kilian:** Empathische Analyse, moralische Führung, medizinische Grundkenntnisse
+- **Lukas:** Multitasking, technische Lösungen, Familienmanagement
+- **Norman:** Rationale Analyse, strategisches Denken, Koordination
+- **Regina:** Professionelle Kommunikation, emotionale Stabilität, Telefon-Expertise
+- **Stefania:** Überlebensfähigkeiten, Unabhängigkeit, Näherkenntnisse (aus Haft)
+- **Viktor:** Praktische Erste Hilfe, schnelles Handeln, Draufgängertum
+- **Milon:** Routinierte Fahrzeugbeherrschung, Gelassenheit, Lebenserfahrung
 
 ## Story-Verzweigungen
 
 ### Haupt-Entscheidungspunkte
 1. **Erste Reaktion:** Hilfe oder Abwarten?
 2. **Priorisierung:** Wer wird zuerst behandelt?
-3. **Methode:** Welche Erste-Hilfe-Maßnahmen?
-4. **Kommunikation:** Wie werden andere informiert?
+3. **Kommunikation:** Wie werden andere informiert?
+4. **Moralische Entscheidungen:** Pflicht vs. persönliche Werte
 5. **Professionelle Hilfe:** Wann wird Rettungsdienst gerufen?
+6. **Charakter-spezifische Entscheidungen:** Jeder Charakter hat einzigartige Dilemmata
+
+### Charakter-spezifische Story-Elemente
+- **Kilian:** Spirituelle Entscheidungen, moralische Führung
+- **Lukas:** Familien-Priorisierung, Überforderungs-Management
+- **Norman:** Professionelle vs. menschliche Reaktionen
+- **Regina:** Telefon-Konflikt mit Stefania, emotionale Durchbrüche
+- **Stefania:** Verantwortungs-Annahme, Autoritäts-Konflikt
+- **Viktor:** Tiefe vs. Handeln, Konfrontation mit Kilian
+- **Milon:** Brief von Tochter, Lebensbejahung vs. Routine
 
 ### Endings
 - **Optimal:** Alle Charaktere entwickeln sich positiv
@@ -99,12 +118,16 @@ Jeder Charakter hat einzigartige Fähigkeiten, die im Gameplay genutzt werden:
 2. **Wachstum:** Krisen führen zu persönlicher Entwicklung
 3. **Gemeinschaft:** Zusammenhalt rettet Leben
 4. **Lernen:** Jeder lehrt und lernt voneinander
+5. **Balance:** Professionelle Pflicht vs. menschliche Verbindung
+6. **Transformation:** Von inneren Konflikten zu integrierter Persönlichkeit
 
 ### Symbolik
-- **Unfall:** Bruch des normalen Lebens
-- **Hilfe:** Menschliche Verbindung
-- **Zeit:** Druck führt zu Wachstum
-- **Entscheidungen:** Formen die Zukunft
+- **Unfall/Krise:** Katalysator für persönliche Entwicklung
+- **Hilfe:** Menschliche Verbindung über professionelle Distanz
+- **Zeit:** Druck führt zu Wachstum und Priorisierung
+- **Entscheidungen:** Formen die Zukunft und Charakter-Entwicklung
+- **Kommunikation:** Telefon vs. persönliche Begegnung
+- **Brief (Milon):** Ungeöffnete Lebensmöglichkeiten
 
 ## Development Guidelines
 

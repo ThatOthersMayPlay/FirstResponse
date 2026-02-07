@@ -3,96 +3,96 @@
 > **⚠️ Hinweis:** Dieses Dokument enthält Platzhalter und grundlegende Konzepte. Die Charaktereigenschaften, Entwicklungs-Arcs und Dialoge müssen noch detailliert ausgearbeitet und verfeinert werden.
 
 ## Grundlegende Informationen
-- **Alter:** 58 Jahre
-- **Beruf:** Rentierte Lehrerin (war Gymnasiallehrerin für Deutsch)
-- **Hintergrund:** Gebildet, kritisch, alleinlebend seit Tod des Mannes
-- **Fahrzeug:** Opel Corsa, war auf dem Heimweg vom Einkaufen
+- **Alter:** 28 Jahre
+- **Beruf:** Leitstellendisponentin
+- **Hintergrund:** Erfahren im Notfall-Management, professionell und zuverlässig
+- **Fahrzeug:** Kein Fahrzeug (arbeitet in Leitstelle, telefonischer Kontakt)
 
 ## Charaktereigenschaften
 
 ### Positive Eigenschaften
-- **Beobachtungsgabe:** Nimmt Details wahr, die andere übersehen
-- **Analytisch:** Kann Situationen gut einschätzen
-- **Geduldig:** Bleibt ruhig und überlegt
-- **Verantwortungsbewusst:** Fühlt sich der Gesellschaft verpflichtet
+- **Professionell:** Zuverlässig und erfahren im Notfall-Management
+- **Kommunikationsstark:** Kann klar und beruhigend am Telefon sprechen
+- **Organisiert:** Koordiniert komplexe Situationen effizient
+- **Emotional stabil:** Bleibt auch unter Druck ruhig
 
-### Negative Eigenschaften
-- **Zögerlich:** Überlegt lange bevor sie handelt
-- **Selbstkritisch:** Zweifelt an eigenen Fähigkeiten
-- **Distanziert:** Schwierigkeiten, emotionale Nähe zuzulassen
-- **Kritisch:** Beurteilt andere schnell und hart
+### Herausfordernde Eigenschaften
+- **Emotional unterdrückend:** Schwierigkeiten, Gefühle zuzulassen
+- **Zu professionell:** Manchmal zu distanziert und unpersönlich
+- **Kontrollierend:** Will Situationen vollständig kontrollieren
+- **Regel-fixiert:** Hält strikt an Protokollen fest
+
+## Hauptkonflikt
+**Professionalität vs. Emotionen:** Regina ist eine junge, aber erfahrene Leitstellendisponentin, die gelernt hat, Emotionen zu unterdrücken, um professionell zu bleiben. Ihre Herausforderung ist es, Emotionen zuzulassen, ohne die Professionalität zu verlieren.
 
 ## Ausgangssituation
-Regina beobachtet den Unfall aus sicherer Entfernung. Als Lehrerin ist sie es gewohnt, Verantwortung zu übernehmen, aber seit ihrer Rente fühlt sie sich unsicher in Krisensituationen.
+Regina arbeitet in der Leitstelle und koordiniert den Notruf. Sie hat hauptsächlich telefonischen Kontakt mit Stefania und muss versuchen, diese zur Erste-Hilfe-Leistung zu bewegen, während sie ihre professionelle Fassade bewahrt.
 
 ## Entwicklungs-Arc
 
-### Phase 1: Beobachtung und Analyse
-- **Emotionen:** Schock, Neugier, Unsicherheit
-- **Verhalten:** Beobachtet aus der Ferne, analysiert Situation
-- **Dialoge:** "Was passiert da?", "Sollte ich helfen?", "Ich bin zu alt dafür"
+### Phase 1: Professionelle Routine
+- **Emotionen:** Konzentration, Fokus, distanzierte Effizienz
+- **Verhalten:** Folgt Protokollen, koordiniert professionell
+- **Dialoge:** "Leitstelle Regina, was ist der Notfall?", "Bleiben Sie am Telefon"
 
-### Phase 2: Innerer Konflikt
-- **Emotionen:** Gewissensbisse, Angst, Pflichtgefühl
-- **Verhalten:** Ringt mit sich, überlegt Vor- und Nachteile
-- **Dialoge:** "Als Lehrerin hätte ich gehandelt", "Aber jetzt bin ich rentiert", "Was ist meine Verantwortung?"
+### Phase 2: Emotionale Risse
+- **Emotionen:** Wachsende Sorge, professionelle Fassade bröckelt
+- **Verhalten:** Beginnt, persönliche Anteile zu zeigen
+- **Dialoge:** "Hören Sie, ich mache mir Sorgen", "Bitte helfen Sie"
 
-### Phase 3: Überwindung und Handeln
-- **Emotionen:** Entschlossenheit, Erleichterung, Stolz
-- **Verhalten:** Überwindet Unsicherheit, hilft aktiv
-- **Dialoge:** "Ich muss helfen", "Meine Erfahrung ist wertvoll", "Ich kann noch etwas beitragen"
+### Phase 3: Emotionale Verbindung
+- **Emotionen:** Balance aus Professionalität und menschlicher Fürsorge
+- **Verhalten:** Verbindet Pflicht mit persönlicher Verantwortung
+- **Dialoge:** "Ich bin hier für Sie", "Wir schaffen das zusammen"
 
-### Phase 4: Neue Identität
-- **Emotionen:** Sinnhaftigkeit, Zufriedenheit, Hoffnung
-- **Verhalten:** Findet neue Rolle als weise Mentorin
-- **Dialoge:** "Mein Leben ist noch nicht vorbei", "Ich kann noch viel geben", "Erfahrung ist ein Geschenk"
-
+### Phase 4: Emotionale Professionalität
+- **Emotionen:** Integrierte Gefühle, warme Autorität, beginnende romantische Gefühle
+- **Verhalten:** Professionell mit Herz, menschliche Leitstelle, öffnet sich für Viktor
+- **Dialoge:** "Ich verstehe und ich helfe", "Sie sind nicht allein", "Viktor, du bist anders als ich dachte"
 ## Entscheidungs-Punkte
-1. **Zuschauen oder helfen?**
-2. **Alte Rollen akzeptieren oder neue finden?**
-3. **Sich zurückhalten oder engagieren?**
-4. **Vergangenheit loslassen oder nutzen?**
+1. **Protokolle befolgen oder intuitiv handeln?**
+2. **Professionelle Distanz oder emotionale Unterstützung?**
+3. **Stefania zu Hilfe drängen oder respektieren?**
+4. **Eigene Gefühle zeigen oder unterdrücken?**
+5. **Viktor näherkommen oder professionelle Distanz wahren?**
 
 ## Beziehungen zu anderen Charakteren
-- **Lukas:** Mutterliche Rolle, gibt Sicherheit und Ratschläge
-- **Viktor:** Gleiche Generation, teilt Lebenserfahrung
-- **Kilian:** Respekt vor jungen Wissen, bietet Lebensweisheit
-- **Stefania:** Verbündete in der Unsicherheit, unterstützt sich gegenseitig
-- **Norman:** Professionelle Zusammenarbeit, lernt moderne Medizin
-
+- **Stefania:** Telefonischer Konflikt (Pflicht vs. Verantwortung) → Wachstum → Balance
+- **Alle:** Professionelle Distanz → Menschliche Verbindung → Emotionale Stabilität
+- **Kilian:** Professionelle Zusammenarbeit, emotionale Unterstützung
+- **Lukas:** Professionelle Hilfe vs. familiäre Verantwortung
+- **Norman:** Professionelle Sympathie, gegenseitiger Respekt
+- **Viktor:** Professionelle Sympathie, gegenseitiger Respekt, Beziehungspotential - beide kennen sich und haben immer wieder miteinander zu tun gehabt, beide haben emotionale Barrieren (Regina: Professionalität vs. Emotionen, Viktor: Souveränität vs. emotionale Offenheit), aber eine Annäherung ist möglich wenn beide bereit sind, über ihre Barrieren hinauszugehen
+- **Milon:** Verständnis für dessen Lebenserfahrung
 ## Lernziele für Spieler
-- Umgang mit Alter und Rollenverlust
-- Wert von Lebenserfahrung erkennen
-- Neue Identität nach Berufsleben finden
-- Bedeutung von civic responsibility verstehen
+- Balance zwischen Professionalität und Menschlichkeit
+- Emotionale Intelligenz in Krisensituationen
+- Telefonische Kommunikation unter Stress
+- Verantwortung übernehmen ohne sich zu verlieren
 
 ## Mögliche Endings
-- **Optimal:** Findet neue sinnvolle Rolle als Mentorin
-- **Neutral:** Hilft zögerlich, bleibt distanziert
-- **Schlecht:** Versagt in der Verantwortung, wird verbittert
+- **Optimal:** Emotionale Professionalität mit Herz und Verstand
+- **Neutral:** Professionell aber bleibt distanziert
+- **Schlecht:** Verbleibt in unterdrückender Professionalität
 
 ## Dialog-Beispiele
-- *Anfang:* "Mein Gott, ein Unfall... Ich sollte etwas tun, aber... bin ich noch fähig dazu?"
-- *Mittendrin:* "Als Lehrerin hätte ich sofort gehandelt. Warum zögere ich jetzt? Meine Erfahrung ist doch wertvoll!"
-- *Ende:* "Ich dachte, mein Leben wäre vorbei. Aber ich habe gelernt: Erfahrung verfällt nicht."
+- *Anfang:* "Leitstelle Regina, was ist der Notfall? Bleiben Sie am Telefon."
+- *Mittendrin:* "Hören Sie, ich mache mir Sorgen. Bitte helfen Sie."
+- *Ende:* "Ich verstehe und ich helfe. Sie sind nicht allein."
 
 ## Visuelle Entwicklung
-- **Anfang:** Unsicher, zurückhaltend, nachdenklich
-- **Mitte:** Konzentriert, entschlossen, aber noch zögernd
-- **Ende:** Selbstbewusst, warm, weise
+- **Anfang:** Professionell, kontrolliert, am Schreibtisch
+- **Mitte:** Emotionale Spannung, sichtbare Sorge
+- **Ende:** Warm, präsent, professionell mit Herz
 
 ## Spezielle Gameplay-Elemente
-- **Beobachtungs-Bonus:** Kann Details entdecken, die andere übersehen
-- **Lehrer-Fähigkeit:** Kann anderen komplexe Situationen erklären
-- **Weisheits-Dialoge:** Spezielle Optionen durch Lebenserfahrung
+- **Telefon-Kommunikation:** Hauptsächlicher Interaktionsmodus
+- **Koordinations-Fähigkeit:** Kann Rettungsdienste leiten
+- **Emotionale Unterstützung:** Lernt, Gefühle zuzulassen
 
 ## Charakter-Skills
-- **Scharfe Beobachtung:** +15% Chance, wichtige Details zu finden
-- **Beruhigende Präsenz:** Reduziert Stress bei jüngeren Charakteren
-- **Analytisches Denken:** Kann Situationen schneller analysieren
-
-## Persönliche Geschichte
-- **Verstorbener Mann:** War Feuerwehrmann, hat ihr Erste Hilfe beigebracht
-- **Lehrer-Karriere:** 30 Jahre an einem Gymnasium, sehr beliebt
+- **Professionelle Kommunikation:** +25% Erfolg bei telefonischer Koordination
+- **Emotionale Stabilität:** Reduziert Panik bei anderen Charakteren
+- **Telefon-Expertise:** Spezielle Dialogoptionen am Telefon
 - **Renten-Dilemma:** Fühlt sich seit 2 Jahren nutzlos
 - **Hobby:** Lesen, Gartenarbeit, ehrenamtliche Nachhilfe
