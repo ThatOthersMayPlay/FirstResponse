@@ -2,6 +2,10 @@
 
 ## Epics
 
+
+Korrektur vorab:
+Bitte überarbeite die Charakter Dokumente: 
+Ergänzt werden muss Miron. Er ist Lkw-Fahrer, zwischen Gelassenheit und gleichgültigkeit leichtsinn, ja geht unangenehmen Themen aus dem Weg. Er hat eine Tochter die er nicht kennt. Diese hat ihm einen Brief geschrieben und dieser Brief liegt immer neben ihm im LKW ungeöffnet. Bei den anderen Charakteren müssen Eigenschaften geändert werden: Viktor ist ein draufgängerischer Sanitäter, dessen Herausforderungen es ist sich mit ernsten Themen auseinanderzusetzen. Regina ist eine leitstellendisponenten deren Herausforderung ist es Emotionen zuzulassen, Kilian ist ein Pastor dessen Herausforderung ist sich auf das hier und Jetzt einzustellen, lukas ist ein familienvater der auf dem Weg zu einem vorstellungsgespräch ist und dessen Herausforderung es ist viele Dinge auf einmal hinzubekommen. Stefania ist eine aus der Haft entlassene straftäterin deren Herausforderung es ist sich auf andere einzulassen und unterzuordnen wenn es nötig ist. Norman ist ein Manager dessen Herausforderung es ist aus dem Schema von Effektivität und Effizienz herauszukommen und Empathie zu zeigen. Konfliktpaare sind Regina und Stefania, Kilian und Viktor, ggf. Miron und Norman
 ### Epic 1: Prototyp - Action-Adventure Unfallszene im Stil von Detroit: Become Human
 **Ziel:** Spannungsgeladene Action-Adventure-Erfahrung mit subtiler Erste-Hilfe-Integration in 2-3 Sprints erreichbar
 
