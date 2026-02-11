@@ -2,10 +2,107 @@
 
 ## Epics
 
+### Epic 16: MVP-Szenen (Emotional dichte Erste-Hilfe-Erlebnisse)
+**Ziel:** Zwei konkrete Szenen mit 100% spürbarer emotionaler Dichte für Games BW Förderungs-MVP
 
-Korrektur vorab:
-Bitte überarbeite die Charakter Dokumente: 
-Ergänzt werden muss Miron. Er ist Lkw-Fahrer, zwischen Gelassenheit und gleichgültigkeit leichtsinn, ja geht unangenehmen Themen aus dem Weg. Er hat eine Tochter die er nicht kennt. Diese hat ihm einen Brief geschrieben und dieser Brief liegt immer neben ihm im LKW ungeöffnet. Bei den anderen Charakteren müssen Eigenschaften geändert werden: Viktor ist ein draufgängerischer Sanitäter, dessen Herausforderungen es ist sich mit ernsten Themen auseinanderzusetzen. Regina ist eine leitstellendisponenten deren Herausforderung ist es Emotionen zuzulassen, Kilian ist ein Pastor dessen Herausforderung ist sich auf das hier und Jetzt einzustellen, lukas ist ein familienvater der auf dem Weg zu einem vorstellungsgespräch ist und dessen Herausforderung es ist viele Dinge auf einmal hinzubekommen. Stefania ist eine aus der Haft entlassene straftäterin deren Herausforderung es ist sich auf andere einzulassen und unterzuordnen wenn es nötig ist. Norman ist ein Manager dessen Herausforderung es ist aus dem Schema von Effektivität und Effizienz herauszukommen und Empathie zu zeigen. Konfliktpaare sind Regina und Stefania, Kilian und Viktor, ggf. Miron und Norman
+> **Hinweis:** Dieses Epic umfasst die zwei Kernszenen des MVP mit innovativen Gameplay-Mechaniken und emotionaler Tiefe. Jede Szene trainiert gezielt 2-3 Kern-Aspekte der Aesthetics of Play.
+
+#### User Stories:
+- Als Spieler möchte ich in Szene 1 ein echtes moralisches Dilemma erleben (Stefania vs. Erste-Hilfe)
+- Als Spieler möchte ich in Szene 2 den Konzentrationskonflikt bei der Autofahrt spüren (Lukas)
+- Als Designer möchte ich Fokuswechsel-Mechaniken implementieren können
+- Als KI-Nutzer möchte ich Szenen-Assets und Dialoge generieren lassen
+- Als QA möchte ich emotionale Dichte und spürbare Spannung validieren können
+
+#### Akzeptanzkriterien:
+- [ ] Szene 1 "Unfall-Schock & Flucht" mit Stefania/Regina ist implementiert
+- [ ] Szene 2 "Ablenkung & Verantwortung" mit Lukas/Kinder ist implementiert
+- [ ] Fokuswechsel-Mechanik in Szene 2 funktioniert (Handy vs. Straße)
+- [ ] Ink-basierte Dialoge mit Entscheidungsverzweigungen sind integriert
+- [ ] Emotionale Dichte und spürbare Spannung sind nachweisbar
+- [ ] Point&Click-Interaktion mit Hotspots funktioniert in beiden Szenen
+- [ ] Audio-Design mit emotionaler Wirkung ist implementiert
+
+#### Technical Tasks:
+- Szene 1: Verkehrsunfall mit Stefania/Regina Dialog-System
+- Szene 2: Autofahrt mit Fokuswechsel-Filter und Hintergrundvideo
+- Ink-Integration für beide Szenen-Dialoge
+- Unity UI Canvas mit Hotspots für beide Szenen
+- Audio-System für emotionale Immersion
+- Fokus-Filter-System für Szene 2 (Blur-Effekte)
+- KI-generierte Assets als Platzhalter
+- Entscheidung-Logging und Konsequenz-System
+
+---
+
+### Epic 15: Point&Click-System (Unity-Standardmittel)
+**Ziel:** KI-gestütztes MVP für narratives Action-Adventure mit statischen Szenen und interaktiven Hotspots
+
+> **Hinweis:** Dieses Epic nutzt Unity-Standardmittel für schnelle Iteration. Fokus auf verzweigte Entscheidungen, nicht auf klassische Adventure-Mechanik. Point&Click dient als reines Erzähl-Interface für komplexe Story-Strukturen.
+
+#### User Stories:
+- Als Entwickler möchte ich schnell statische Szenen mit interaktiven Hotspots erstellen können
+- Als Designer möchte ich Story-kritische Quick-Decisions ohne komplexe Programmierung umsetzen können
+- Als Spieler möchte ich klare, visuelle Entscheidungs-Optionen mit Hover-Feedback erhalten
+- Als KI-Nutzer möchte ich Hotspot-Patterns automatisiert generieren lassen
+- Als QA möchte ich Story-Flüsse schnell über visuelle Interfaces testen können
+
+#### Akzeptanzkriterien:
+- [ ] Unity UI Canvas-basiertes System ist implementiert
+- [ ] Statische Hintergrundbilder mit überlagerten Hotspots funktionieren
+- [ ] Zwei Hotspot-Typen: Bild+Text und reine Outline-Schaltflächen
+- [ ] Hover-Visualisierung mit klarem Feedback ist implementiert
+- [ ] Klick-Events triggern Ink-Choices und Szenenübergänge
+- [ ] Story-State-gesteuerte Hotspot-Aktualisierung funktioniert
+- [ ] EKG-animierte Outline-Hotspots (Nice-to-have) sind optional
+- [ ] Kein Inventar, Movement oder Physik (reiner Story-Fokus)
+
+#### Technical Tasks:
+- Unity UI Canvas mit Image/Text Buttons einrichten
+- Transparente Hitboxen mit Outline-Visualisierung entwickeln
+- Ink-Integration für ChooseChoiceIndex() implementieren
+- Story-State-Lese-System für Hotspot-Aktualisierung
+- Hover-Effekt-System mit visuellem Feedback
+- EKG-Animation via LineRenderer oder UI-Shader (optional)
+- Szenen-Management-System für Hintergrundbilder
+- KI-generierbare Hotspot-Patterns erstellen
+
+---
+
+### Epic 14: Ink-Dialogsystem (MVP-Kernkomponente)
+**Ziel:** KI-kompatibles Dialogsystem mit Ink für Games BW Förderungs-MVP
+
+> **Hinweis:** Dieses Epic ist eine Hauptsäule für das MVP zur Produktvorstellung für die Spiele-Förderung. Ink bietet textuelle Syntax, hohe KI-Kompatibilität und stabile Unity-Integration.
+
+#### User Stories:
+- Als Entwickler möchte ich Dialoge in einfacher Textsyntax schreiben können
+- Als Writer möchte ich Story-Verzweigungen ohne Code-Kenntnisse erstellen können
+- Als KI-Nutzer möchte ich Dialoge automatisiert generieren und validieren lassen
+- Als Spieler möchte ich Entscheidungen mit spürbaren Konsequenzen erleben
+- Als QA möchte ich Dialog-Flüsse schnell testen und debuggen können
+
+#### Akzeptanzkriterien:
+- [ ] Ink-Integration in Unity ist implementiert und stabil
+- [ ] Dialog-System unterstützt Verzweigungen und Bedingungen
+- [ ] Entscheidungs-Speicherung beeinflusst nachfolgende Dialoge
+- [ ] KI-generierte Dialoge können importiert und validiert werden
+- [ ] Point&Click-Integration mit Dialog-Optionen funktioniert
+- [ ] Audio-Integration (gesprochene Dialoge) ist vorbereitet
+- [ ] Debug-Tools für Dialog-Testing sind verfügbar
+- [ ] Automatisierte Validierung von Ink-Syntax ist implementiert
+
+#### Technical Tasks:
+- Unity Ink-Plugin einrichten und konfigurieren
+- Dialog-Manager für Ink-Integration entwickeln
+- Entscheidungs-Tracking mit Story-Variablen
+- Point&Click-UI mit Dialog-Optionen verbinden
+- KI-Dialog-Import und Validierungs-Tools
+- Audio-System für gesprochene Dialoge
+- Debug-Visualisierung für Dialog-Flüsse
+- Performance-Optimierung für mobile Geräte
+
+---
+
 ### Epic 1: Prototyp - Action-Adventure Unfallszene im Stil von Detroit: Become Human
 **Ziel:** Spannungsgeladene Action-Adventure-Erfahrung mit subtiler Erste-Hilfe-Integration in 2-3 Sprints erreichbar
 
@@ -404,7 +501,7 @@ Ergänzt werden muss Miron. Er ist Lkw-Fahrer, zwischen Gelassenheit und gleichg
 - Grundlegendes Save/Load-System
 
 ### Priorisierung:
-1. **High Priority:** Epic 1 (Prototyp), Epic 7 (Strategy Interface), Epic 9 (Dokumentenpflege), Epic 10 (Point & Click Framework), Epic 11 (Entscheidungs-Framework)
+1. **Hochste Priorität:** Epic 16 (MVP-Szenen), Epic 15 (Point&Click-System), Epic 14 (Ink-Dialogsystem - MVP-Kernkomponente), Epic 1 (Prototyp), Epic 7 (Strategy Interface), Epic 9 (Dokumentenpflege), Epic 10 (Point & Click Framework), Epic 11 (Entscheidungs-Framework)
 2. **Medium Priority:** Epic 2, Epic 3, Epic 8 (Character Development)
 3. **Low Priority:** Epic 4, Epic 5, Epic 6, Epic 12 (Point & Click Editor)
 
@@ -422,24 +519,33 @@ Eine spielbare Szene, die alle Aspekte des Spiels anreißt:
 - **Auswertung als Text** am Ende
 
 ### Sprint 1 Epic-Kombination
-**Hauptfokus:** Epic 1 (Prototyp) + Epic 10 (Point & Click Framework) + Epic 11 (Entscheidungs-Framework)
+**Hauptfokus:** Epic 16 (MVP-Szenen) + Epic 15 (Point&Click-System) + Epic 14 (Ink-Dialogsystem) + Epic 1 (Prototyp) + Epic 10 (Point & Click Framework) + Epic 11 (Entscheidungs-Framework)
 
 #### Minimale spielbare Szene umfasst:
-1. **Unfallszene** mit visuellem Impact
-2. **Point & Click Interaktion** mit Hotspots
-3. **Charakter-Dialog** mit 2-3 Optionen
-4. **Entscheidungs-Logging** mit Speicherung
-5. **Erste-Hilfe-Entscheidung** (einfache Maßnahme)
-6. **Text-Auswertung** basierend auf Entscheidungen
-7. **Emotionale Reaktion** der Charaktere
+1. **Szene 1:** "Unfall-Schock & Flucht" mit Stefania/Regina
+2. **Szene 2:** "Ablenkung & Verantwortung" mit Lukas/Kinder
+3. **Unity UI Canvas** mit statischen Hintergrundbildern und Hintergrundvideo
+4. **Interaktive Hotspots** (Bild+Text und Outline-Schaltflächen)
+5. **Ink-Dialogsystem** mit KI-kompatibler Syntax
+6. **Point&Click Interaktion** mit Hover-Feedback
+7. **Fokuswechsel-Mechanik** in Szene 2 (Handy vs. Straße)
+8. **Story-State-gesteuerte** Hotspot-Aktualisierung
 
 #### Technical Tasks für Sprint 1:
-- Unity-Szene mit Unfall-Setup
+- Szene 1: Verkehrsunfall mit Stefania/Regina Dialog-System (Epic 16)
+- Szene 2: Autofahrt mit Fokuswechsel-Filter und Hintergrundvideo (Epic 16)
+- Unity UI Canvas mit Image/Text Buttons einrichten (Epic 15)
+- Transparente Hitboxen mit Outline-Visualisierung (Epic 15)
+- Unity Ink-Plugin einrichten und konfigurieren (Epic 14)
+- Dialog-Manager für Ink-Integration entwickeln (Epic 14)
+- Ink-Integration für ChooseChoiceIndex() implementieren (Epic 15)
+- Unity-Szene mit Unfall-Setup (Epic 1)
+- Story-State-Lese-System für Hotspot-Aktualisierung (Epic 15)
 - Point & Click Hotspot-System (Epic 10)
-- Einfaches Dialog-System (Epic 11)
-- Entscheidungs-Logging (Epic 11)
-- Text-Auswertungs-System
-- Platzhalter-Assets
+- Entscheidungs-Logging mit Story-Variablen (Epic 11 + 14)
+- Fokus-Filter-System für Szene 2 (Blur-Effekte) (Epic 16)
+- Audio-System für emotionale Immersion (Epic 16)
+- KI-generierte Assets als Platzhalter (Epic 16)
 - Grundlegendes Save/Load-System
 
 #### Sprint 1 Player Experience Aufgaben (Epic 13):
