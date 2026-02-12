@@ -98,20 +98,26 @@ Wir entwickeln ein innovatives Spiel, das Menschen befähigt, in Notfallsituatio
 - **Fokus:** Verzweigte Entscheidungen, Zustandsänderungen, Story-Flow
 - **Nice-to-have:** EKG-animierte Outline-Hotspots für Zeitdruck-Visualisierung
 
-**MVP-Scope (1-2 Szenen): Emotional dichte Erste-Hilfe-Erlebnisse**
-- **Szene 1:** "Unfall-Schock & Flucht" - Verkehrsunfall mit menschlichem Dilemma
-  - **Emotionale Dichte:** Adrenalin, Panik, Überforderung, Angst vor Entdeckung
-  - **Spannung:** Lebensrettende Entscheidung vs. persönliche Notlage
-  - **Konkrete Situation:** Stefania (frisch aus Haft) will von Unfallort flüchten - Regina (Leitstellendisponentin) informiert über ankommende Krankenwagen/Polizei - das Wort "Polizei" triggert Stefania's Panik
-  - **Entscheidungsdilemma für Spieler:** Stefania helfen (Risiko: Entdeckung durch Polizei) vs. weglaufen (Risiko: Verzögerung bei Erste-Hilfe)
-  - **Aesthetics of Play:** Entscheidung, Konsequenz, Zeitdruck, Unwägbarkeit, moralischer Konflikt
+**MVP-Scope (1-2 Szenen): Emotional dichte Erste-Hilfe-Erlebnisse mit dynamischer Struktur**
+- **Szene 1:** "Unfall-Schock & Führung" - Verkehrsunfall aus Reginas Perspektive
+  - **Intro:** Interview mit Justizbeamtin über Stefania (Monolog als Antwort auf vorausgehende Frage - Stil bekannt aus Fight Club, District 9, Notruf)
+  - **Emotionale Dichte:** Ohnmacht, Frustration, Verantwortungsdruck, indirekte Kontrolle
+  - **Spannung:** Stefania's Unsicherheit vs. Reginas professionelle Pflicht
+  - **Konkrete Situation:** Regina (Leitstellendisponentin) führt Stefania durch Erste-Hilfe-Maßnahmen - Stefania (frisch aus Haft) ist unsicher und will flüchten - das Wort "Polizei" triggert Stefania's Panik
+  - **Gameplay-Mechanik:** Regina gibt Anweisungen via Funk/Telefon - Spieler beeinflusst Tonalität und Dringlichkeit der Führung
+  - **Entscheidungsdilemma für Spieler:** Stefania sanft führen (Risiko: Zeitverlust) vs. drängend kommandieren (Risiko: Verschlimmerung durch Stefania's Panik)
+  - **Outro:** Visuelle Szene mit Regina - angestrengt ins Leere schauende oder sich umschauende Augen (kontrollierte, introvertierte, nüchterne Art)
+  - **Vorteil:** Kleiner Aufwand (keine komplexe Interaktion), große Wirkung (emotionale Spannung)
+  - **Aesthetics of Play:** Entscheidung, Konsequenz, Zeitdruck, Unwägbarkeit, indirekte Kontrolle
   
 - **Szene 2:** "Ablenkung & Verantwortung" - Autofahrt mit Fokus-Dilemma
+  - **Intro:** Vorstellungsgespräch-Vorbereitung (Lukas schreibt E-Mail an Ex-Frau/potenziellen Arbeitgeber)
   - **Emotionale Dichte:** Stress, Überforderung, familiärer Druck, Konzentrationskonflikt
   - **Spannung:** Ablenkung durch Kinder vs. sichere Fahrt zum Vorstellungsgespräch
   - **Konkrete Situation:** Lukas (Familienvater) fährt zum Vorstellungsgespräch - Kinder (4 und 15 Jahre) fragen/streiten - Monolog zeigt Dringlichkeit des Zurückschreibens (Kontakt zu Ex-Frau, die ihn unter Druck setzt oder potenziellem Arbeitgeber)
   - **Gameplay-Mechanik:** Fokuswechsel zwischen Handy (Hand-Fokus, Hintergrund verschwommen) und Straße (Hintergrund-Fokus, Handy verschwommen)
   - **Interaktive Elemente:** Blickwinkel-Änderung bei Kinderfragen, Button zum Ausweichen bei stehengebliebenem Fahrzeug
+  - **Outro:** Ankunft beim Vorstellungsgespräch mit Konsequenzen-Reflexion
   - **Technische Umsetzung:** Vorgerendertes Hintergrundvideo (ggf. KI generiert) + festes Cockpit-Bild + Fokus-Filter
   - **Aesthetics of Play:** Planbarkeit, Erfolg, Kohärenz, Variation, Konzentrationsmanagement
 
@@ -282,7 +288,11 @@ Wir entwickeln ein innovatives Spiel, das Menschen befähigt, in Notfallsituatio
 
 ## 📝 Aktuelle Maßnahmen
 
-### [2026-02-11] Games BW Förderantrag-Vorbereitung
+### [2026-02-12] Story-Development Vault eingerichtet
+- Story-Development Ordner als zentraler Vault für Story-Notizen und Szenen
+- Szene-1 und Szene-2 erhalten eigene Unterordner mit detaillierten Konzepten
+- Vorgehen dokumentiert: Jede Szene → eigener Ordner mit vollständiger Ausarbeitung
+- Story-Schnipsel und Charakter-Entwicklung werden für Wiederverwendung archiviert
 - Strategie auf Games BW Richtlinien ausgerichtet
 - Kulturtest-Kriterien definiert und dokumentiert
 - Nachhaltigkeitsmaßnahmen spezifiziert

@@ -8,30 +8,36 @@
 > **Hinweis:** Dieses Epic umfasst die zwei Kernszenen des MVP mit innovativen Gameplay-Mechaniken und emotionaler Tiefe. Jede Szene trainiert gezielt 2-3 Kern-Aspekte der Aesthetics of Play.
 
 #### User Stories:
-- Als Spieler möchte ich in Szene 1 ein echtes moralisches Dilemma erleben (Stefania vs. Erste-Hilfe)
-- Als Spieler möchte ich in Szene 2 den Konzentrationskonflikt bei der Autofahrt spüren (Lukas)
-- Als Designer möchte ich Fokuswechsel-Mechaniken implementieren können
+- Als Spieler möchte ich Reginas Perspektive bei der Führung von Stefania erleben
+- Als Spieler möchte ich den Konflikt zwischen professioneller Pflicht und menschlicher Unsicherheit spüren
+- Als Designer möchte ich indirekte Kontrolle mit maximaler emotionaler Wirkung umsetzen
 - Als KI-Nutzer möchte ich Szenen-Assets und Dialoge generieren lassen
 - Als QA möchte ich emotionale Dichte und spürbare Spannung validieren können
 
 #### Akzeptanzkriterien:
-- [ ] Szene 1 "Unfall-Schock & Flucht" mit Stefania/Regina ist implementiert
+- [ ] Szene 1 "Unfall-Schock & Führung" mit Regina als spielbarem Charakter ist implementiert
 - [ ] Szene 2 "Ablenkung & Verantwortung" mit Lukas/Kinder ist implementiert
 - [ ] Fokuswechsel-Mechanik in Szene 2 funktioniert (Handy vs. Straße)
 - [ ] Ink-basierte Dialoge mit Entscheidungsverzweigungen sind integriert
 - [ ] Emotionale Dichte und spürbare Spannung sind nachweisbar
 - [ ] Point&Click-Interaktion mit Hotspots funktioniert in beiden Szenen
 - [ ] Audio-Design mit emotionaler Wirkung ist implementiert
+- [ ] Indirekte Steuerung von Stefania durch Reginas Anweisungen funktioniert
 
 #### Technical Tasks:
-- Szene 1: Verkehrsunfall mit Stefania/Regina Dialog-System
-- Szene 2: Autofahrt mit Fokuswechsel-Filter und Hintergrundvideo
-- Ink-Integration für beide Szenen-Dialoge
-- Unity UI Canvas mit Hotspots für beide Szenen
-- Audio-System für emotionale Immersion
+- Szene 1 Intro: Interview mit Justizbeamtin über Stefania (Monolog als Antwort auf vorausgehende Frage - Fight Club/District 9/Notruf Stil)
+- Szene 1 Hauptteil: Regina führt Stefania via Funk/Telefon (indirekte Steuerung)
+- Szene 1 Outro: Visuelle Szene mit Regina - angestrengt ins Leere schauende oder sich umschauende Augen (kein Monolog)
+- Szene 2 Intro: Vorstellungsgespräch-Vorbereitung (Lukas E-Mail)
+- Szene 2 Hauptteil: Autofahrt mit Fokuswechsel-Filter und Hintergrundvideo
+- Szene 2 Outro: Ankunft beim Vorstellungsgespräch mit Konsequenzen-Reflexion
+- Ink-Integration für alle Szenen-Dialoge und Monologe
+- Unity UI Canvas mit Hotspots für alle Szenen-Teile
+- Audio-System für emotionale Immersion (Intro/Hauptteil/Outro)
 - Fokus-Filter-System für Szene 2 (Blur-Effekte)
 - KI-generierte Assets als Platzhalter
 - Entscheidung-Logging und Konsequenz-System
+- Szenen-Übergänge und emotionale Pacing
 
 ---
 
@@ -522,7 +528,7 @@ Eine spielbare Szene, die alle Aspekte des Spiels anreißt:
 **Hauptfokus:** Epic 16 (MVP-Szenen) + Epic 15 (Point&Click-System) + Epic 14 (Ink-Dialogsystem) + Epic 1 (Prototyp) + Epic 10 (Point & Click Framework) + Epic 11 (Entscheidungs-Framework)
 
 #### Minimale spielbare Szene umfasst:
-1. **Szene 1:** "Unfall-Schock & Flucht" mit Stefania/Regina
+1. **Szene 1:** "Unfall-Schock & Führung" mit Regina als spielbarem Charakter
 2. **Szene 2:** "Ablenkung & Verantwortung" mit Lukas/Kinder
 3. **Unity UI Canvas** mit statischen Hintergrundbildern und Hintergrundvideo
 4. **Interaktive Hotspots** (Bild+Text und Outline-Schaltflächen)
@@ -532,8 +538,12 @@ Eine spielbare Szene, die alle Aspekte des Spiels anreißt:
 8. **Story-State-gesteuerte** Hotspot-Aktualisierung
 
 #### Technical Tasks für Sprint 1:
-- Szene 1: Verkehrsunfall mit Stefania/Regina Dialog-System (Epic 16)
-- Szene 2: Autofahrt mit Fokuswechsel-Filter und Hintergrundvideo (Epic 16)
+- Szene 1 Intro: Interview mit Justizbeamtin über Stefania (Monolog als Antwort auf vorausgehende Frage - Fight Club/District 9/Notruf Stil) (Epic 16)
+- Szene 1 Hauptteil: Regina führt Stefania via Funk/Telefon (indirekte Steuerung) (Epic 16)
+- Szene 1 Outro: Visuelle Szene mit Regina - angestrengt ins Leere schauende oder sich umschauende Augen (kein Monolog) (Epic 16)
+- Szene 2 Intro: Vorstellungsgespräch-Vorbereitung (Lukas E-Mail) (Epic 16)
+- Szene 2 Hauptteil: Autofahrt mit Fokuswechsel-Filter und Hintergrundvideo (Epic 16)
+- Szene 2 Outro: Ankunft beim Vorstellungsgespräch mit Konsequenzen-Reflexion (Epic 16)
 - Unity UI Canvas mit Image/Text Buttons einrichten (Epic 15)
 - Transparente Hitboxen mit Outline-Visualisierung (Epic 15)
 - Unity Ink-Plugin einrichten und konfigurieren (Epic 14)
@@ -544,8 +554,9 @@ Eine spielbare Szene, die alle Aspekte des Spiels anreißt:
 - Point & Click Hotspot-System (Epic 10)
 - Entscheidungs-Logging mit Story-Variablen (Epic 11 + 14)
 - Fokus-Filter-System für Szene 2 (Blur-Effekte) (Epic 16)
-- Audio-System für emotionale Immersion (Epic 16)
+- Audio-System für emotionale Immersion (Intro/Hauptteil/Outro) (Epic 16)
 - KI-generierte Assets als Platzhalter (Epic 16)
+- Szenen-Übergänge und emotionale Pacing (Epic 16)
 - Grundlegendes Save/Load-System
 
 #### Sprint 1 Player Experience Aufgaben (Epic 13):
