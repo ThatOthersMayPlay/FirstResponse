@@ -288,6 +288,13 @@ Wir entwickeln ein innovatives Spiel, das Menschen befähigt, in Notfallsituatio
 
 ## 📝 Aktuelle Maßnahmen
 
+### [2026-02-14] Sprint 1 eingerichtet
+- Sprint 1: Entscheidungsverwaltung & Point&Click UI (4 Wochen)
+- Arbeitsordner für unabhängige Komponenten-Entwicklung erstellt
+- Vorabversion ohne visuelle Perfektion als Ziel
+- Iterativer Ansatz für nachfolgende Verbesserungen
+- MVP-Scope für Entscheidungsverwaltung und UI-System definiert
+
 ### [2026-02-12] Story-Development Vault eingerichtet
 - Story-Development Ordner als zentraler Vault für Story-Notizen und Szenen
 - Szene-1 und Szene-2 erhalten eigene Unterordner mit detaillierten Konzepten

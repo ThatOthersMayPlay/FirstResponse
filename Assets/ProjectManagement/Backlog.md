@@ -2,10 +2,10 @@
 
 ## Epics
 
-### Epic 16: MVP-Szenen (Emotional dichte Erste-Hilfe-Erlebnisse)
+### Epic 16: MVP-Szenen (Emotional dichte Story-Erlebnisse)
 **Ziel:** Zwei konkrete Szenen mit 100% spürbarer emotionaler Dichte für Games BW Förderungs-MVP
 
-> **Hinweis:** Dieses Epic umfasst die zwei Kernszenen des MVP mit innovativen Gameplay-Mechaniken und emotionaler Tiefe. Jede Szene trainiert gezielt 2-3 Kern-Aspekte der Aesthetics of Play.
+> **Hinweis:** Dieses Epic umfasst die zwei Kernszenen des MVP mit innovativen Gameplay-Mechaniken und emotionaler Tiefe. Fokus auf atmosphärische Story mit subtiler Erste-Hilfe-Thematik, nicht auf direkte Simulation.
 
 #### User Stories:
 - Als Spieler möchte ich Reginas Perspektive bei der Führung von Stefania erleben
@@ -109,27 +109,31 @@
 
 ---
 
-### Epic 1: Prototyp - Action-Adventure Unfallszene im Stil von Detroit: Become Human
-**Ziel:** Spannungsgeladene Action-Adventure-Erfahrung mit subtiler Erste-Hilfe-Integration in 2-3 Sprints erreichbar
+### Epic 1: Story-Prototyp Foundation
+**Ziel:** Atmosphärische Story-Szenen mit Point&Click-Interaktion und emotionaler Dichte
 
-> **Hinweis:** Das Spiel kombiniert Action-Adventure-Elemente mit realistischen Erste-Hilfe-Szenarien. Die Erste-Hilfe-Maßnahmen sind natürlich in die Story eingebettet und nicht als Lernmodul erkennbar.
+> **Hinweis:** Dieses Epic wurde von Unfall-orientiert auf Story-orientiert aktualisiert. Fokus liegt auf den beiden Demo-Szenen mit Regina und Lukas.
 
 #### User Stories:
-- Als Spieler möchte ich eine spannende, action-orientierte Unfallszene erleben
-- Als Spieler möchte ich bedeutungsvolle Entscheidungen mit Konsequenzen treffen
-- Als Spieler möchte ich Charaktere aus verschiedenen Perspektiven steuern
-- Als Spieler möchte ich realistische Erste-Hilfe-Maßnahmen als natürlichen Teil der Story durchführen
-- Als Spieler möchte ich mich durch die Atmosphäre und Spannung gefangen fühlen
-- Als Entwickler möchte ich ein System für multiple Charakter-Perspektiven erstellen
+- Als Spieler möchte ich Regina's Perspektive bei der Führung von Stefania erleben
+- Als Spieler möchte ich Lukas' Konzentrationskonflikt bei der Autofahrt erleben
+- Als Spieler möchte ich meine Entscheidungen und deren Konsequenzen erleben
+- Als Spieler möchte ich intuitive Point&Click-Interaktion nutzen
+- Als Spieler möchte ich emotionale Dichte und spürbare Spannung erleben
 
 #### Akzeptanzkriterien:
-- Eine spielbare, spannungsgeladene Unfallszene mit Action-Elementen
-- Mindestens 2-3 steuerbare Charaktere mit unterschiedlichen Perspektiven
-- Bedeutungsvolle Entscheidungen mit spürbaren Konsequenzen (Detroit: Become Human Stil)
-- Subtil integrierte Erste-Hilfe-Maßnahmen als natürlicher Story-Teil
-- Atmosphärische Inszenierung mit Spannungsbogen
-- Grundlegendes Entscheidungssystem mit Verzweigungen
-- Platzhalter-Assets für schnellen Prototypen
+- [ ] Szene 1 "Unfall-Schock & Führung" mit Regina als spielbarem Charakter ist implementiert
+- [ ] Szene 2 "Ablenkung & Verantwortung" mit Lukas/Kinder ist implementiert
+- [ ] Ink-Dialogsystem mit Story-Verzweigungen funktioniert
+- [ ] Point&Click UI reagiert auf Story-States
+- [ ] Emotionale Dichte und spürbare Konsequenzen sind nachweisbar
+
+#### Technical Tasks:
+- Unity-Szene "Szene1-Regina" erstellen (Leitstellen-Setup)
+- Unity-Szene "Szene2-Lukas" erstellen (Auto-Cockpit)
+- Platzhalter-Assets für beide Szenen
+- Environment-Lighting für atmosphärische Stimmung
+- Grundlegende Story-Verwaltung und UI-Integration
 
 ---
 
@@ -148,26 +152,6 @@
 - [ ] Jeder Charakter hat einzigartige Perspektive auf Ereignisse
 - [ ] Charakter-spezifische Dialogoptionen sind verfügbar
 - [ ] Visuelle Unterscheidung der Charakter-Perspektiven
-
----
-
-### Epic 3: Erweiterte Erste-Hilfe-Simulation
-**Ziel:** Komplette Erste-Hilfe-Maßnahmen mit realistischer Simulation
-
-#### User Stories:
-- Als Spieler möchte ich Vitalfunktionen überprüfen können
-- Als Spieler möchte ich Reanimation durchführen können
-- Als Spieler möchte ich die stabile Seitenlage anwenden können
-- Als Spieler möchte ich Verbände anlegen können
-- Als Spieler möchte ich Schocklagerung durchführen können
-- Als Spieler möchte ich Feedback zur Korrektheit meiner Maßnahmen erhalten
-
-#### Akzeptanzkriterien:
-- [ ] Alle 5 Erste-Hilfe-Maßnahmen sind implementiert
-- [ ] Schritt-für-Schritt Anleitungen sind verfügbar
-- [ ] Realistische Simulation der medizinischen Prozesse
-- [ ] Feedback-System für korrekte/inkorrekte Maßnahmen
-- [ ] Schwierigkeitsgrade für verschiedene Kenntnisstände
 
 ---
 
@@ -191,21 +175,24 @@
 
 ---
 
-### Epic 5: Atmosphäre und Immersion
-**Ziel:** Emotionale Tiefe und authentisches Erlebnis
+### Epic 5: Atmosphäre und Story-Immersion
+**Ziel:** Emotionale Tiefe und authentisches Story-Erlebnis
+
+> **Hinweis:** Dieses Epic fokussiert auf atmosphärische Immersion für Story-Szenen, nicht auf Unfall-Realismus.
 
 #### User Stories:
 - Als Spieler möchte ich mich in die Charaktere hineinversetzen können
-- Als Spieler möchte ich eine realistische Unfallszene erleben
+- Als Spieler möchte ich eine emotionale Story mit Tiefe erleben
 - Als Spieler möchte ich durch Audio und Grafik vollkommen immersiert sein
 - Als Spieler möchte ich emotionale Reaktionen der Charaktere erleben
+- Als Spieler möchte ich die subtile Erste-Hilfe-Thematik spüren
 
 #### Akzeptanzkriterien:
 - [ ] Emotionale Musik und Soundeffekte sind implementiert
-- [ ] Realistische Unfall-Szene mit visuellen Details
+- [ ] Atmosphärische Story-Szenen mit visuellen Details
 - [ ] Charakter-Animationen zeigen emotionale Zustände
-- [ ] Umgebungs-Sounds erhöhen die Immersion
-- [ ] Lighting-System unterstützt die Atmosphäre
+- [ ] Umgebungs-Sounds erhöhen die Story-Immersion
+- [ ] Lighting-System unterstützt die atmosphärische Stimmung
 
 ---
 
@@ -500,32 +487,33 @@
 - Gameplay-Elemente pro Charakter definieren
 
 ### Prototyp-Technical Tasks:
-- Unity-Szene mit grundlegendem Unfall-Setup
-- Dialog-System mit einfachen UI-Elementen
-- Input-System für Erste-Hilfe-Aktionen
-- Platzhalter-Assets integration
-- Grundlegendes Save/Load-System
+- Unity-Szene mit grundlegendem Story-Setup
+- Dialog-System mit Ink-Integration
+- Point&Click-Interaktion für Story-Entscheidungen
+- Platzhalter-Assets für Story-Szenen
+- Grundlegendes Save/Load-System für Story-States
 
 ### Priorisierung:
-1. **Hochste Priorität:** Epic 16 (MVP-Szenen), Epic 15 (Point&Click-System), Epic 14 (Ink-Dialogsystem - MVP-Kernkomponente), Epic 1 (Prototyp), Epic 7 (Strategy Interface), Epic 9 (Dokumentenpflege), Epic 10 (Point & Click Framework), Epic 11 (Entscheidungs-Framework)
-2. **Medium Priority:** Epic 2, Epic 3, Epic 8 (Character Development)
-3. **Low Priority:** Epic 4, Epic 5, Epic 6, Epic 12 (Point & Click Editor)
+1. **Hochste Priorität:** Epic 16 (MVP-Szenen), Epic 15 (Point&Click-System), Epic 14 (Ink-Dialogsystem - MVP-Kernkomponente), Epic 1 (Story-Prototyp Foundation), Epic 7 (Strategy Interface), Epic 9 (Dokumentenpflege), Epic 10 (Point & Click Framework), Epic 11 (Entscheidungs-Framework)
+2. **Medium Priority:** Epic 2, Epic 4, Epic 5, Epic 8 (Character Development)
+3. **Low Priority:** Epic 6, Epic 12 (Point & Click Editor)
 
 ---
 
-## 🎯 Sprint 1 Fokus: Spielbare Szene
+## 🎯 Sprint 1 Fokus: Story-Prototyp Foundation
 
 ### Ziel der ersten Iteration
-Eine spielbare Szene, die alle Aspekte des Spiels anreißt:
-- **Spannende Szene** mit schwierigen Entscheidungen
-- **Erste Hilfe oder Präventions-Thema** 
-- **Adrenalin** und emotionale Intensität
+Technische Grundlagen für atmosphärische Story-Szenen schaffen:
+- **Spannende Story-Szenen** mit schwierigen Entscheidungen
+- **Emotionale Dichte** und spürbare Konsequenzen
+- **Atmosphärische Immersion** mit subtiler Erste-Hilfe-Thematik
+- **Story-Verzweigungen** mit Point&Click-Interaktion
 - **Dialog** mit Charakter-Interaktion
 - **Geloggte Entscheidungen** mit Konsequenzen
 - **Auswertung als Text** am Ende
 
 ### Sprint 1 Epic-Kombination
-**Hauptfokus:** Epic 16 (MVP-Szenen) + Epic 15 (Point&Click-System) + Epic 14 (Ink-Dialogsystem) + Epic 1 (Prototyp) + Epic 10 (Point & Click Framework) + Epic 11 (Entscheidungs-Framework)
+**Hauptfokus:** Epic 16 (MVP-Szenen) + Epic 15 (Point&Click-System) + Epic 14 (Ink-Dialogsystem) + Epic 1 (Story-Prototyp Foundation) + Epic 10 (Point & Click Framework) + Epic 11 (Entscheidungs-Framework)
 
 #### Minimale spielbare Szene umfasst:
 1. **Szene 1:** "Unfall-Schock & Führung" mit Regina als spielbarem Charakter
@@ -558,6 +546,35 @@ Eine spielbare Szene, die alle Aspekte des Spiels anreißt:
 - KI-generierte Assets als Platzhalter (Epic 16)
 - Szenen-Übergänge und emotionale Pacing (Epic 16)
 - Grundlegendes Save/Load-System
+
+---
+
+## 🔄 Sprint 1: Entscheidungsverwaltung & Point&Click UI (Neu)
+
+**Zeitraum:** 14.02.2026 - 14.03.2026  
+**Ziel:** Vorabversion der Entscheidungsverwaltung und Point&Click UI ohne visuelle Perfektion
+
+### Arbeitsordner:
+- **Sprint-1-Entscheidungsverwaltung/**: Ink-Integration, Story-States, Konsequenzen
+- **Sprint-1-PointClick-UI/**: UI-Canvas, Button-System, Hotspot-Detektion
+
+### MVP-Scope für Sprint 1:
+- [ ] Ink-Plugin einrichten und konfigurieren (Epic 14)
+- [ ] Dialog-Manager für Ink-Integration entwickeln (Epic 14)
+- [ ] Story-State-Lese-System implementieren (Epic 15)
+- [ ] Entscheidungs-Logging mit Story-Variablen (Epic 11 + 14)
+- [ ] Unity UI Canvas mit Image/Text Buttons einrichten (Epic 15)
+- [ ] Transparente Hitboxen mit Outline-Visualisierung (Epic 15)
+- [ ] Ink-Integration für ChooseChoiceIndex() implementieren (Epic 15)
+- [ ] Grundlegendes Save/Load-System
+- [ ] Integrationstests beider Komponenten
+
+### Definition of Done:
+- [ ] Ink-Dialoge werden korrekt geladen und angezeigt
+- [ ] Spieler-Entscheidungen werden gespeichert
+- [ ] Buttons sind klickbar und visuell erkennbar
+- [ ] UI reagiert auf Story-States
+- [ ] Beide Komponenten arbeiten zusammen
 
 #### Sprint 1 Player Experience Aufgaben (Epic 13):
 - Bewertung der Unfallszene nach 7 Kern-Aspekten (manueller Test)
