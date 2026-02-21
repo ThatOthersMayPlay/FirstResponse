@@ -70,7 +70,7 @@
 - **Handy-Nutzung:** Entscheidungen über E-Mail-Antworten
 - **Kinder-Konflikt-Mechanik:**
   - **Handy-Ablenkung:** Nachrichten in regelmäßigen Abständen
-  - **Streit-Eskalation:** Teenager vs. Kleinkind (Musik-Konflikt)
+  - **Streit-Eskalation:** Jonas vs. Kleinkind (Musik-Konflikt)
   - **Spieler-Herausforderung:** Handy-Priorität vs. Kinder-Aufmerksamkeit
   - **Goldener Weg:** Einfacher elterlicher Kommentar ("Später darfst du auch deine Musik hören.")
 
@@ -152,4 +152,4 @@
 
 ---
 
-*Letzte Aktualisierung: 12.02.2026*
+*Letzte Aktualisierung: 21.02.2026*

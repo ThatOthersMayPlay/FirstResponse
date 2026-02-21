@@ -5,8 +5,9 @@
 ## Grundlegende Informationen
 - **Alter:** 35 Jahre
 - **Beruf:** Von Frau getrennter Familienvater
-- **Hintergrund:** Mittelschicht, versucht mit Teenager-Sohn und 3-jähriger Tochter klarzukommen
+- **Hintergrund:** Mittelschicht, versucht mit Teenager-Sohn Jonas (15) und 4-jähriger Tochter klarzukommen
 - **Fahrzeug:** Familien-Van (auf dem Weg mit den Kindern)
+- **Familie:** Jonas (15 Jahre, technik-affin), Tochter (4 Jahre, neugierig)
 
 ## Charaktereigenschaften
 
@@ -26,7 +27,7 @@
 **Überforderung & multiple Verantwortung:** Lukas versucht gleichzeitig Vater, Ex-Ehemann, Versorger und Problemlöser zu sein. Seine Herausforderung ist es, mehrere Dinge gleichzeitig im Blick zu behalten und einen kühlen Kopf zu bewahren.
 
 ## Ausgangssituation
-Lukas ist auf dem Weg zu einem Vorstellungsgespräch, muss seine Kinder (Teenager-Sohn und 3-jährige Tochter) zuerst bei seinen Eltern unterbringen. Seine Frau weiß nichts von seiner Arbeitslosigkeit und nicht über alle Schritte seiner Jobsuche. Er steht unter Druck, telefonieren zu müssen während er fährt, was eine zusätzliche Herausforderung darstellt.
+Lukas ist auf dem Weg zu einem Vorstellungsgespräch, muss seine Kinder (Jonas 15 Jahre und 4-jährige Tochter) zuerst bei seinen Eltern unterbringen. Seine Frau weiß nichts von seiner Arbeitslosigkeit und nicht über alle Schritte seiner Jobsuche. Er steht unter Druck, telefonieren zu müssen während er fährt, was eine zusätzliche Herausforderung darstellt. Jonas ist technik-affin und hat eine Drohne dabei, die bisher nur als Spielzeug diente.
 
 ## Entwicklungs-Arc
 
@@ -48,16 +49,35 @@ Lukas ist auf dem Weg zu einem Vorstellungsgespräch, muss seine Kinder (Teenage
 ### Phase 4: Balancierter Familienvater
 - **Emotionen:** Ruhe, Selbstbewusstsein, väterliche Liebe
 - **Verhalten:** Managt multiple Verantwortungen mit kühlem Kopf
-- **Dialoge:** "Ich weiß, was wichtig ist", "Ich bin ein guter Vater"
-## Entscheidungs-Punkte
-1. **Kinder zuerst oder Jobgespräch priorisieren?**
-2. **Ex-Frau anrufen oder Geheimnis bewahren?**
-3. **Telefonieren während des Fahrens (riskant) oder später?**
-4. **Ehrlichkeit oder Notlüge gegenüber der Familie?**
+- **Dialoge:** "Ich schaffe das", "Meine Familie zuerst"
+
+---
+
+## Beziehung zu Jonas
+
+### **Vater-Sohn-Dynamik**
+- **Komplex aber liebevoll:** Lukas ist stolz auf Jonas' technische Fähigkeiten
+- **Konflikte:** Musikgeschmack, Handy-Nutzung, Verantwortung
+- **Entwicklung:** Lukas lernt, Jonas als kompetent zu vertrauen
+- **Stolz:** Bewundert Jonas' technische Kenntnisse
+
+### **Erwartungen vs. Realität**
+- **Erwartung:** Jonas als verantwortungsvoller Helfer
+- **Realität:** Jonas als Teenager mit eigenen Interessen
+- **Konflikt:** Musik-Lautstärke vs. Konzentration beim Fahren
+- **Lösung:** Kompromiss finden, Jonas als Partner akzeptieren
+
+### **Zukünftige Entwicklung**
+- **Vertrauen:** Lukas lernt, Jonas' Kompetenzen zu schätzen
+- **Partnerschaft:** Jonas wird zu technischem Berater
+- **Stolz:** Vater ist stolz auf heranwachsenden Sohn
+
+---
 
 ## Beziehungen zu anderen Charakteren
 - **Ex-Frau:** Nicht informiert über Arbeitslosigkeit, Spannung über Geheimnisse
-- **Kinder:** Teenager-Sohn und 3-jährige Tochter benötigen volle Aufmerksamkeit
+- **Jonas (15 Jahre):** Technik-affiner Teenager-Sohn, Drohnen-Kompetenz, Musik-Konflikte
+- **Tochter (4 Jahre):** Neugierig, fordernd, braucht Aufmerksamkeit
 - **Eltern:** Erste Anlaufstelle für Kinder-Betreuung, aber auch Druckquelle
 - **Kilian:** Pastorale Unterstützung bei emotionaler Überforderung
 - **Norman:** Professionelle Ratschläge vs. väterliche Instinkte

@@ -31,9 +31,11 @@ Dieser Ordner dient als zentraler Vault für alle Story-Notizen, Szenen-Entwickl
 - **Status:** Konzept finalisiert, Technical Tasks definiert
 
 ### **Szene 2: "Ablenkung & Verantwortung"**
-- **Perspektive:** Lukas (Familienvater)
-- **Gameplay:** Fokuswechsel-Mechanik (Handy vs. Straße)
-- **Emotionale Dichte:** Stress, Überforderung, Konzentrationskonflikt
+- **Datei:** [Szenen-Konzept.md](Szene-2-Ablenkung-Verantwortung/Szenen-Konzept.md)
+- **Charakter:** Lukas (Familienvater)
+- **Gameplay:** Fokuswechsel-Mechanik zwischen Handy und Straße
+- **Innovation:** Müdigkeits-Effekte, Kinder-Konflikt-Mechanik
+- **Emotionale Dichte:** Stress, Überforderung, familiärer Druck
 - **Status:** Konzept finalisiert, Technical Tasks definiert
 
 ---

@@ -1,0 +1,15 @@
+﻿
+ProcessName               Id      CPU WorkingSet
+-----------               --      --- ----------
+Unity Hub               3420  180,875  210767872
+Unity Hub               3972 0,109375  137138176
+Unity Hub               5128   40,625  178229248
+Unity Hub              14228 0,046875  102178816
+Unity Hub              14244        0   41750528
+Unity Hub              15600  0,09375   88944640
+Unity Hub              18044   61,125  191680512
+Unity Hub              19308 23,90625  240619520
+Unity Hub              20448  0,34375   62545920
+Unity.Licensing.Client  7436 2,578125  100012032
+
+
