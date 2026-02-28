@@ -1,0 +1,80 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AI Story JSON Schema",
+  "type": "object",
+  "required": ["knots"],
+  "properties": {
+    "variables": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "integer"
+      }
+    },
+    "knots": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/definitions/knot"
+      }
+    }
+  },
+  "definitions": {
+    "knot": {
+      "type": "object",
+      "required": ["id", "lines"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]+$"
+        },
+        "lines": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "choices": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/choice"
+          }
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "choice": {
+      "type": "object",
+      "required": ["text", "target"],
+      "properties": {
+        "text": {
+          "type": "string"
+        },
+        "target": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]+$"
+        },
+        "condition": {
+          "type": "string"
+        },
+        "effects": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "once": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

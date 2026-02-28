@@ -2,7 +2,7 @@
 
 > **⚠️ Hinweis:** Dieses Dokument dient zur Beobachtung und Logung des Spielerlebnisses basierend auf der Ästhetik of Play von Brian Akten. Die ausgewogene Balance zwischen diesen Aspekten ist entscheidend für ein gutes Spielgefühl.
 
-## 🎯 Ästhetik of Play - Brian Akten
+## 🎯 The Aesthetic of Play - Brian Akten
 
 ### Die 7 Kern-Aspekte des Spielerlebnisses:
 

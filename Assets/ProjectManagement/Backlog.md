@@ -494,7 +494,7 @@
 - Grundlegendes Save/Load-System für Story-States
 
 ### Priorisierung:
-1. **Hochste Priorität:** Epic 16 (MVP-Szenen), Epic 15 (Point&Click-System), Epic 14 (Ink-Dialogsystem - MVP-Kernkomponente), Epic 1 (Story-Prototyp Foundation), Epic 7 (Strategy Interface), Epic 9 (Dokumentenpflege), Epic 10 (Point & Click Framework), Epic 11 (Entscheidungs-Framework)
+1. **Hochste Priorität:** Epic 16 (MVP-Szenen), Epic 15 (Point&Click-System), Epic 14 (Ink-Dialogsystem - MVP-Kernkomponente), Epic 1 (Story-Prototyp Foundation), Epic 7 (Strategy Interface), Epic 9 (Dokumentenpflege), Epic 10 (Point & Click Framework), Epic 11 (Entscheidungs-Framework), Epic 17 (Development Workflow)
 2. **Medium Priority:** Epic 2, Epic 4, Epic 5, Epic 8 (Character Development)
 3. **Low Priority:** Epic 6, Epic 12 (Point & Click Editor)
 
@@ -568,6 +568,9 @@ Technische Grundlagen für atmosphärische Story-Szenen schaffen:
 - [ ] Ink-Integration für ChooseChoiceIndex() implementieren (Epic 15)
 - [ ] Grundlegendes Save/Load-System
 - [ ] Integrationstests beider Komponenten
+- [ ] Development Workflow etablieren (Epic 17)
+- [ ] Ordner-Struktur Assets/ vs. ProjectManagement/ validieren
+- [ ] Meta-Dateien Management durchführen
 
 ### Definition of Done:
 - [ ] Ink-Dialoge werden korrekt geladen und angezeigt
@@ -575,6 +578,9 @@ Technische Grundlagen für atmosphärische Story-Szenen schaffen:
 - [ ] Buttons sind klickbar und visuell erkennbar
 - [ ] UI reagiert auf Story-States
 - [ ] Beide Komponenten arbeiten zusammen
+- [ ] Development Workflow ist etabliert und wird befolgt
+- [ ] Keine redundanten Code-Ablagen mehr
+- [ ] Unity zeigt keine Meta-Dateien Fehler
 
 #### Sprint 1 Player Experience Aufgaben (Epic 13):
 - Bewertung der Unfallszene nach 7 Kern-Aspekten (manueller Test)
@@ -584,6 +590,41 @@ Technische Grundlagen für atmosphärische Story-Szenen schaffen:
 - Dokumentation der Design-Entscheidungen
 
 > **Hinweis:** Player Experience Kriterien sind vor allem in Vorüberlegungen der Szenen und Spielmechaniken sowie in manuellen Tests relevant - kaum coderelevant.
+
+---
+
+## 🔄 **Wiederkehrende Aufgaben für jeden Sprint**
+
+### **Development Workflow (Epic 17)**
+**Ziel:** Konsistente und effiziente Entwicklungsprozesse für jeden Sprint
+
+#### User Stories:
+- Als Entwickler möchte ich einen klaren Workflow für Code-Entwicklung haben
+- Als Team-Mitglied möchte ich wissen, wo ich entwickle und wo ich dokumentiere
+- Als Projekt-Manager möchte ich sicherstellen, dass keine redundanten Ablagen entstehen
+
+#### Akzeptanzkriterien:
+- [ ] Development Workflow wird zu Beginn jedes Sprints überprüft
+- [ ] Code wird direkt in Assets/ entwickelt (nicht in ProjectManagement/)
+- [ ] Dokumentation wird nur in ProjectManagement/ gepflegt
+- [ ] Meta-Dateien werden korrekt mitverschieben/entfernt
+- [ ] Unity-Fehler durch verwaiste Meta-Dateien werden vermieden
+
+#### Technical Tasks:
+- [ ] Development-Workflow.md zu Beginn jedes Sprints überprüfen
+- [ ] Ordner-Struktur Assets/ vs. ProjectManagement/ validieren
+- [ ] Meta-Dateien Management nach Unity-Meta-Management.md durchführen
+- [ ] Redundante Ablagen im ProjectManagement entfernen
+- [ ] Git-Struktur für Code vs. Dokumentation trennen
+
+#### Definition of Done:
+- [ ] Development Workflow ist etabliert und wird befolgt
+- [ ] Keine redundanten Code-Ablagen mehr
+- [ ] Unity zeigt keine Meta-Dateien Fehler
+- [ ] Team-Mitglieder kennen den Workflow
+- [ ] Dokumentation ist aktuell und zugänglich
+
+---
 
 ## Definition of Done:
 - User Story ist implementiert und getestet

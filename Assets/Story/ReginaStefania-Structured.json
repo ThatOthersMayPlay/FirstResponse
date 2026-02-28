@@ -1,0 +1,61 @@
+{
+  "variables": {
+    "stefania_trust": 0,
+    "player_perspective": ""
+  },
+  "knots": [
+    {
+      "id": "intro",
+      "lines": [
+        "Regina: \"Stefania, bleiben Sie bei der Person!\"",
+        "Stefania: \"Ich... ich kann nicht. Die Polizei kommt!\""
+      ],
+      "choices": [
+        {
+          "text": "Gefährderin",
+          "target": "regina_warnt_polizei",
+          "effects": [
+            {
+              "raw": "stefania_trust -= 1"
+            },
+            {
+              "assign": {
+                "variable": "player_perspective",
+                "value": "Regina hat Stefania verraten, Konsequenzen absehbar"
+              }
+            }
+          ]
+        },
+        {
+          "text": "Beruhigen",
+          "target": "regina_beruhigt_stefania",
+          "effects": [
+            {
+              "raw": "stefania_trust += 1"
+            },
+            {
+              "assign": {
+                "variable": "player_perspective",
+                "value": "Regina beruhigt Stefania, Vertrauen steigt"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "regina_warnt_polizei",
+      "lines": [
+        "Regina: (funk) \"Achtung, Person könnte gewaltbereit sein.\""
+      ],
+      "choices": []
+    },
+    {
+      "id": "regina_beruhigt_stefania",
+      "lines": [
+        "Regina: \"Alles ist gut. Kein Grund zur Panik.\""
+      ],
+      "choices": []
+    }
+  ]
+}
