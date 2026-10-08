@@ -1,7 +1,7 @@
 ---
 Titel: MIGRATION – Handover StrategyInterface (Inventar, offene Punkte, Struktur-Entscheidung)
 Typ: Info
-Status: offen
+Status: erledigt
 Priorität: hoch
 Auftraggeber: PM/WPA (Koordinator)
 Agent: StrategyInterface-Agent

@@ -38,6 +38,15 @@ var CONFIG = {
         // Atmosphäre-Spur (Default: leise)
         music: "atmosphere.mp3",
         // Klick-Sound bei jeder Option/Auswahl
-        click: "click.mp3"
+        click: "click.mp3",
+        // Format-Fallback, falls der Browser MP3 nicht abspielt
+        musicFallback: "atmosphere.ogg",
+        clickFallback: "click.ogg",
+        // Default-Lautstärken (0..1); Musik bewusst leise
+        musicVolume: 0.35,
+        clickVolume: 0.8,
+        // Musik je Szene (optional): { "<szene>": "<datei>" }
+        // Nicht gepflegte Szenen nutzen `music`.
+        sceneMusic: {}
     }
 };

@@ -1,7 +1,7 @@
 ---
 Titel: Info: Szenen-Bilder werden über lokale Stable-Diffusion-API erzeugt
 Typ: Info
-Status: offen
+Status: abgeschlossen
 Priorität: hoch
 Auftraggeber: Koordinator
 Agent: HTML-Prototyp-Agent

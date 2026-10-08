@@ -68,6 +68,31 @@ Im Basis-Level zeigt jede Szene **mehrere Optionen parallel** (einfacher choice-
 
 **Erweiterung (optional):** Geometrie-basierte Hotspots (absolut positionierte Flächen mit Outline) können für einzelne Szenen ergänzt werden (`hotspots.json`, Typ `image_text`/`outline`). Nicht MVP-verpflichtend.
 
+### 3.4 Szenen-Konvention: `VAR scene` je Knoten (verbindlich, seit 2026-10-08)
+
+Jeder Ink-Knoten, der eine Szene darstellt, setzt zuerst die Szenen-Variable:
+
+```
+~ scene = "intro"
+```
+
+- **HTML liest** `story.variablesState["scene"]` und lädt daraus Bild + `options.json`.
+- **Grund:** inkjs liefert `currentPathString` an Choice-Punkten `null` – ein Pfad-basierter Szenennamen ist dort nicht auswertbar.
+- **Unity:** Konvention ebenso nutzbar, aber nicht zwingend (Unity kann den Pfad anders auflösen).
+- **Verantwortung:** Der Story-Development-Agent setzt `~ scene = "…"` in jeder neuen/geänderten Ink-Datei an; der HTML-Prototyp-Agent dokumentiert fehlende Werte als `[WARN]`.
+
+### 3.5 Debug-Log-Präfixe (Parität HTML ↔ Unity)
+
+| Präfix | HTML | Unity |
+|---|---|---|
+| `[Story-State]` | ja | ja |
+| `[Choice]` | ja | ja |
+| `[Scene]` | ja | ja |
+| `[Decision]` | nein | ja |
+| `[UI-Event]` | nein | ja |
+
+**Entscheidung (Koordinator, 2026-10-08, zu R6):** Die **drei Präfixe `[Story-State]`, `[Choice]`, `[Scene]` genügen** für den HTML-Prototyp. `[Decision]` und `[UI-Event]` bleiben Unity-spezifisch und müssen nicht nachgezogen werden.
+
 ---
 
 ## 4. Datenfluss

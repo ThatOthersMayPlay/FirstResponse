@@ -1,6 +1,7 @@
-// Automatische Verifikation des Setup-Grundgerüsts (Aufgabe 1).
+// Automatische Verifikation des Setup-Grundgerüsts (Aufgabe 1) + Audio-Block.
 // Prüft: inkjs-Full-Build, Kompilierung einer .ink-Story, Choices (mehrere parallel),
-// Variablen-Änderung, State-Serialisierung und config.js.
+// Variablen-Änderung, State-Serialisierung, config.js sowie Audio-Dateien,
+// Audio-Container (MP3/OGG), Audio-Controls und die Audio-Engine in main.js.
 // Ausführen: node js/verify.js  → Exit-Code 0 = alle Checks bestanden.
 "use strict";
 
@@ -162,6 +163,58 @@ try {
         JSON.stringify(real.variablesState["player_perspective"]));
 } catch (e) {
     check("Test-Dialog.ink laden", false, e.message);
+}
+
+// --- Audio-Block (Aufgabe: Audio-Musik-Klicksound) ---
+function readHeader(file, n) {
+    const b = fs.readFileSync(file);
+    return Array.from(b.subarray(0, n));
+}
+
+try {
+    const audioCfg = new Function(fs.readFileSync(path.join(ROOT, "config.js"), "utf8") + "; return CONFIG;")();
+    const A = audioCfg.audio || {};
+
+    // A1: alle vier Audio-Dateien vorhanden und nicht leer (MP3 + OGG-Fallback)
+    const files = [A.music, A.musicFallback, A.click, A.clickFallback];
+    const paths = files.map((f) => path.join(ROOT, A.dir || "assets/audio/", f));
+    const missing = files.filter((f, i) => !fs.existsSync(paths[i]) || fs.statSync(paths[i]).size === 0);
+    check("Audio-Dateien vorhanden (MP3 + OGG)", missing.length === 0, files.join(", "));
+
+    // A2: echte MP3-/OGG-Container (ID3 bzw. OggS), kein Platzhalter/Leerdatei
+    const mp3Header = fs.existsSync(paths[0]) && fs.existsSync(paths[2]) &&
+        readHeader(paths[0], 3).map((x) => String.fromCharCode(x)).join("") === "ID3" &&
+        readHeader(paths[2], 3).map((x) => String.fromCharCode(x)).join("") === "ID3";
+    const oggHeader = fs.existsSync(paths[1]) && fs.existsSync(paths[3]) &&
+        readHeader(paths[1], 4).map((x) => String.fromCharCode(x)).join("") === "OggS" &&
+        readHeader(paths[3], 4).map((x) => String.fromCharCode(x)).join("") === "OggS";
+    check("Audio-Container gueltig (ID3/mp3 + OggS/ogg)", mp3Header && oggHeader,
+        "mp3=" + mp3Header + ", ogg=" + oggHeader);
+
+    // A3: config.audio vollstaendig, Zahlen-Defaults, keine CDN-Pfade
+    const cfgOk = A.dir && A.music && A.click && A.musicFallback && A.clickFallback &&
+        typeof A.musicVolume === "number" && typeof A.clickVolume === "number" &&
+        A.sceneMusic && typeof A.sceneMusic === "object" &&
+        [A.dir, A.music, A.click].every((v) => !/^https?:/i.test(String(v)));
+    check("config.audio vollstaendig und CDN-frei", !!cfgOk,
+        JSON.stringify({ dir: A.dir, music: A.music, musicVolume: A.musicVolume, clickVolume: A.clickVolume }));
+
+    // A4: Bedienelemente (Mute + Lautstaerke) im Markup
+    const html = fs.readFileSync(path.join(ROOT, "index.html"), "utf8");
+    const uiIds = ["audio-bar", "audio-mute", "audio-volume", "audio-status"];
+    const uiMissing = uiIds.filter((id) => html.indexOf('id="' + id + '"') === -1);
+    check("Audio-Controls in index.html (Mute + Lautstaerke)", uiMissing.length === 0,
+        uiIds.join(", "));
+
+    // A5: Audio-Engine eingebunden (Autoplay-Gating + Klick- und Szenen-Hook)
+    const mainSrc = fs.readFileSync(path.join(ROOT, "js", "main.js"), "utf8");
+    const engineOk = mainSrc.indexOf("AudioEngine") !== -1 &&
+        mainSrc.indexOf("document.addEventListener(\"pointerdown\", unlock") !== -1 &&
+        /AudioEngine\.click\(\)/.test(mainSrc) &&
+        /AudioEngine\.setScene\(/.test(mainSrc);
+    check("Audio-Engine in main.js (Autoplay-Gating, Klick-/Szenen-Hook)", !!engineOk);
+} catch (e) {
+    check("Audio-Block", false, e.message);
 }
 
 console.log(`\nErgebnis: ${passed} bestanden, ${failed} fehlgeschlagen`);

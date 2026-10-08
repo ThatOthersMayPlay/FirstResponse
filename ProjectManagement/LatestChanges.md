@@ -1,5 +1,30 @@
 # Latest Changes - First Response
 
+## [2026-10-08] Migration abgeschlossen + Koordinator-Antwort HTML-Prototype
+
+### Migration (neues Basisverzeichnis)
+- **Neues Repo:** `C:\Opencode-Projekte\FirstResponse` (Commit `6256814`), Zielstruktur mit allen 9 Bereichen.
+- **Sicherungs-Commit im Monorepo:** `c162144`, Arbeitsbaum sauber.
+- **Verifikation §6:** `node js/verify.js` **19/19 PASS**, 14 Handover-Dateien, 4 BRIEFINGs, keine `.meta` außerhalb `unity/`, `git status` sauber.
+- **Green Light:** 7/7 Bereiche (Bildererzeugung, Character-Development, Extern, HTML-Prototype, Spielmechanik, Story-Development, StrategyInterface).
+- **StrategyInterface:** eingefroren (`STATUS.md`), keine INBOX, Inhalte in `ARCHIV/`.
+- **Monorepo bleibt vorerst stehen** – Session-Handover (Migrationsplan §7) läuft noch.
+
+### Koordinator-Entscheidungen zur HTML-Rückmeldung (R1–R9)
+- **R1/R2:** `Test-Dialog.ink` als vorübergehendes Scaffolding freigegeben; echte MVP-Szene-1-Ink-Datei + SD-Prompts an Story-Development delegiert (`Story-Development/INBOX/2026-10-08-Aufgabe-MVP-Szene1-Ink-Und-SD-Prompts.md`).
+- **R9/Blockade B2:** `ffmpeg 9.0.2` installiert (winget, MP3/OGG bleibt verbindlich) → `Audio-Musik-Klicksound` wieder `offen`.
+- **R4:** Aufgabentext `Beispielszene-Szene1` korrigiert (Story-Verweis + Optionen); bleibt nur noch durch SD-Prompts blockiert.
+- **R5/R6:** `HTML-Ink-Schnittstelle.md` §3.4 (`VAR scene` je Knoten) und §3.5 (Log-Präfixe) ergänzt.
+- **R8:** `Info-StableDiffusion-Bilder.md` übernommen → `HTML-Prototype/ARCHIV/`.
+- Antwort-Datei: `HTML-Prototype/INBOX/2026-10-08-Entscheidung-Antwort-Rueckfrage-Offene-Punkte.md`.
+
+### Nächste Schritte
+- Story-Development: MVP-Szene-1-Ink + SD-Prompts liefern → entblockiert `Beispielszene-Szene1`.
+- Koordinator: OUTBOX-Übernahme HTML-Prototype (`Audio-Musik-Klicksound` erledigt, `verify.js` 24/24) und Spielmechanik (`CoreGameLoop-AhaEffekt`) vornehmen.
+- Koordinator: Session-Handover je Bereich auf neue Pfade umstellen, danach Monorepo archivieren.
+
+---
+
 ## [2026-08-17] Agenten-Übernahme & Projektstand
 
 ### Übernommen aus OUTBOXen (Koordinator-Abgleich)

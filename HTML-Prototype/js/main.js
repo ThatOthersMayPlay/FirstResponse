@@ -30,6 +30,191 @@
         log("WARN", msg);
     }
 
+    // --- Audio-Engine (Aufgabe: Audio-Musik-Klicksound) ---
+    // Autoplay-Gating: Browser verbieten Ton ohne vorherige Interaktion,
+    // deshalb startet die Musik erst nach dem ersten Klick/Keystroke.
+    var AudioEngine = (function () {
+        var A = CONFIG.audio || {};
+        var supported = typeof Audio !== "undefined";
+        var unlocked = false;
+        var muted = false;
+        var musicVolume = typeof A.musicVolume === "number" ? A.musicVolume : 0.35;
+        var clickVolume = typeof A.clickVolume === "number" ? A.clickVolume : 0.8;
+        var track = null;
+        var lastScene = null;
+        var musicEl = null;
+        var clickEls = [];
+        var clickIdx = 0;
+        var clickPlays = 0;
+
+        var statusEl = document.getElementById("audio-status");
+        var muteBtn = document.getElementById("audio-mute");
+        var volumeEl = document.getElementById("audio-volume");
+
+        function canPlay(mime) {
+            try {
+                var probe = document.createElement("audio");
+                return !!probe.canPlayType && probe.canPlayType(mime) !== "";
+            } catch (e) { return false; }
+        }
+
+        function pickFile(preferred, fallback) {
+            if (canPlay("audio/mpeg")) return preferred;
+            if (canPlay('audio/ogg; codecs="vorbis"')) return fallback;
+            return preferred;
+        }
+
+        function path(file) {
+            return (A.dir || "assets/audio/") + file;
+        }
+
+        function setStatus(text) {
+            if (statusEl) statusEl.textContent = text;
+        }
+
+        function applyVolumes() {
+            if (musicEl) musicEl.volume = muted ? 0 : musicVolume;
+            for (var i = 0; i < clickEls.length; i++) clickEls[i].volume = muted ? 0 : clickVolume;
+        }
+
+        function makeElement() {
+            var el = new Audio();
+            el.preload = "auto";
+            el.addEventListener("error", function () {
+                var src = el.currentSrc || el.getAttribute("src") || "(unbekannt)";
+                warnOnce("audio:" + src,
+                    "Audiodatei nicht abspielbar: " + src + " – Datei fehlt oder Format wird nicht unterstuetzt.");
+            });
+            return el;
+        }
+
+        function ensureClickPool() {
+            if (clickEls.length > 0 || !supported) return;
+            var f = pickFile(A.click, A.clickFallback);
+            for (var i = 0; i < 3; i++) {
+                var el = makeElement();
+                el.src = path(f);
+                clickEls.push(el);
+            }
+            log("Audio", "Klick-Sound bereit ('" + f + "', 3 Kanaele fuer schnelle Folgen)");
+        }
+
+        function playMusic() {
+            if (!musicEl) return;
+            var p = musicEl.play();
+            if (p && typeof p.catch === "function") {
+                p.catch(function (e) {
+                    warnOnce("audio:play",
+                        "Musik-Start verhindert: " + (e && e.message ? e.message : "Fehler") + " (Autoplay-Gating?).");
+                });
+            }
+        }
+
+        function unlock() {
+            if (unlocked || !supported) return;
+            unlocked = true;
+            document.removeEventListener("pointerdown", unlock, true);
+            document.removeEventListener("keydown", unlock, true);
+            ensureClickPool();
+            applyVolumes();
+            playMusic();
+            log("Audio", "Audio freigeschaltet (erste Interaktion) – Musik '" + track + "' laeuft");
+            setStatus(muted ? "Audio: stumm" : "Audio: an");
+        }
+
+        var api = {
+            setScene: function (scene) {
+                if (!supported || scene === lastScene) return;
+                lastScene = scene;
+                var map = A.sceneMusic || {};
+                var want = map[scene] || A.music || "atmosphere.mp3";
+                var changed = want !== track;
+                track = want;
+                if (!musicEl) {
+                    musicEl = makeElement();
+                    musicEl.loop = true;
+                }
+                if (changed) {
+                    musicEl.src = path(want);
+                    musicEl.load();
+                    applyVolumes();
+                    if (unlocked) playMusic();
+                }
+                log("Audio", "Szene '" + scene + "' -> Musik '" + want + "' " +
+                    (changed ? "(gewechselt)" : "(laeuft weiter)"));
+            },
+            click: function () {
+                if (!unlocked || muted || clickEls.length === 0) return;
+                var el = clickEls[clickIdx];
+                clickIdx = (clickIdx + 1) % clickEls.length;
+                try {
+                    el.currentTime = 0;
+                    var p = el.play();
+                    clickPlays++;
+                    if (p && typeof p.catch === "function") {
+                        p.catch(function (e) {
+                            warnOnce("audio:click",
+                                "Klick-Sound nicht abspielbar: " + (e && e.message ? e.message : "Fehler"));
+                        });
+                    }
+                } catch (e) {
+                    warnOnce("audio:click", "Klick-Sound nicht abspielbar: " + e.message);
+                }
+            },
+            setMuted: function (next) {
+                muted = !!next;
+                applyVolumes();
+                if (muteBtn) {
+                    muteBtn.textContent = muted ? "Ton: aus" : "Ton: an";
+                    muteBtn.setAttribute("aria-pressed", muted ? "true" : "false");
+                }
+                setStatus(muted ? "Audio: stumm"
+                    : (unlocked ? "Audio: an" : "Audio: gesperrt (startet nach erster Interaktion)"));
+                log("Audio", muted ? "Stummgeschaltet" : "Ton eingeschaltet");
+            },
+            isMuted: function () { return muted; },
+            setVolume: function (v) {
+                musicVolume = Math.max(0, Math.min(1, v));
+                applyVolumes();
+                log("Audio", "Lautstaerke Musik: " + Math.round(musicVolume * 100) + "%");
+            },
+            volume: function () { return musicVolume; },
+            isUnlocked: function () { return unlocked; },
+            clicksPlayed: function () { return clickPlays; },
+            musicState: function () {
+                if (!musicEl) return null;
+                return {
+                    src: musicEl.getAttribute("src"),
+                    paused: musicEl.paused,
+                    volume: musicEl.volume,
+                    loop: musicEl.loop
+                };
+            },
+            init: function () {
+                if (!supported) {
+                    setStatus("Audio: nicht verfuegbar");
+                    log("WARN", "Keine Audio-API im Browser – Audio-Engine deaktiviert.");
+                    return;
+                }
+                if (volumeEl) {
+                    volumeEl.value = String(Math.round(musicVolume * 100));
+                    volumeEl.addEventListener("input", function () {
+                        api.setVolume(Number(volumeEl.value) / 100);
+                    });
+                }
+                if (muteBtn) {
+                    muteBtn.addEventListener("click", function () { api.setMuted(!muted); });
+                }
+                // Autoplay-Gating: erst Interaktion -> dann Ton
+                document.addEventListener("pointerdown", unlock, true);
+                document.addEventListener("keydown", unlock, true);
+                log("Audio", "Audio-Engine bereit (Start nach erster Interaktion), Format: " +
+                    pickFile(A.click || "click.mp3", A.clickFallback));
+            }
+        };
+        return api;
+    })();
+
     function drainText() {
         var out = "";
         while (story.canContinue) out += story.Continue();
@@ -158,6 +343,7 @@
                 "Szenen-Bild nicht gefunden: " + src + " – Szenenfläche bleibt Platzhalter (Bildasset ausstehend).");
         };
         imageEl.src = src;
+        AudioEngine.setScene(scene);
     }
 
     function choiceLabel(text) {
@@ -271,6 +457,7 @@
 
     function choose(index) {
         var c = (story.currentChoices || [])[index];
+        AudioEngine.click();
         // Präfix [Choice] laut Aufgabenvorgabe, Inhalt analog Unity "[Decision] Choice: <name>"
         log("Choice", "Choice: " + (c ? c.text : "?") + " (Index " + index + ")");
         story.ChooseChoiceIndex(index);
@@ -330,5 +517,8 @@
         continueStory();
     }
 
+    AudioEngine.init();
+    // Debug-/Test-Zugang (wird von der CDP-Verifikation genutzt)
+    window.AudioEngine = AudioEngine;
     boot();
 })();

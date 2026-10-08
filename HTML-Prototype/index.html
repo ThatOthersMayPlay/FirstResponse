@@ -115,6 +115,48 @@
             text-align: left;
         }
 
+        /* --- Audio-Leiste (Mute + Lautstaerke) --- */
+
+        #audio-bar {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px 16px;
+            background: var(--panel);
+            border: 1px solid var(--panel-edge);
+            border-radius: 6px;
+            padding: 8px 12px;
+            font-size: 0.82rem;
+            color: var(--text-dim);
+        }
+
+        #audio-bar button {
+            background: var(--panel);
+            color: var(--text);
+            border: 1px solid var(--panel-edge);
+            border-radius: 6px;
+            padding: 6px 12px;
+            font-size: 0.82rem;
+            font-family: inherit;
+        }
+
+        #audio-bar label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        #audio-bar input[type="range"] {
+            width: 120px;
+            accent-color: var(--accent);
+            cursor: pointer;
+        }
+
+        #audio-status {
+            font-family: Consolas, "Courier New", monospace;
+            font-size: 0.78rem;
+        }
+
         /* --- Hover-/Fokus-Feedback, Basis-Level ---
            Ein Block fuer ALLE interaktiven Flaechen: .choice (Optionen),
            generische <button> und kuenftige .interactive-Flaechen
@@ -167,6 +209,7 @@
         #scene-stage,
         #scene-image,
         #choice-panel,
+        #audio-bar,
         #dialog-panel,
         #debug-panel {
             cursor: default;
@@ -177,6 +220,7 @@
         #scene-stage:hover,
         #scene-image:hover,
         #choice-panel:hover,
+        #audio-bar:hover,
         #dialog-panel:hover,
         #debug-panel:hover {
             box-shadow: none;
@@ -226,6 +270,14 @@
         </div>
 
         <div id="choice-panel" aria-label="Optionen"></div>
+
+        <div id="audio-bar" aria-label="Audio-Einstellungen">
+            <button id="audio-mute" type="button" aria-pressed="false">Ton: an</button>
+            <label for="audio-volume">Lautstärke
+                <input id="audio-volume" type="range" min="0" max="100" value="35">
+            </label>
+            <span id="audio-status">Audio: gesperrt (startet nach erster Interaktion)</span>
+        </div>
 
         <div id="debug-panel" aria-label="Debug-Log"></div>
     </div>

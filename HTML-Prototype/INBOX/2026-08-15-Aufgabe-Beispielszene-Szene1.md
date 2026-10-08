@@ -15,11 +15,11 @@ Abhängigkeiten: Szenenwechsel; Hotspot-System; Ink-Anbindung
 Die erste MVP-Szene „Unfall-Schock & Führung" (Regina) als spielbarer HTML-Point&Click-Prototyp.
 
 ## Umfang
-- Szenen-Bilder (Platzhalter, PNG) für Intro / Hauptteil / Outro erstellen oder beschaffen
-- `options.json` für die Szenenteile anlegen (mehrere Optionen parallel, passend zur Ink-Story `ReginaStefania.ink`)
+- Szenen-Bilder (Platzhalter, PNG) für Intro / Hauptteil / Outro erstellen oder beschaffen (Prompts kommen vom Story-Development-Agenten, siehe Koordinator-Antwort)
+- `options.json` für die Szenenteile anlegen (mehrere Optionen parallel, passend zur Ink-Story – **Grundlage: `unity/Assets/Story/Test-Dialog.ink` als freigegebenes Scaffolding**, Wechsel auf die echte MVP-Story, sobald der Story-Development-Agent sie liefert)
 - Ink-Knoten auf Szenenteile mappen
-- Entscheidungs-Optionen auf die Ink-Choices verdrahten (z. B. „Gefährderin" / „Beruhigen")
-- Audio: Hintergrundmusik + Klick-Sound für die Szene
+- Entscheidungs-Optionen auf die Ink-Choices verdrahten (die Ink-Choices der freigegebenen Grundlage, z. B. „Polizei warnen" / „Stefania beruhigen" / „Nachfragen")
+- Audio: Hintergrundmusik + Klick-Sound für die Szene (Aufgabe `Audio-Musik-Klicksound` ist seit 2026-10-08 wieder `offen`)
 - Manueller Durchspiel-Test inkl. Konsistenz-Check gegen Unity-Story-Pfade
 
 ## Ergebnis (Definition of Done)
@@ -66,20 +66,43 @@ fertiggestellt werden:
 
 ### Entscheidungsbedarf / Rueckfragen
 1. **Welche Ink-Datei ist die MVP-Grundlage fuer Szene 1?**
-   Bitte durch die Story-Seite bereitstellen (echte Story), oder bestaetigen,
-   dass vorerst gegen `Test-Dialog.ink` als Scaffolding gearbeitet wird.
-2. **Wer liefert die SD-Szenen-Prompts?** Benoetigt wird das Szenen-Konzept
-   „Unfall-Schock & Fuehrung" vom Story-Development-Agenten.
-3. **Reihenfolge Audio:** Soll `Audio-Musik-Klicksound` zuerst abgeschlossen
-   werden, damit hier die Audio-DoD erfuellbar ist?
-4. Ggf. Anpassung des Aufgabentextes (Optionen/Story-Verweis), da er auf der
-   nicht-MVP-Datei basiert.
+   → **beantwortet 2026-10-08**, siehe Koordinator-Antwort unten.
+2. **Wer liefert die SD-Szenen-Prompts?** → **beantwortet 2026-10-08**: der
+   Story-Development-Agent, Aufgabe liegt in dessen INBOX.
+3. **Reihenfolge Audio:** → **beantwortet 2026-10-08**: Audio laeuft frei
+   parallel, ist nicht mehr blockiert.
+4. Aufgabentext angepasst → **erledigt 2026-10-08** (siehe „Umfang" oben).
+
+### Koordinator-Antwort (2026-10-08)
+
+**B1 – entblockiert (Arbeitsfreigabe):**
+- `unity/Assets/Story/Test-Dialog.ink` wird **voruebergehend als Scaffolding
+  freigegeben** – der Prototyp arbeitet bis auf Weiteres darauf.
+- `ReginaStefania.ink` bleibt ausdruecklich ** Nicht-MVP** und wird nicht als
+  Grundlage verwendet.
+- Aufgabentext oben entsprechend aktualisiert (Story-Verweis + Optionen).
+- **Zugleich angestoessen:** Der Story-Development-Agent liefert die echte
+  MVP-Szene-1-Ink-Datei (Aufgabe
+  `Story-Development/INBOX/2026-10-08-Aufgabe-MVP-Szene1-Ink-Und-SD-Prompts.md`).
+  Bei Lieferung ist der Verweis in dieser Aufgabe dort gegen die echte Story
+  auszutauschen.
+
+**B2 – bleibt offen (einzige verbleibende Blockade):**
+- SD-Szenen-Prompts „Unfall-Schock & Fuehrung" kommen laut
+  `Info-StableDiffusion-Bilder.md` verbindlich vom Story-Development-Agenten,
+  nicht improvisieren.
+- Ausloeser ist die neue Story-Aufgabe; bis zur Lieferung bleibt diese Aufgabe
+  `blockiert`. Szenen-PNGs duerfen vorher nur als Platzhalter stehen.
+
+**B3 – entblockiert:**
+- `Audio-Musik-Klicksound` ist seit 2026-10-08 wieder `offen`
+  (ffmpeg 9.0.2 bereitgestellt). Audio-DoD dieser Aufgabe ist damit erfuellbar.
 
 ### Empfehlung
-Zuerst B1 klaeren (Story-Basis). Danach ist die Aufgabe ohne weitere externe
-Abhaengigkeiten bearbeitbar – Web-Prototyp, `options.json`-Verdrahtung,
-Ink-Mapping und Durchspiel-Test stehen bereits bereit.
+B2 ist die letzte externe Abhaengigkeit. Bis zur Lieferung der Prompts kann an
+`options.json`-Verdrahtung, Ink-Mapping und Durchspiel-Test gegen
+`Test-Dialog.ink` gearbeitet werden.
 
 ### Parallel ohne Blockade machbar
-`Hover-Feedback` (Abhaengigkeit Hotspot-System erfuellt) und
-`Audio-Musik-Klicksound` sind frei und betreffen nicht diese Blockade.
+`Hover-Feedback` (abgeschlossen) und `Audio-Musik-Klicksound` (seit 2026-10-08
+wieder `offen`) – beide betreffen nicht diese Blockade.

@@ -1,7 +1,7 @@
 ---
 Titel: MIGRATION – Handover/Tool-Stand vor dem Umzug
 Typ: Info
-Status: offen
+Status: erledigt
 Priorität: hoch
 Von: EasyDiffusion-Stakeholder (Tool-Entwicklung)
 An: PM/WPA (Koordinator)

@@ -63,3 +63,29 @@ Erarbeite mit dem Koordinator **schrittweise im Interview** ein Szenen-Konzept f
 - **Scope-Klärung:** Core Game Loop, Aha-Effekt-Design und Mechanik-Balance gehören in den Bereich **Game Design/Spielmechanik**, nicht Story-Development. Erkenntnisse und Delegationsempfehlungen liegen in der OUTBOX (`2026-08-17-Info-Szene1-Interview-Erkenntnisse-Delegation.md`).
 - **Story-Development-Fokus:** Wie Entscheidungen neuen Horizont eröffnen oder schließen (narrative Verzweigungen, Ink-Variablen).
 - **Status-Hinweis:** Die konkrete Szenen-Ausarbeitung wird fortgesetzt, sobald die Mechanik-Vorgaben (Game Design) vorliegen.
+
+## Interview-Verlauf (2026-10-08)
+
+**Vorab-Prüfung nach Migration:**
+- Arbeitsbereich liegt jetzt unter `C:\Opencode-Projekte\FirstResponse\Story-Development\` (zusammengeführt aus Workflow- + Inhalts-Ordner); INBOX/OUTBOX/ARCHIV und BRIEFING.md sind vorhanden und vollständig.
+- **Abhängigkeit weiterhin offen/blockierend:** `Spielmechanik/INBOX/2026-08-17-Aufgabe-CoreGameLoop-AhaEffekt.md` hat noch Status `offen` (Fälligkeit 2026-08-29 überschritten, keine Abgabe in der OUTBOX). Die Ink-Ausarbeitung startet daher **noch nicht** (laut Briefing: blockiert bis Mechanik-Klärung).
+- **Achtung, veraltetes Dokument:** `Szenen-Konzept.md` (Letzte Aktualisierung 12.02.2026) bildet die Interview-Entscheidungen vom 17.08.2026 **nicht ab** (kein Tunnel/Brücke, keine falsche-Adresse-Mechanik, keine Plattform-Position Stefanias, „Polizei"-Reaktion als alleiniger Trigger). Vor weiterer Nutzung aktualisieren – Vorschlag liegt dem Koordinator vor.
+
+**Nicht blockierte, offene Story-Entscheidungen** (aus Notizen 17.08.2026 + Migrations-Handover):
+1. Regina-Auftakt: Modell A „kein Ernst" vs. Modell B „falsch verbunden"
+2. Zeitliche Abfolge Stefania: Variante 1 leere Tankstelle vs. Variante 2 Tunnel durchfahren
+3. Zuspitzung „jemand noch im Tunnel?": A / B / C
+4. Norman-Verzögerung, Milon-Endmechanik, Brief-Unterbrechung
+5. Offene Detailfrage: Notruftelefon vs. Mobilfunk-Empfang für Stefania
+
+**Nächste Interview-Frage an den Koordinator (Frage 1 von 5):**
+
+> **Regina-Auftakt – Modell A oder Modell B?**
+> Beide Modelle bestimmen, wie die erste Notrufeingabe in Szene 1 beginnt:
+> - **Modell A „kein Ernst":** Regina hält den Anruf wegen der unmöglichen Ortsangabe für einen Streich/Prank → distanziert-sachliche, leicht nachlässige Behandlung; spielt den roten Faden „Bleib mit dem Bullen weg" (Kriminalitätsverdacht) von Anbeginn an.
+> - **Modell B „falsch verbunden":** Regina geht von einem technischen Fehler/verlegenen Anruf aus (veraltete Standortkennung der Baustellen-Notrufsäule) → saubere Zuordnung, abbruchbereite Professionalität; der Verdacht baut sich erst im Verlauf auf.
+>
+> **Vorschlag (Story-Development):** **Modell A**, weil es dem Spieler die False-Baseline „hier läuft etwas falsch" sofort mitgibt und Reginas Realitätsprüfung („Ist das echt?") zum Motor des Auftakts macht – Modell B kann als zweite, spätere Hypothese nachgeschoben werden.
+> *(Paraphrase der Modelle aus dem Interview – bitte im Zweifel korrigieren; die Modelle sind nirgends im Repo im Detail dokumentiert.)*
+
+**Status:** `in_bearbeitung` (Interview läuft; Ink-Ausarbeitung weiterhin abhängig von Mechanik-Vorgaben).
