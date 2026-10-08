@@ -8,16 +8,15 @@
 [Uu]ser[Ss]ettings/
 [Mm]emoryCaptures/
 
-# Unity generated files
-Assets/InputSystem_Actions.inputactions*
-Assets/Readme.asset*
-Assets/Scenes/SampleScene.unity*
-Assets/Settings/
-Assets/TutorialInfo/
-Assets/ProjectManagement.meta
-Assets/Scenes.meta
-Assets/Settings.meta
-Assets/TutorialInfo.meta
+# Unity generated files (Unity-Projekt liegt unter unity/)
+unity/Assets/InputSystem_Actions.inputactions*
+unity/Assets/Readme.asset*
+unity/Assets/Scenes/SampleScene.unity*
+unity/Assets/Settings/
+unity/Assets/TutorialInfo/
+unity/Assets/Scenes.meta
+unity/Assets/Settings.meta
+unity/Assets/TutorialInfo.meta
 
 # Visual Studio
 .vs/
@@ -32,7 +31,7 @@ Thumbs.db
 desktop.ini
 
 # Package Manager
-Packages/packages-lock.json
+unity/Packages/packages-lock.json
 
 # Unity Cloud Build
 .cloud/
@@ -41,19 +40,19 @@ Packages/packages-lock.json
 Collab/
 
 # Unity Analytics
-ProjectSettings/ProjectSettings.asset
+unity/ProjectSettings/ProjectSettings.asset
 
 # Unity Ads
-Assets/UnityAds/
+unity/Assets/UnityAds/
 
 # Unity Purchasing
-Assets/UnityPurchasing/
+unity/Assets/UnityPurchasing/
 
 # Unity Analytics
-Assets/UnityAnalytics/
+unity/Assets/UnityAnalytics/
 
 # Unity Performance Reporting
-Assets/UnityPerformanceReporting/
+unity/Assets/UnityPerformanceReporting/
 
 # Unity Hub
 UnityHub/

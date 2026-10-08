@@ -1,0 +1,9 @@
+{
+  "scene": "intro",
+  "image": "scenes/intro.png",
+  "options": [
+    { "id": "gefaehrderin", "label": "Gefährderin melden", "inkChoice": "Gefährderin" },
+    { "id": "beruhigen", "label": "Stefania beruhigen", "inkChoice": "Stefania beruhigen" },
+    { "id": "nachfragen", "label": "Erst nachfragen", "inkChoice": "Nachfragen" }
+  ]
+}

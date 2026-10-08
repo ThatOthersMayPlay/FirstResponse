@@ -1,0 +1,8 @@
+{
+  "scene": "polizei_warnt",
+  "image": "scenes/polizei_warnt.png",
+  "options": [
+    { "id": "einsatzstelle", "label": "Einsatzstelle alarmieren", "inkChoice": "Einsatzstelle alarmieren" },
+    { "id": "beruhigen", "label": "Stefania beruhigen", "inkChoice": "Stefania beruhigen" }
+  ]
+}

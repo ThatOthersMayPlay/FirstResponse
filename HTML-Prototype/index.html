@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Response – HTML-Prototyp</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --bg: #0d0f14;
+            --panel: #14171f;
+            --panel-edge: #232837;
+            --text: #e6e9f0;
+            --text-dim: #8a92a6;
+            --accent: #4fd1c5;
+            --danger: #e05252;
+        }
+
+        html, body { height: 100%; }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 12px;
+        }
+
+        #app {
+            width: 100%;
+            max-width: 960px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 8px;
+        }
+
+        header h1 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+        }
+
+        header #scene-status {
+            font-size: 0.8rem;
+            color: var(--text-dim);
+            font-family: Consolas, "Courier New", monospace;
+        }
+
+        #scene-stage {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            background: radial-gradient(ellipse at center, #1b2130 0%, #0a0c11 70%);
+            border: 1px solid var(--panel-edge);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        #scene-image {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: none;
+        }
+
+        #scene-image.loaded { display: block; }
+
+        #dialog-panel {
+            background: var(--panel);
+            border: 1px solid var(--panel-edge);
+            border-radius: 6px;
+            padding: 14px 16px;
+            min-height: 96px;
+        }
+
+        #dialog-speaker {
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        #dialog-text {
+            font-size: 1.02rem;
+            line-height: 1.45;
+            white-space: pre-wrap;
+        }
+
+        #choice-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        #choice-panel .choice {
+            background: var(--panel);
+            color: var(--text);
+            border: 1px solid var(--panel-edge);
+            border-radius: 6px;
+            padding: 12px 16px;
+            font-size: 0.98rem;
+            text-align: left;
+        }
+
+        /* --- Hover-/Fokus-Feedback, Basis-Level ---
+           Ein Block fuer ALLE interaktiven Flaechen: .choice (Optionen),
+           generische <button> und kuenftige .interactive-Flaechen
+           (z. B. Geometrie-Hotspots) erhalten identisches Verhalten. */
+
+        button,
+        .interactive,
+        #choice-panel .choice {
+            cursor: pointer;
+            transition: border-color 0.1s, box-shadow 0.1s, background 0.1s;
+        }
+
+        button:hover,
+        .interactive:hover,
+        #choice-panel .choice:hover {
+            border-color: var(--accent);
+            background: #1a1f2b;
+            box-shadow: 0 0 0 1px var(--accent), 0 0 14px rgba(79, 209, 197, 0.55);
+        }
+
+        button:active,
+        .interactive:active,
+        #choice-panel .choice:active {
+            background: #171c27;
+            box-shadow: inset 0 0 0 1px var(--accent), 0 0 8px rgba(79, 209, 197, 0.4);
+        }
+
+        button:focus-visible,
+        .interactive:focus-visible,
+        #choice-panel .choice:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+        }
+
+        button:focus:not(:focus-visible),
+        .interactive:focus:not(:focus-visible),
+        #choice-panel .choice:focus:not(:focus-visible) {
+            outline: none;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            button,
+            .interactive,
+            #choice-panel .choice { transition: none; }
+        }
+
+        /* Nicht-interaktive Flaechen: ausdruecklich ohne Hover-Effekt und
+           ohne Pointer-Cursor (DoD: kein stoerender Effekt). */
+        header,
+        #scene-stage,
+        #scene-image,
+        #choice-panel,
+        #dialog-panel,
+        #debug-panel {
+            cursor: default;
+            outline: none;
+        }
+
+        header:hover,
+        #scene-stage:hover,
+        #scene-image:hover,
+        #choice-panel:hover,
+        #dialog-panel:hover,
+        #debug-panel:hover {
+            box-shadow: none;
+        }
+
+        #debug-panel {
+            background: #0a0c11;
+            border: 1px dashed var(--panel-edge);
+            border-radius: 6px;
+            padding: 10px 12px;
+            font-family: Consolas, "Courier New", monospace;
+            font-size: 0.78rem;
+            line-height: 1.5;
+            color: var(--text-dim);
+            max-height: 160px;
+            overflow-y: auto;
+        }
+
+        #debug-panel .warn { color: #f0b429; }
+        #debug-panel .error { color: var(--danger); }
+
+        @media (min-width: 640px) {
+            #choice-panel { flex-direction: row; flex-wrap: wrap; }
+            #choice-panel .choice { flex: 1 1 240px; }
+        }
+
+        @media (max-width: 480px) {
+            body { padding: 8px; }
+            #dialog-panel { min-height: 84px; }
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>FIRST RESPONSE – HTML-Prototyp</h1>
+            <span id="scene-status">Szene: –</span>
+        </header>
+
+        <div id="scene-stage" aria-label="Szenen-Fläche">
+            <img id="scene-image" alt="Szenen-Hintergrund">
+        </div>
+
+        <div id="dialog-panel" aria-live="polite">
+            <div id="dialog-speaker"></div>
+            <div id="dialog-text"></div>
+        </div>
+
+        <div id="choice-panel" aria-label="Optionen"></div>
+
+        <div id="debug-panel" aria-label="Debug-Log"></div>
+    </div>
+
+    <script src="js/ink-full.min.js"></script>
+    <script src="config.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

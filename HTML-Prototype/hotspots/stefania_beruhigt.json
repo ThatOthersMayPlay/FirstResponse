@@ -1,0 +1,7 @@
+{
+  "scene": "stefania_beruhigt",
+  "image": "scenes/stefania_beruhigt.png",
+  "options": [
+    { "id": "weiter", "label": "Weiter zur Einsatzstelle", "inkChoice": "Weiter zur Einsatzstelle" }
+  ]
+}
