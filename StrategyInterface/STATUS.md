@@ -1,16 +1,30 @@
 # StrategyInterface – STATUS
 
-**Stand: EINGEFROREN (seit 2026-10-08)**
+**Stand: AKTIV – Neuausrichtung als Arbeits-Plattform (2026-10-09)**
 
-- Der Bereich wird **nicht weitergeführt** (Entscheidung laut Handover
-  `OUTBOX/2026-10-08-Info-Migration-Handover.md`).
-- **Inhalte liegen im `ARCHIV/`** (index.html, StrategyLog.md, README.md,
-  GitHub-/Latest-Update-Notizen, `.deploy-trigger`).
-- **Ausnahme:** `FirstResponseStrategy.md` wurde in den aktiven Bestand überführt →
-  `../ProjectManagement/FirstResponseStrategy.md` (dort wird es als kanonisches
-  Strategiedokument geführt, sofern nicht anders entschieden).
-- **Keine INBOX** – eingefroren = keine neuen Aufgaben. Bei Wiederbelebung:
-  INBOX/OUTBOX/ARCHIV-Workflow laut `../Agenten-Workflow.md` reaktivieren.
-- GitHub Workflows/Pages: bewusst nicht genutzt (Entscheidung 2026-10-08).
+## Neuausrichtung
+- Der Bereich wird **reaktiviert** und von der früheren statischen
+  Status-Webseite zu einer **internen Arbeits-/Kollaborationsplattform**
+  weiterentwickelt.
+- **Zugang:** ggf. über die öffentliche Webseite (`Webpräsenz/`) – jedoch
+  **hinter einem Login** (nur internes Team, nicht öffentlich).
+- **Zweck:** Projekt-/Aufgabenstatus, Bereichsübersicht, Aufgaben-Boards,
+  Entscheidungs-/Dokumentenzugriff, Fortschritts-Tracking für das Team.
+- **Abgrenzung:**
+  - `Webpräsenz/` = **öffentliches** Aushängeschild (Sponsoren, Crowdfunding, Stakeholder).
+  - `StrategyInterface/` = **internes** Arbeitswerkzeug hinter Login.
 
-*Status dokumentiert beim Migrations-Umzug, 2026-10-08 (PM/WPA)*
+## Historie
+- 2026-10-08: war als „EINGEFROREN" geführt (Inhalte im `ARCHIV/`).
+- 2026-10-09: **Entscheidung des Auftraggebers:** StrategyInterface wird zur
+  Arbeits-Plattform (mit Login, ggf. über die Webseite). Einfrierung aufgehoben.
+- `FirstResponseStrategy.md` bleibt im aktiven Bestand
+  (`../ProjectManagement/FirstResponseStrategy.md`).
+
+## Arbeitsweise
+- Standard-Workflow des Projekts: `INBOX/ · OUTBOX/ · ARCHIV/` laut
+  [`../ProjectManagement/Agenten-Workflow.md`](../ProjectManagement/Agenten-Workflow.md).
+- Der frühere Bestand (`index.html`, `StrategyLog.md`, `README.md`,
+  Update-Notizen, `.deploy-trigger`) liegt im `ARCHIV/` und dient als Referenz.
+
+*Status aktualisiert: 2026-10-09 (PM/WPA)*

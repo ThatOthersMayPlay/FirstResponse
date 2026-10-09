@@ -1,15 +1,22 @@
 ---
 Titel: Beispielszene Szene1-Regina als HTML-Prototyp
 Typ: Aufgabe
-Status: blockiert
+Status: offen
 Priorität: hoch
 Auftraggeber: Koordinator
 Agent: HTML-Prototyp-Agent
 Erstellt: 2026-08-15
-Fälligkeit: 2026-09-12
-Blockiert seit: 2026-10-08
+Fälligkeit: 2026-10-16
 Abhängigkeiten: Szenenwechsel; Hotspot-System; Ink-Anbindung
+Koordinator-Update: 2026-10-09 (R1/R4 geklaert)
 ---
+
+## Koordinator-Update (2026-10-09)
+- **Entblockt (R1/R4):** Grundlage ist die echte Szene-1-Story aus
+  `Story-Development/`. Bis diese vorliegt, ist `unity/Assets/Story/Test-Dialog.ink`
+  ausdrücklich als **Scaffolding** freigegeben.
+- **Offen bleiben nur:** Szenen-Bilder (SD-Prompts, R2) und Audio (Encoder, R9).
+  Details: `INBOX/2026-10-09-Entscheidung-Koordinator-Antwort-R1-R9.md`.
 
 ## Ziel
 Die erste MVP-Szene „Unfall-Schock & Führung" (Regina) als spielbarer HTML-Point&Click-Prototyp.
@@ -19,7 +26,7 @@ Die erste MVP-Szene „Unfall-Schock & Führung" (Regina) als spielbarer HTML-Po
 - `options.json` für die Szenenteile anlegen (mehrere Optionen parallel, passend zur Ink-Story – **Grundlage: `unity/Assets/Story/Test-Dialog.ink` als freigegebenes Scaffolding**, Wechsel auf die echte MVP-Story, sobald der Story-Development-Agent sie liefert)
 - Ink-Knoten auf Szenenteile mappen
 - Entscheidungs-Optionen auf die Ink-Choices verdrahten (die Ink-Choices der freigegebenen Grundlage, z. B. „Polizei warnen" / „Stefania beruhigen" / „Nachfragen")
-- Audio: Hintergrundmusik + Klick-Sound für die Szene (Aufgabe `Audio-Musik-Klicksound` ist seit 2026-10-08 wieder `offen`)
+- Audio: Hintergrundmusik + Klick-Sound für die Szene (Status siehe Aufgabe `Audio-Musik-Klicksound`)
 - Manueller Durchspiel-Test inkl. Konsistenz-Check gegen Unity-Story-Pfade
 
 ## Ergebnis (Definition of Done)
@@ -31,10 +38,12 @@ Die erste MVP-Szene „Unfall-Schock & Führung" (Regina) als spielbarer HTML-Po
 - [ ] Protokoll des Konsistenz-Tests gegen Unity liegt bei
 ---
 
-## BLOCKIERT – Rueckfrage an den Koordinator (2026-10-08)
+## HISTORIE – Blockade & Rueckfrage (2026-10-08) – beantwortet 2026-10-09
 
-**Status: `blockiert`** (wartet auf Input/Zusatzinfo des Koordinators, siehe
-Agenten-Workflow.md 5.3). Die Datei bleibt bewusst in der INBOX.
+> **Auflösung (Koordinator, 2026-10-09):** Rückfragen R1/R4 sind geklärt, die
+> Aufgabe ist wieder `offen`. Der folgende Blockade-Abschnitt bleibt nur zur
+> Nachvollziehbarkeit stehen. Offen bleiben allein B2 (Szenen-Prompts) und
+> B3 (Audio-Encoder).
 
 ### Warum blockiert
 Die Aufgabe stuetzt sich auf einen veralteten Stand und kann so nicht

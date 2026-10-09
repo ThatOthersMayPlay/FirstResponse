@@ -72,12 +72,14 @@ Im Basis-Level zeigt jede Szene **mehrere Optionen parallel** (einfacher choice-
 
 Jeder Ink-Knoten, der eine Szene darstellt, setzt zuerst die Szenen-Variable:
 
-```
-~ scene = "intro"
+```ink
+=== szene1_intro ===
+~ scene = "szene1_intro"
+...
 ```
 
 - **HTML liest** `story.variablesState["scene"]` und lädt daraus Bild + `options.json`.
-- **Grund:** inkjs liefert `currentPathString` an Choice-Punkten `null` – ein Pfad-basierter Szenennamen ist dort nicht auswertbar.
+- **Grund:** inkjs liefert `currentPathString` an Choice-Punkten `null` – ein Pfad-basierter Szenennamen ist dort nicht auswertbar; die `VAR scene`-Konvention ist deshalb der einzige verbindliche Szenen-Erkennungsweg.
 - **Unity:** Konvention ebenso nutzbar, aber nicht zwingend (Unity kann den Pfad anders auflösen).
 - **Verantwortung:** Der Story-Development-Agent setzt `~ scene = "…"` in jeder neuen/geänderten Ink-Datei an; der HTML-Prototyp-Agent dokumentiert fehlende Werte als `[WARN]`.
 

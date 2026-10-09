@@ -1,5 +1,57 @@
 # Latest Changes - First Response
 
+## [2026-10-09] Migration abgeschlossen, Webpräsenz-Bereich & Koordinator-Übernahmen
+
+### Migration
+- **Post-Migration-Übernahme abgeschlossen:** Alle erledigten OUTBOX-Aufgaben und
+  Handover-Dateien der Bereiche wurden übernommen (`abgeschlossen`) und ins jeweilige
+  `ARCHIV/` verschoben. Die Migration-Checkliste (`2026-10-08-Aufgabe-MIGRATION-PM-Checkliste.md`)
+  ist abgeschlossen und archiviert. Alle OUTBOXen sind leer.
+- **Rückfrage HTML-Prototyp (R1–R9) beantwortet** →
+  `HTML-Prototype/INBOX/2026-10-09-Entscheidung-Koordinator-Antwort-R1-R9.md`.
+  Kernergebnisse: MVP-Story kommt aus Story-Development (bis dahin `Test-Dialog.ink`
+  als Scaffolding freigegeben); SD-Prompts liefert Story-Development; `~ scene` ist
+  verbindliche Szenen-Konvention; 3 Log-Präfixe genügen für HTML; Audio bleibt blockiert
+  bis MP3-/OGG-Encoder bereitsteht.
+- **Offen (extern):** Alt-Monorepo archivieren; `node js/verify.js` in dieser Umgebung
+  nicht ausführbar (kein Node) – letzter Stand 19/19 PASS (2026-10-08).
+
+### Neuer Agenten-Bereich: Webpräsenz
+- `Webpräsenz/` mit INBOX/OUTBOX/ARCHIV + `BRIEFING.md` angelegt.
+- **Verantwortung:** öffentliche Projekt-/Spiel-Präsenz (Aushängeschild) für **Sponsoren,
+  Crowdfunding und Stakeholder**; Abgrenzung zur allgemeinen Studio-Seite
+  `www.cusquea-games.de` (First Response „herausschälen").
+- **Registriert:** Agenten-Workflow.md (Struktur, Bereichstabelle, Rollen),
+  DocumentStructure.md (Kollaboration & Interface), README.md.
+- **Befund 2026-10-09:** TLS-Zertifikat von `www.cusquea-games.de` abgelaufen – vor
+  öffentlichem Auftritt erneuern.
+
+### Dokumentation
+- **README.md aktualisiert** (Version 0.2.0): aktuelle Struktur (Wurzelbereiche + `unity/`),
+  Unity 6000.3.9f1 LTS, HTML-first-Strategie, Agenten-Workflow, Webpräsenz, Lizenz/Kontakt.
+- **HTML-Ink-Schnittstelle.md:** verbindliche `~ scene`-Konvention ergänzt (§3.4).
+- **StrategyInterface** zunächst als EINGEFROREN in Agenten-Workflow und DocumentStructure
+  vermerkt – am selben Tag zur internen Arbeits-Plattform reaktiviert (siehe unten).
+
+### Neue Aufgaben
+- **Story-Development:** `2026-10-09-Aufgabe-SD-Szenen-Prompts-Szene1.md` (SD-Prompts für
+  Szene 1, entblockt die Szenen-Bilder des HTML-Prototyps).
+- **HTML-Prototype:** `Beispielszene-Szene1` wieder `offen` (strukturell startbar gegen
+  `Test-Dialog.ink`); `Audio-Musik-Klicksound` weiter `blockiert` (Encoder).
+
+### StrategyInterface reaktiviert: interne Arbeits-Plattform
+- **Entscheidung des Auftraggebers (2026-10-09):** `StrategyInterface/` wird von der
+  früheren statischen Status-Seite (zuletzt „EINGEFROREN") zur **internen
+  Arbeits-Plattform** ausgebaut – **hinter Login**, ggf. über die Webseite erreichbar.
+- **Abgrenzung:** `Webpräsenz/` = öffentliches Aushängeschild; `StrategyInterface/` =
+  internes Arbeitswerkzeug.
+- **Umgesetzt:** `STATUS.md` neu, `BRIEFING.md` + `INBOX/OUTBOX/ARCHIV` angelegt;
+  erste Aufgabe `2026-10-09-Aufgabe-Arbeitsplattform-Konzept.md` in der INBOX.
+- **Registriert:** Agenten-Workflow.md (Struktur, Bereichstabelle, Rollen),
+  DocumentStructure.md, README.md.
+
+---
+
 ## [2026-10-08] Migration abgeschlossen + Koordinator-Antwort HTML-Prototype
 
 ### Migration (neues Basisverzeichnis)

@@ -33,14 +33,19 @@ Der Koordinator (Projektmanagement) ist die zentrale Instanz:
 Assets/ProjectManagement/
 ├── INBOX/                        # Zentrale Ablage für unzuordbare/allgemeine Aufgaben
 ├── OUTBOX/                       # Zentrale Rückmeldung an den Koordinator
+├── ARCHIV/                       # Abgeschlossene zentrale (PM-)Aufgaben
 ├── Character-Development/
 │   ├── INBOX/                    # Aufgaben für den Charakter-Writer
 │   ├── OUTBOX/                   # Ergebnisse des Charakter-Writers
 │   └── ARCHIV/                   # Abgeschlossene Charakter-Aufgaben
-├── StrategyInterface/
-│   ├── INBOX/                    # Aufgaben für den Strategie-Web-Agenten
-│   ├── OUTBOX/                   # Ergebnisse des Strategie-Agenten
-│   └── ARCHIV/                   # Abgeschlossene Strategie-Aufgaben
+├── StrategyInterface/            # Interne Arbeits-Plattform (hinter Login)
+│   ├── INBOX/                    # Aufgaben für den StrategyInterface-Agenten
+│   ├── OUTBOX/                   # Ergebnisse des StrategyInterface-Agenten
+│   └── ARCHIV/                   # Abgeschlossene + frühere Inhalte
+├── Webpräsenz/                   # Öffentliche Projekt-/Spiel-Präsenz (Aushängeschild)
+│   ├── INBOX/                    # Aufgaben für den Webpräsenz-Agenten
+│   ├── OUTBOX/                   # Ergebnisse des Webpräsenz-Agenten
+│   └── ARCHIV/                   # Abgeschlossene Webpräsenz-Aufgaben
 ├── HTML-Prototype/
 │   ├── INBOX/                    # Aufgaben für den HTML-Prototyp-Agenten
 │   ├── OUTBOX/                   # Ergebnisse des HTML-Prototyp-Agenten
@@ -72,7 +77,8 @@ Assets/ProjectManagement/
 | Bereich | Verantwortung | Zuständiger Agent |
 |---|---|---|
 | `Character-Development/` | Charakterprofile, Arcs, Beziehungen, Dialoge | Charakter-Writer |
-| `StrategyInterface/` | Strategie-Webseite, Status-Übersicht | Strategie-Web-Agent |
+| `StrategyInterface/` | Interne Arbeits-/Kollaborationsplattform (Status, Aufgaben, Berichte) hinter Login | StrategyInterface-Agent |
+| `Webpräsenz/` | Öffentliche Projekt-/Spiel-Präsenz (Aushängeschild), Sponsoren/Crowdfunding/Stakeholder | Webpräsenz-Agent |
 | `HTML-Prototype/` | HTML-Point&Click-MVP, inkjs-Schnittstelle, Options-System, Szenen-Rendering | HTML-Prototyp-Agent |
 | `Story-Development/` | Szenen-Konzepte, Dialoge, Ink-Ausarbeitung der MVP-Szenen | Story-Development-Agent |
 | `Spielmechanik/` | Core Game Loop, Aha-Effekt, Entscheidungsarchitektur, Pacing, Balance | Spielmechanik-Agent |
@@ -92,7 +98,7 @@ Assets/ProjectManagement/
 - Setzt Aufgaben auf `abgeschlossen` und verschiebt sie ins ARCHIV.
 - Veranlasst neue Aufgaben im Interview schrittweise.
 
-### Spezialisierter Agent (z. B. Charakter-Writer, Strategie-Web-Agent, HTML-Prototyp-Agent, Story-Development-Agent, Spielmechanik-Agent)
+### Spezialisierter Agent (z. B. Charakter-Writer, HTML-Prototyp-Agent, Story-Development-Agent, Spielmechanik-Agent, Bildererzeugungs-Agent, Webpräsenz-Agent, StrategyInterface-Agent)
 - Arbeitet die INBOX des eigenen Bereichs ab.
 - Pflegt den Status jeder Aufgabe im Dateikopf.
 - Legt fertige Ergebnisse in die eigene OUTBOX.
@@ -131,7 +137,7 @@ Typ: <Aufgabe | Info | Review | Entscheidung>
 Status: <offen | in_bearbeitung | erledigt | abgeschlossen | blockiert>
 Priorität: <hoch | mittel | niedrig>
 Auftraggeber: <Koordinator>
-Agent: <Charakter-Writer | Strategie-Web-Agent | HTML-Prototyp-Agent | Story-Development-Agent | Spielmechanik-Agent | ...>
+Agent: <Charakter-Writer | HTML-Prototyp-Agent | Story-Development-Agent | Spielmechanik-Agent | Bildererzeugungs-Agent | Webpräsenz-Agent | StrategyInterface-Agent | ...>
 Erstellt: <YYYY-MM-DD>
 Fälligkeit: <YYYY-MM-DD>
 Abhängigkeiten: <optional, z. B. referenzierte Dateien>

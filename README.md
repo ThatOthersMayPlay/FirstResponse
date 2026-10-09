@@ -1,60 +1,66 @@
-# First Response - Serious Game
+# First Response – Serious Game
 
-Ein innovatives Serious Game für Erste-Hilfe-Ausbildung, das Bildung und Unterhaltung verbindet.
+Ein innovatives Serious Game für Erste-Hilfe-Ausbildung, das Bildung und Unterhaltung verbindet. Entwickelt von **Cusquea Games** (Achim Dieterle).
+
+**Leitmotiv:** *That others may play.*
+
+---
 
 ## 🎯 Projektvision
 
-First Response wird zum führenden Serious Game im Bereich Erste-Hilfe-Ausbildung und schafft eine Brücke zwischen Bildung und Unterhaltung. Spieler lernen in einer interaktiven, spannenden Umgebung, wie sie in Notfallsituationen richtig handeln können.
+First Response wird zum führenden Serious Game im Bereich Erste-Hilfe-Ausbildung und schafft eine Brücke zwischen Bildung und Unterhaltung. Spieler lernen in einer interaktiven, spannenden Umgebung, wie sie in Notfallsituationen richtig handeln können – ohne Belehrung, sondern durch emotionale, erlebbare Konsequenzen.
 
-## 🚀 Aktuelle Features
+---
 
-### 📋 Projektmanagement
-- **Strategie-Interface:** Web-basierte Projektübersicht und Strategie-Bearbeitung
-- **Character Development:** Detaillierte Charakterprofile mit Entwicklungs-Arcs
-- **Player Experience Monitoring:** Systematische Analyse basierend auf Ästhetik of Play
-- **Agile Entwicklung:** Sprint-basierte Entwicklung mit Backlog-Management
+## 📌 Projektstatus
 
-### 🎮 Spielkonzept
-- **Interaktive Unfallszene:** Spieler erleben einen Unfall aus erster Perspektive
-- **Charakter-Perspektiven:** Wechsel zwischen verschiedenen Charakteren
-- **Entscheidungs-System:** Konsequenzen der Entscheidungen auf den Story-Verlauf
-- **Erste-Hilfe-Simulation:** Realistische Simulation von Erste-Hilfe-Maßnahmen
+**Stand: 2026-10-09**
 
-### 🌐 Technologie
-- **Unity URP:** Universal Render Pipeline für optimale Performance
-- **Cross-Plattform:** PC und Mobile Unterstützung
-- **Point & Click Framework:** Einfache Interaktion mit visuellen Hotspots
-- **Web-Interface:** GitHub Pages basierte Projektübersicht
+- **Migration abgeschlossen:** Das Projekt wurde in ein eigenes Basisverzeichnis und ein eigenes Git-Repo überführt (`github.com/ThatOthersMayPlay/FirstResponse`). Unity liegt vollständig unter `unity/`, alle Fachbereiche in der Wurzel.
+- **Strategie:** HTML-first – ein schnell spielbarer Browser-MVP (Point & Click) steht vor einem Unity-Build.
+- **Zielrahmen:** Games-BW-Förderung; MVP mit emotional dichten Szenen.
+- **Single Source of Truth:** Story/Dialoge liegen als **Ink** in `unity/Assets/Story/` und werden von **Unity** und **HTML (inkjs)** gleichermaßen konsumiert.
+- **In Arbeit:** Szene 1 „Unfall-Schock & Führung" (Regina), Mechanik/Core-Game-Loop, Webpräsenz für Stakeholder.
+
+---
 
 ## 📁 Projektstruktur
 
 ```
 FirstResponse/
-├── Assets/
-│   ├── ProjectManagement/          # Projektmanagement-Dokumente
-│   │   ├── VisionLog.md           # Projektvision und Ziele
-│   │   ├── Backlog.md             # Epics und User Stories
-│   │   ├── StoryLog.md            # Story-Entwicklung
-│   │   ├── Sprint-1.md            # Sprint-Planung
-│   │   ├── PlayerExperienceLog.md # Spielerlebnis-Analyse
-│   │   ├── Character-Development/ # Charakter-Dokumente
-│   │   └── StrategyInterface/      # Web-Interface
-│   ├── ProjectSettings/           # Unity-Einstellungen
-│   └── Packages/                   # Unity-Pakete
-├── README.md                       # Diese Datei
-└── .gitignore                      # Git-Ignore-Datei
+├── ProjectManagement/       # Koordinator, zentrale Doku, Backlog, Sprints, Vision
+├── Story-Development/       # Szenen-Konzepte, Dialoge, Ink-Ausarbeitung
+├── Spielmechanik/           # Core Game Loop, Aha-Effekt, Entscheidungsarchitektur
+├── Character-Development/   # Charakterprofile, Arcs, Beziehungen
+├── HTML-Prototype/          # Schnellspielbarer Browser-MVP (HTML/CSS/JS + inkjs)
+├── Bildererzeugung/         # Bildaufträge via EasyDiffusion-API
+├── Webpräsenz/              # Öffentliche Projekt-/Spiel-Präsenz (Aushängeschild, Stakeholder)
+├── StrategyInterface/       # Interne Arbeits-Plattform (hinter Login)
+├── Extern/                  # Kanal für externe Stakeholder (z. B. EasyDiffusion)
+├── unity/                   # Unity-Projekt 1:1 (Assets, Packages, ProjectSettings)
+├── README.md                # Diese Datei
+└── .github/                 # Repository-Konfiguration
 ```
 
-## 🎮 Gameplay
+Jeder Fachbereich ist als **spezialisierter Agent** organisiert und nutzt die einheitliche Struktur `INBOX/ · OUTBOX/ · ARCHIV/` plus `BRIEFING.md`. Der Austausch erfolgt ausschließlich über `INBOX`/`OUTBOX` – verbindlich geregelt in [`ProjectManagement/Agenten-Workflow.md`](ProjectManagement/Agenten-Workflow.md).
+
+---
+
+## 🎮 Gameplay & MVP-Szenen
 
 ### Haupt-Features
 - **Spannende Szenen:** Emotionale und realistische Unfallszenarien
 - **Schwierige Entscheidungen:** Moralische und praktische Dilemmata
 - **Erste-Hilfe-Thema:** Praktische Anwendung von Erste-Hilfe-Wissen
 - **Adrenalin-Elemente:** Spannung und Zeitdruck
-- **Dialog-System:** Interaktive Charakter-Kommunikation
-- **Entscheidungs-Logging:** Nachverfolgung aller Entscheidungen
-- **Text-Auswertung:** Detaillierte Analyse der Spielentscheidungen
+- **Dialog-System (Ink):** Interaktive Charakter-Kommunikation
+- **Entscheidungs-Logging:** Nachverfolgung und Auswertung aller Entscheidungen
+- **Point & Click:** Interaktion über sichtbare Optionen/Hotspots
+- **Aha-Effekt-Design:** Drastische, spürbare Konsequenzen (Core Game Loop)
+
+### MVP-Szenen (Epic 16)
+1. **Szene 1 – „Unfall-Schock & Führung":** Regina führt Stefania via Funk/Telefon (indirekte Steuerung).
+2. **Szene 2 – „Ablenkung & Verantwortung":** Lukas/Kinder, Fokuswechsel-Mechanik (Handy vs. Straße).
 
 ### Charaktere
 - **Lukas (24):** IT-Consultant, unerfahren aber lernbereit
@@ -64,37 +70,48 @@ FirstResponse/
 - **Regina (58):** Lehrerin, weise und beobachtend
 - **Norman (35):** Rettungssanitäter, professionell und kompetent
 
-## 🛠️ Entwicklung
+---
 
-### Aktuelle Epics (High Priority)
-1. **Prototyp:** Spielbare Unfallszene
-2. **Strategy Interface:** Web-basierte Projektübersicht
-3. **Dokumentenpflege:** Systematische Dokumenten-Verwaltung
-4. **Point & Click Framework:** Interaktions-System
-5. **Player Experience Monitoring:** Spielerlebnis-Analyse
+## 🛠️ Technologie-Stack
 
-### Technologie-Stack
-- **Game Engine:** Unity 2022.3+ mit URP
-- **Frontend:** HTML5, CSS3, JavaScript
-- **Version Control:** Git & GitHub
-- **Documentation:** Markdown
-- **Project Management:** Agile Methoden
+| Bereich | Technologie |
+|---|---|
+| Game Engine | **Unity 6000.3.9f1 LTS** (URP) |
+| Story/Dialoge | **Ink** (Single Source of Truth, `unity/Assets/Story/*.ink`) |
+| Browser-MVP | HTML5, CSS3, JavaScript + **inkjs** (lokal, keine CDN-Abhängigkeit) |
+| Asset-Erzeugung | Lokale **EasyDiffusion**-API (`http://localhost:9000`) |
+| Version Control | Git & GitHub |
+| Dokumentation | Markdown |
 
-## 🌐 Strategy Interface
+---
 
-Das Projekt verfügt über ein web-basiertes Interface für Projektmanagement und Kollaboration:
+## 🧭 Entwicklung & Workflow
 
-**Zugriff:** [GitHub Pages Link nach Deployment]
+Das Projekt wird arbeitsteilig mit spezialisierten Agenten entwickelt. Der **Koordinator (Projektmanagement)** steuert, übernimmt Ergebnisse und hält die Projektdokumente aktuell.
 
-### Features
-- **Projektübersicht:** Status und Fortschritt
-- **Strategie-Editor:** Online-Bearbeitung der Projektstrategie
-- **Responsive Design:** Mobile & Desktop optimiert
-- **LocalStorage:** Lokale Speicherung von Änderungen
+```
+Koordinator ──legt Aufgabe──▶ Bereich/INBOX ──▶ Agent ──▶ Bereich/OUTBOX ──▶ Koordinator übernimmt & archiviert
+```
+
+Angeschlossene Bereiche: `ProjectManagement`, `Story-Development`, `Spielmechanik`, `Character-Development`, `HTML-Prototype`, `Bildererzeugung`, `Webpräsenz`, `StrategyInterface` sowie der externe Kanal `Extern`.
+
+Details: [`ProjectManagement/Agenten-Workflow.md`](ProjectManagement/Agenten-Workflow.md)
+
+---
+
+## 🌐 Webpräsenz & Stakeholder
+
+Die öffentliche Präsenz des Projekts liegt bei **Cusquea Games**: [www.cusquea-games.de](https://www.cusquea-games.de).
+
+Der Bereich [`Webpräsenz/`](Webpräsenz/) schält **First Response** als eigenes Aushängeschild heraus – für **Sponsoren, Crowdfunding und weitere Stakeholder**. Ziel ist eine fokussierte, projektbezogene Präsentation (statt der allgemeinen Studio-Seite).
+
+Ergänzend wird [`StrategyInterface/`](StrategyInterface/) zur **internen Arbeits-Plattform** ausgebaut (Projekt-/Aufgabenstatus) – **hinter einem Login**, ggf. erreichbar über die Webseite.
+
+---
 
 ## 📊 Player Experience
 
-Basierend auf der Ästhetik of Play von Brian Akten analysieren wir 7 Kern-Aspekte:
+Basierend auf der *Aesthetics of Play* analysieren wir sieben Kern-Aspekte:
 
 1. **Entscheidung:** Kontrolle und Eigenverantwortung
 2. **Konsequenz:** Spürbare Auswirkungen
@@ -104,33 +121,31 @@ Basierend auf der Ästhetik of Play von Brian Akten analysieren wir 7 Kern-Aspek
 6. **Erfolg:** Kompetenzgefühl
 7. **Variation:** Vielfalt und Wiederspielwert
 
+---
+
 ## 🤝 Mitwirken
 
-### Team-Struktur
-- **Project Manager:** Strategie und Organisation
-- **Game Designer:** Gameplay und Spielerlebnis
-- **Developer:** Technische Implementierung
-- **Writer:** Story und Charaktere
-- **QA:** Qualitätssicherung
+1. Repository forken bzw. Branch erstellen
+2. Änderungen implementieren
+3. Pull Request erstellen
+4. Review durchführen
 
-### Beitrag leisten
-1. Repository forken
-2. Feature-Branch erstellen
-3. Änderungen implementieren
-4. Pull Request erstellen
-5. Code Review durchführen
-
-## 📄 Lizenz
-
-Dieses Projekt unterliegt der [Lizenz-Name]-Lizenz.
-
-## 📞 Kontakt
-
-- **Project Manager:** [Name] ([Email])
-- **Technical Lead:** [Name] ([Email])
-- **Web Interface:** [GitHub Pages Link]
+**Team-Rollen:** Project Management (Koordination/Strategie), Game Design (Gameplay/Player Experience), Development (Unity + HTML), Narrative (Story/Charaktere), QA (Qualitätssicherung).
 
 ---
 
-*Letzte Aktualisierung: 2026-01-30*  
-*Version: 0.1.0 - Initial Setup*
+## 📄 Lizenz
+
+© 2026 Cusquea Games – Achim Dieterle. Alle Rechte vorbehalten (proprietär), sofern nicht anders angegeben.
+
+---
+
+## 📞 Kontakt
+
+- **Studio / Project Lead:** Achim Dieterle (Cusquea Games)
+- **Repository:** https://github.com/ThatOthersMayPlay/FirstResponse
+- **Webpräsenz:** https://www.cusquea-games.de
+
+---
+
+*Letzte Aktualisierung: 2026-10-09 · Version 0.2.0 – Post-Migration*
