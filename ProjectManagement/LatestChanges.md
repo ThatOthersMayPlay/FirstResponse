@@ -13,7 +13,9 @@
 - **Interner Bereich vorbereitet:** `Webpräsenz/Interner-Bereich/` mit Mini-HTML-Skelett
   (`noindex`); Auth-Methode noch offen – Vorschläge in der Aufgabe (Basic Auth nur bei
   Server-Hosting; für GitHub Pages eigener Auth-Dienst bzw. späteres Projekt-Auth-System).
-- **Offen für Koordinator:** Pages-URL prüfen, Custom Domain/CNAME erst nach Freigabe,
+- **Live geprüft (2026-10-10):** `https://thatothersmayplay.github.io/FirstResponse/` → HTTP 200
+  (Landingpage); `Interner-Bereich/`, `INBOX/`, `OUTBOX/`, `BRIEFING.md` → 404, also nicht öffentlich.
+- **Offen für Koordinator:** Custom Domain/CNAME erst nach Freigabe,
   TLS der Studio-Seite erneuern, Auth-Methode freigeben, Key-Visuals aus `Bildererzeugung/` nachliefern.
 
 ## [2026-10-09] Migration abgeschlossen, Webpräsenz-Bereich & Koordinator-Übernahmen

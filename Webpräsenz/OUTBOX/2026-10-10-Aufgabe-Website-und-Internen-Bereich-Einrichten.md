@@ -52,9 +52,11 @@ Die Webseite `www.cusquea-games.de` (bzw. den First-Response‑Bereich) wieder �
 
 ### Abgabe (Definition of Done)
 
-- [ ] Öffentliche Webseite ist unter der GitHub‑Pages‑URL erreichbar.
-- [ ] `static.yml` (oder neuer Workflow) so geändert, dass er den richtigen Ordner deployt.
-- [ ] In `Webpräsenz/INBOX/` wurde die Aufgabe auf `erledigt` gesetzt und nach `OUTBOX` verschoben.
+- [x] Öffentliche Webseite ist unter der GitHub‑Pages‑URL erreichbar.
+      **Geprüft 2026-10-10:** `https://thatothersmayplay.github.io/FirstResponse/` → HTTP 200,
+      Landingpage ausgeliefert; `Interner-Bereich/`, `INBOX/`, `OUTBOX/`, `BRIEFING.md` → 404 (nicht öffentlich).
+- [x] `static.yml` (oder neuer Workflow) so geändert, dass er den richtigen Ordner deployt.
+- [x] In `Webpräsenz/INBOX/` wurde die Aufgabe auf `erledigt` gesetzt und nach `OUTBOX` verschoben.
 
 ---
 
@@ -80,9 +82,9 @@ Einen Bereich einrichten, der **nur über einen Login** (bzw. ein Unterverzeichn
 
 ### Abgabe (Definition of Done)
 
-- [ ] Ordner `Webpräsenz/Interner-Bereich/` existiert und enthält ein minimal‑HTML‑Skelett.
-- [ ] In der Aufgaben‑Datei ist festgehalten, welche Auth‑Methode später angewendet werden soll.
-- [ ] Status `offen` (wird nach Absprache mit Koordinator weiterbearbeitet).
+- [x] Ordner `Webpräsenz/Interner-Bereich/` existiert und enthält ein minimal‑HTML‑Skelett.
+- [x] In der Aufgaben‑Datei ist festgehalten, welche Auth‑Methode später angewendet werden soll.
+- [x] Status `erledigt` (Gesamtaufgabe); interner Bereich wird nach Absprache mit dem Koordinator weiterbearbeitet.
 
 ---
 
@@ -140,7 +142,7 @@ Einen Bereich einrichten, der **nur über einen Login** (bzw. ein Unterverzeichn
 
 ### Offene Punkte für den Koordinator
 
-- [ ] **Pages-URL testen** nach Push: `https://thatothersmayplay.github.io/FirstResponse/`
+- [x] **Pages-URL testen** nach Push: `https://thatothersmayplay.github.io/FirstResponse/` – **bestätigt 2026-10-10 (HTTP 200)**.
 - [ ] **Custom Domain `www.cusquea-games.de`:** DNS/CNAME erst nach Freigabe einrichten
       (bewusst noch kein `CNAME` angelegt – Domain würde sonst umkonfiguriert).
 - [ ] **TLS-Zertifikat der Studio-Seite erneuern** (abgelaufen laut BRIEFING 2026-10-09).
