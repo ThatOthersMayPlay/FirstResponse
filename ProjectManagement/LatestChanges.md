@@ -1,5 +1,21 @@
 # Latest Changes - First Response
 
+## [2026-10-10] Webpräsenz: Öffentliche Seite reaktiviert & interner Bereich vorbereitet
+
+### Webpräsenz (Aufgabe `2026-10-10-Aufgabe-Website-und-Internen-Bereich-Einrichten.md`, Status `erledigt`, in OUTBOX)
+- **Public-Ordner `Webpräsenz/public/`** angelegt (eigenes `index.html`, Inline-CSS,
+  keine CDN-Abhängigkeiten): Landingpage First Response mit Teaser-Link, Gameplay/MVP-Szenen
+  (spoilerfrei), Fortschritt, Sponsoring-/Crowdfunding-CTA, Studio-Footer
+  (Impressum/Datenschutz → `www.cusquea-games.de`). SEO/Open-Graph gesetzt.
+  Bewusst getrennter Ordner, damit INBOX/OUTBOX/BRIEFING **nicht** öffentlich deployed werden.
+- **GitHub Actions reaktiviert:** `.github/workflows/static.yml` → `path: 'Webpräsenz/public'`,
+  Trigger `Webpräsenz/public/**`.
+- **Interner Bereich vorbereitet:** `Webpräsenz/Interner-Bereich/` mit Mini-HTML-Skelett
+  (`noindex`); Auth-Methode noch offen – Vorschläge in der Aufgabe (Basic Auth nur bei
+  Server-Hosting; für GitHub Pages eigener Auth-Dienst bzw. späteres Projekt-Auth-System).
+- **Offen für Koordinator:** Pages-URL prüfen, Custom Domain/CNAME erst nach Freigabe,
+  TLS der Studio-Seite erneuern, Auth-Methode freigeben, Key-Visuals aus `Bildererzeugung/` nachliefern.
+
 ## [2026-10-09] Migration abgeschlossen, Webpräsenz-Bereich & Koordinator-Übernahmen
 
 ### Migration

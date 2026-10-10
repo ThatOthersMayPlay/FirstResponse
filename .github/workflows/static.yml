@@ -1,11 +1,11 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy Strategy Interface to Pages
+# Workflow für die öffentliche Webpräsenz (GitHub Pages)
+name: Deploy Public Website to GitHub Pages
 
 on:
   push:
     branches: ["main", "master"]
     paths:
-      - "Assets/ProjectManagement/StrategyInterface/**"
+      - "Webpräsenz/public/**"
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
@@ -40,8 +40,8 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
-          # Upload Strategy Interface directory directly
-          path: 'Assets/ProjectManagement/StrategyInterface'
+          # Upload public website directory directly
+          path: 'Webpräsenz/public'
           retention-days: 1
 
       - name: Deploy to GitHub Pages
