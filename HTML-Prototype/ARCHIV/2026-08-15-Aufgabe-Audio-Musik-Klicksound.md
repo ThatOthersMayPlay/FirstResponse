@@ -1,7 +1,7 @@
----
+﻿---
 Titel: Audio: Hintergrundmusik + Klick-Sound
 Typ: Aufgabe
-Status: erledigt
+Status: abgeschlossen
 Priorität: mittel
 Auftraggeber: Koordinator
 Agent: HTML-Prototyp-Agent
