@@ -7,8 +7,13 @@ Auftraggeber: Koordinator
 Agent: HTML-Prototyp-Agent
 Erstellt: 2026-08-15
 Fälligkeit: 2026-08-15
+Abgeschlossen: 2026-10-09
 Abhängigkeiten: Asset-Generierung-StableDiffusion.md
 ---
+
+> **Koordinator-Übernahme (2026-10-09, R8):** Info-Übergabe übernommen →
+> `abgeschlossen`, archiviert. Inhalt gilt weiter: Szenen-Bilder werden über die
+> lokale SD-API erzeugt, Prompts kommen vom Story-Development-Agenten.
 
 ## Information
 

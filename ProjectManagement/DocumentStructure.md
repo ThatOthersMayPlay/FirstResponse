@@ -114,17 +114,17 @@
 ### 🌐 Kollaboration & Interface
 **Regelmäßige Aktualisierung erforderlich:**
 
-#### StrategyInterface/index.html
-- **Inhalt:** Web-Interface für Projektstatus und Strategie
-- **Update-Frequenz:** Bei Status-Änderungen oder neuen Features
-- **Verantwortlich:** Web Developer, Project Manager
+#### Webpräsenz/ (Agenten-Bereich)
+- **Inhalt:** Öffentliche Projekt-/Spiel-Präsenz (Aushängeschild) für Sponsoren, Crowdfunding und Stakeholder; Content-Konzept, Landingsseite, Key-Visuals
+- **Update-Frequenz:** Kontinuierlich während der Öffentlichkeitsarbeit
+- **Verantwortlich:** Webpräsenz-Agent
 - **Letzte Aktualisierung:** [Datum]
 
-#### StrategyInterface/README.md
-- **Inhalt:** Setup-Anleitung, technische Dokumentation
-- **Update-Frequenz:** Bei technischen Änderungen
-- **Verantwortlich:** Technical Lead
-- **Letzte Aktualisierung:** [Datum]
+#### StrategyInterface/ (Agenten-Bereich)
+- **Inhalt:** Interne **Arbeits-Plattform** (hinter Login): Projekt-/Aufgabenstatus, Bereichsübersicht, Aufgaben-Boards, Dokumentenzugriff; ggf. über die Webseite erreichbar
+- **Update-Frequenz:** Kontinuierlich während der Plattform-Entwicklung
+- **Verantwortlich:** StrategyInterface-Agent
+- **Letzte Aktualisierung:** 2026-10-09
 
 #### HTML-Ink-Schnittstelle.md
 - **Inhalt:** Schnittstellen-Design für HTML-Point&Click-MVP ↔ Ink (inkjs, Hotspots, Choice-Rendering, Szenenwechsel)

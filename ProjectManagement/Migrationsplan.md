@@ -40,6 +40,12 @@
 
 ## 4. StrategyInterface (Entscheidung laut Handover)
 
+> **Nachtrag (2026-10-09):** Die Einfrierung wurde aufgehoben. StrategyInterface
+> wird zur **internen Arbeits-Plattform (hinter Login)** ausgebaut; `STATUS.md`,
+> `BRIEFING.md` und `INBOX/OUTBOX/ARCHIV` sind aktiv. Der folgende Abschnitt
+> beschreibt den ursprünglichen Migrationsstand (2026-10-08), der weiterhin als
+> Referenz dient.
+
 - **Eingefroren:** Bereich wandert mit `ARCHIV/` (alle Inhalte) + `OUTBOX/` (Handover) + `STATUS.md` = „EINGEFROREN".
 - **Ausnahme:** `FirstResponseStrategy.md` wandert in den **aktiven Bestand** → `ProjectManagement/FirstResponseStrategy.md`.
 - Keine INBOX (eingefroren = keine neuen Aufgaben).
