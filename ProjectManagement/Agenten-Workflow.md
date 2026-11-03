@@ -58,6 +58,11 @@ Assets/ProjectManagement/
 │   ├── INBOX/                    # Aufgaben für den Bildererzeugungs-Agenten
 │   ├── OUTBOX/                   # Ergebnisse (PNG + Prompt)
 │   └── ARCHIV/                   # Abgeschlossene Bildaufträge
+├── Scene-Development/            # Konzeptionelle Szenenunterstützung im Dialog mit dem Bediener
+│   ├── BRIEFING.md               # Rolle & Grenzen
+│   ├── INBOX/                    # Übergaben an den Scene-Development-Agenten
+│   ├── OUTBOX/                   # Übergaben vom Scene-Development-Agenten
+│   └── ARCHIV/                   # Abgeschlossene Übergaben
 ├── Extern/                       # Kanal für externe Stakeholder (NICHT Projekt-Agenten)
 │   ├── BRIEFING.md               # Kanal-Regeln
 │   └── EasyDiffusion/            # Stakeholder: Tool-Entwicklung (C:\EasyDiffusion, externes Git)
@@ -77,6 +82,7 @@ Assets/ProjectManagement/
 | `Story-Development/` | Szenen-Konzepte, Dialoge, Ink-Ausarbeitung der MVP-Szenen | Story-Development-Agent |
 | `Spielmechanik/` | Core Game Loop, Aha-Effekt, Entscheidungsarchitektur, Pacing, Balance | Spielmechanik-Agent |
 | `Bildererzeugung/` | Bildaufträge (Szenen, Charaktere, Konzept) via API an EasyDiffusion | Bildererzeugungs-Agent |
+| `Scene-Development/` | Konzeptionelle Unterstützung der Szenenentwicklung im Dialog mit dem Bediener | Scene-Development-Agent |
 | `Extern/` | Kanal für externe Stakeholder (z. B. Tool-Entwicklung EasyDiffusion) | Koordinator (verwaltet) |
 
 > **Hinweis:** Neue Bereiche werden schrittweise ergänzt (z. B. Unity-Development, QA). Jeder neue Bereich erhält dieselbe INBOX/OUTBOX/ARCHIV-Struktur.
