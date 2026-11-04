@@ -20,6 +20,8 @@ Ersten LoRA-Test für die Charakterkonsistenz von Regina durchführen. Der Daten
 2. **Entscheidung LoRA vs. img2img** (Phase 3): Der erste Test soll zeigen, ob LoRA für Regina trägt. Wenn die VRAM-Analyse dagegen spricht, ist img2img-Variante als Alternative zu bewerten. Ergebnis mit Begründung dokumentieren.
 3. **Datensatz-Prüfung** durch den Bildererzeugungs-Agenten (siehe Aufgabe oben). Captions und Trigger-Wort abwarten, bevor das Training startet.
 
+Hinweis des Koordinators: Das Tool wird vom EasyDiffusion-Agenten selbst gemanagt. Die Vorbedingungen (Analyse im Gaming-Modus) bleiben bestehen.
+
 ## Umfang
 
 1. Vorbedingungen prüfen und dokumentieren (Thermal- und VRAM-Werte, Modus, Empfehlung).

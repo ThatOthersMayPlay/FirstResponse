@@ -30,7 +30,7 @@ Ablage: `Bildererzeugung/Trainingsdaten/Regina/` (7 PNG, ca. 2,6 MB, vom Koordin
 
 1. **Bestandsaufnahme:** Auflösung, Format, Stil, Pose und Hintergrund je Bild in einer Tabelle erfassen.
 2. **Stil-Konsistenz prüfen:** Die Bilder wirken uneinheitlich (Zeichnung vs. 3D-Referenz). Bewerten, ob das für einen gemeinsamen LoRA-Stil problematisch ist.
-3. **Herkunft klären:** Bei den Meshy-Bildern und den 3D-Referenzen prüfen, ob sie für Training genutzt werden dürfen. Ergebnis dokumentieren, ohne Rechtsberatung zu ersetzen.
+3. **Herkunft dokumentieren:** Die Meshy-Bilder wurden mit der Pro-Version zur weiteren Verwendung erzeugt (Angabe des Koordinators). Die Herkunft je Datei im Bericht festhalten, Nutzungsrechte nicht selbst bewerten.
 4. **Captions vorschlagen:** Je Bild eine kurze Beschreibungszeile für das Training (Trigger-Wort-Vorschlag, z. B. `regina_first_response`, bitte als Vorschlag kennzeichnen).
 5. **Konsistenz mit Character-Development:** Abgleichen, was aus `Character-Development/Regina.md` über Erscheinung bekannt ist. Erscheinungsmerkmale, die dort fehlen, nicht erfinden, sondern als Lücke melden.
 6. **Datensatz-Empfehlung:** Ist der Umfang (7 Bilder) für einen ersten LoRA-Test ausreichend? Wenn nein, welche Bildtypen fehlen (z. B. Gesicht Nahaufnahme, Halbtotale, Kleidung, verschiedene Lichtsituationen)?
