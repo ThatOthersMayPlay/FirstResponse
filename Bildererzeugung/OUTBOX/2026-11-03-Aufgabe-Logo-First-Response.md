@@ -1,7 +1,7 @@
 ---
 Titel: Logo-Entwürfe First Response (3 Konzepte, Wappen-Bezug)
 Typ: Aufgabe
-Status: offen
+Status: erledigt
 Priorität: hoch
 Auftraggeber: Koordinator
 Agent: Bildererzeugungs-Agent

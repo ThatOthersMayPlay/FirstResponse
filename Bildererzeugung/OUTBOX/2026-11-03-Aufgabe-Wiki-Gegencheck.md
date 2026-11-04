@@ -1,7 +1,7 @@
 ---
 Titel: Wiki-Gegencheck – festgelegte Punkte und Falschinfos melden
 Typ: Aufgabe
-Status: offen
+Status: erledigt
 Priorität: mittel
 Auftraggeber: Koordinator
 Agent: Bildererzeugungs-Agent
