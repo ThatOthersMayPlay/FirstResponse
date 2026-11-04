@@ -68,6 +68,11 @@ Assets/ProjectManagement/
 │   ├── INBOX/                    # Übergaben an den Scene-Development-Agenten
 │   ├── OUTBOX/                   # Übergaben vom Scene-Development-Agenten
 │   └── ARCHIV/                   # Abgeschlossene Übergaben
+├── Modeling/                     # 3D-Modellierung in Blender (Testphase, MVP-Schnittstelle)
+│   ├── BRIEFING.md               # Rolle, Werkzeug, Regeln
+│   ├── INBOX/                    # Aufträge an den Modeling-Agenten
+│   ├── OUTBOX/                   # Ergebnisse (Exporte, Berichte)
+│   └── ARCHIV/                   # Abgeschlossene Modellieraufträge
 ├── Extern/                       # Kanal für externe Stakeholder (NICHT Projekt-Agenten)
 │   ├── BRIEFING.md               # Kanal-Regeln
 │   └── EasyDiffusion/            # Stakeholder: Tool-Entwicklung (C:\EasyDiffusion, externes Git)
@@ -89,6 +94,7 @@ Assets/ProjectManagement/
 | `Spielmechanik/` | Core Game Loop, Aha-Effekt, Entscheidungsarchitektur, Pacing, Balance | Spielmechanik-Agent |
 | `Bildererzeugung/` | Bildaufträge (Szenen, Charaktere, Konzept) via API an EasyDiffusion | Bildererzeugungs-Agent |
 | `Scene-Development/` | Konzeptionelle Unterstützung der Szenenentwicklung im Dialog mit dem Bediener | Scene-Development-Agent |
+| `Modeling/` | 3D-Modellierung in Blender über MVP-Schnittstelle (Testphase) | Modeling-Agent |
 | `Extern/` | Kanal für externe Stakeholder (z. B. Tool-Entwicklung EasyDiffusion) | Koordinator (verwaltet) |
 
 > **Hinweis:** Neue Bereiche werden schrittweise ergänzt (z. B. Unity-Development, QA). Jeder neue Bereich erhält dieselbe INBOX/OUTBOX/ARCHIV-Struktur.
