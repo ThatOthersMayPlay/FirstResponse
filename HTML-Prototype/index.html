@@ -226,6 +226,90 @@
             box-shadow: none;
         }
 
+        /* --- Gedanken-/Agenda-Leiste (Fuß, Testversion) --- */
+        #thought-bar {
+            background: var(--panel);
+            border: 1px solid var(--panel-edge);
+            border-radius: 6px;
+            padding: 8px 12px;
+            font-size: 0.82rem;
+        }
+
+        #thought-list {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            max-height: 120px;
+            overflow-y: auto;
+        }
+
+        .thought-item {
+            position: relative;
+            border-left: 3px solid #a0aec0;
+            padding: 4px 8px 8px 8px;
+            background: #0f1219;
+            border-radius: 4px;
+            transition: opacity 0.15s;
+        }
+
+        .thought-old {
+            opacity: 0.45;
+        }
+
+        .thought-line {
+            cursor: pointer;
+            color: var(--text);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .thought-line:hover {
+            color: var(--accent);
+        }
+
+        .thought-due {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 2px;
+            border-radius: 0 2px 2px 0;
+            transition: width 0.3s;
+        }
+
+        .thought-detail {
+            margin-top: 4px;
+            font-size: 0.78rem;
+            color: var(--text-dim);
+            white-space: pre-wrap;
+            line-height: 1.35;
+        }
+
+        #thought-controls {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 6px;
+            font-size: 0.78rem;
+            color: var(--text-dim);
+        }
+
+        #thought-controls button {
+            background: var(--panel);
+            color: var(--text);
+            border: 1px solid var(--panel-edge);
+            border-radius: 6px;
+            padding: 4px 10px;
+            font-size: 0.78rem;
+            font-family: inherit;
+            cursor: pointer;
+        }
+
+        #thought-status {
+            font-family: Consolas, "Courier New", monospace;
+            font-size: 0.74rem;
+        }
+
         #debug-panel {
             background: #0a0c11;
             border: 1px dashed var(--panel-edge);
@@ -271,6 +355,16 @@
 
         <div id="choice-panel" aria-label="Optionen"></div>
 
+        <!-- --- Gedanken-/Agenda-Leiste (Fuß) --- -->
+        <div id="thought-bar" aria-label="Gedanken des Charakters">
+            <div id="thought-list"></div>
+            <div id="thought-controls">
+                <button id="thought-add" type="button">+ Gedanke (Test)</button>
+                <button id="thought-clear" type="button">Leeren</button>
+                <span id="thought-status"></span>
+            </div>
+        </div>
+
         <div id="audio-bar" aria-label="Audio-Einstellungen">
             <button id="audio-mute" type="button" aria-pressed="false">Ton: an</button>
             <label for="audio-volume">Lautstärke
@@ -285,5 +379,6 @@
     <script src="js/ink-full.min.js"></script>
     <script src="config.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/gedanken.js"></script>
 </body>
 </html>

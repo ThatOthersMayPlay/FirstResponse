@@ -40,13 +40,24 @@ Die Gedanken-Anzeige (Agenda-Leiste) des Charakters im HTML-Prototyp umsetzen. D
 - Mechanik (Entstehung, Fälligkeit-Folgen, Gewichtung): Spielmechanik.
 - Anzeige: diese Aufgabe.
 
+## Umsetzung (Koordinator, 2026-11-05, Testversion)
+
+Eine erste Testversion wurde implementiert:
+- `js/gedanken.js`: GedankenEngine-Modul (add, clear, max 3 sichtbar, ältester verschwindet, Farbcodierung, Aufklappen mit Auto-Schließen 5s, Fälligkeits-Strich, Abschneiden mit „…").
+- `index.html`: `#thought-bar` mit `#thought-list` und Steuerbuttons (+Gedanke, Leeren) sowie Statusanzeige.
+- CSS: Gedanken-Leiste im Fuß, Farben je Agenda, halbtransparente alte Gedanken, scrollbar.
+- Testdaten: 5 Gedanken (Akut, Strategie, Beziehung, Routine) mit Detailtexten.
+- Noch offen: Datenformat-Abstimmung mit Story-Development (Ink-Integration), mobil testen, Fälligkeit in Beats oder Zeit klären (Konzept O-1).
+
 ## Ergebnis (Definition of Done)
 
-- [ ] Gedanken-Leiste im Fuß, mobil, mit Abschneiden und „…"
-- [ ] Farbcodierung der vier Agenden
-- [ ] Aufklappen mit zwei Zeilen, Auto-Schließen nach 5 Sekunden oder bei anderer Aktivität
-- [ ] Maximal 3 Gedanken, neuer schiebt aktuellen nach unten (halbtransparent), ältester verschwindet, scrollbar
-- [ ] Fälligkeits-Strich am unteren Rand
-- [ ] Keine Overlays, nur Lesen aus Ink
-- [ ] Testdatensatz für die Anzeige, Format als Vorschlag dokumentiert
-- [ ] Ergebnis in der OUTBOX, Status `erledigt`
+- [x] Gedanken-Leiste im Fuß, mobil, mit Abschneiden und „…" (Testversion)
+- [x] Farbcodierung der vier Agenden (Testversion)
+- [x] Aufklappen mit zwei Zeilen, Auto-Schließen nach 5 Sekunden oder bei anderer Aktivität (Testversion)
+- [x] Maximal 3 Gedanken, neuer schiebt aktuellen nach unten (halbtransparent), ältester verschwindet, scrollbar (Testversion)
+- [x] Fälligkeits-Strich am unteren Rand (Testversion)
+- [x] Keine Overlays, nur Lesen aus Ink (Testversion)
+- [x] Testdatensatz für die Anzeige, Format als Vorschlag dokumentiert (Testversion)
+- [ ] Ink-Integration (Datenformat mit Story-Development abstimmen)
+- [ ] Mobil-Test
+- [ ] Ergebnis in der OUTBOX, Status `erledigt` (nach Abschluss)
