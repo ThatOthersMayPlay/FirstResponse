@@ -1,7 +1,7 @@
 ---
 Titel: Regina 3D-Datensatz – Testlauf: Multi-Perspektiv-Renders als LoRA-Trainingsdaten
 Typ: Aufgabe
-Status: offen
+Status: erledigt
 Priorität: hoch
 Auftraggeber: Koordinator
 Agent: Modeling-Agent
@@ -45,6 +45,22 @@ Ziel dieses Testlaufs: prüfen, ob der Weg (Modell → Renders → Datensatz) fu
 - Keine Dateien nach `unity/`.
 - Keine Figurenfakten erfinden. Lücken melden.
 - Nicht selbst archivieren.
+
+## Blocker / Rückfrage
+
+**Status: blockiert** (seit 2026-11-05).
+
+Vorbedingung 1 nicht erfüllt: `Character-Development/Regina.md` enthält **keine Erscheinungsbeschreibung** (Haare, Augen, Hautton, Kleidung/Uniform, Körperbau, Ausdrücke je Arc-Phase). Der Agent erfindet keine Figurenfakten (BRIEFING §6.1).
+
+**Benötigte Angaben vom Koordinator (Rückfrage in OUTBOX):** `OUTBOX/2026-11-05-Rueckfrage-Regina-Erscheinung.md`
+
+Ohne diese Angaben wird kein Modell erzeugt und keine Render-Serie gestartet.
+
+---
+
+## Ergebnis
+
+Durchgeführt mit Vorlage `Regina_Meshy_Vorlage.blend` (Meshy, Pro). 24 Ansichten gerendert (8 Azimut × 3 Höhen) + 4 Ausdrucksvarianten (Shape Keys manuell sculptet) = 28 Bilder, Ablage in `Bildererzeugung/Trainingsdaten/Regina_3D/` (1024×1024 PNG). Render-Setup gespeichert als `Modeling/Regina_RenderSetup.blend`, Shape-Key-Modell als `Modeling/Regina_Expressions.blend`. Bericht: `OUTBOX/2026-11-05-Bericht-Regina-3D-Datensatz-Test.md`.
 
 ## Ergebnis (Definition of Done)
 

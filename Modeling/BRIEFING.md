@@ -26,7 +26,7 @@ Testweise: Zunächst nur kleine, klar umrissene Aufträge, um die Schnittstelle 
 | Eigenschaft | Wert |
 |---|---|
 | Tool | Blender 4.5 (`C:\Program Files\Blender Foundation\Blender 4.5`) |
-| Schnittstelle | MVP-Schnittstelle (Details: noch festzulegen, siehe Abschnitt 7) |
+| Schnittstelle | **Blender MCP** (mcp-for-blender) – interaktive Steuerung via MCP-Tools; CLI/File als Fallback |
 | Start | **Nur durch einen Menschen oder den Koordinator.** Der Agent startet Blender nicht selbst. |
 | Installation, Updates, Add-ons | Nur nach Freigabe durch den Koordinator |
 
@@ -75,9 +75,9 @@ Referenzbilder aus `Bildererzeugung/` sind **nicht** automatisch Vorgabe. Die Vo
 
 ## 7. Offene Punkte (vor dem ersten Test)
 
-- **MVP-Schnittstelle:** Art und Ablauf (z. B. Skript-Aufruf, Datei-Austausch, Kommandozeile) sind noch nicht festgelegt. Der erste Test klärt das.
-- **Arbeitsordner für Blender-Dateien:** Pfad außerhalb des Repos festlegen.
-- **Erster Testauftrag:** Vorschlag wird vom Koordinator festgelegt.
+- **MVP-Schnittstelle:** ✅ Festgelegt – **Blender MCP** (mcp-for-blender) als primär, CLI/File als Fallback. Details: `Modeling/MVP-Anleitung.md`. Addon installiert & aktiv.
+- **Arbeitsordner für Blender-Dateien:** In der Testphase direkt in `Modeling/`; für Produktion Pfad außerhalb des Repos festlegen.
+- **Erster Testauftrag:** ✅ Angelegt und abgeschlossen: `Modeling/OUTBOX/2026-11-05-Aufgabe-Testprojekt-Wuerfel.md`.
 
 ---
 

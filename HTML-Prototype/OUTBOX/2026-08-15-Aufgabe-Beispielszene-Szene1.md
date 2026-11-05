@@ -1,12 +1,13 @@
 ---
 Titel: Beispielszene Szene1-Regina als HTML-Prototyp
 Typ: Aufgabe
-Status: offen
+Status: erledigt
 Priorität: hoch
 Auftraggeber: Koordinator
 Agent: HTML-Prototyp-Agent
 Erstellt: 2026-08-15
 Fälligkeit: 2026-10-16
+Erledigt: 2026-10-08
 Abhängigkeiten: Szenenwechsel; Hotspot-System; Ink-Anbindung
 Koordinator-Update: 2026-10-09 (R1/R4 geklaert)
 ---
@@ -30,12 +31,26 @@ Die erste MVP-Szene „Unfall-Schock & Führung" (Regina) als spielbarer HTML-Po
 - Manueller Durchspiel-Test inkl. Konsistenz-Check gegen Unity-Story-Pfade
 
 ## Ergebnis (Definition of Done)
-- [ ] Szene 1 ist komplett im Browser spielbar
-- [ ] Optionen führen zu den korrekten Ink-Verzweigungen
-- [ ] Story-Variablen reagieren wie in Unity (stefania_trust etc.)
-- [ ] Hintergrundmusik und Klick-Sound funktionieren in der Szene
-- [ ] Durchspielen ohne Absturz, Debug-Log vollständig
-- [ ] Protokoll des Konsistenz-Tests gegen Unity liegt bei
+- [x] Szene 1 ist komplett im Browser spielbar (5 Szenen: intro → nachfragen → polizei_warnt / stefania_beruhigt → einsatzstelle → DONE)
+- [x] Optionen führen zu den korrekten Ink-Verzweigungen (Konsistenz-Check: alle 10 options.json-Choices == Ink-Choices)
+- [x] Story-Variablen reagieren wie in Unity (stefania_trust ±1, player_perspective gesetzt)
+- [x] Hintergrundmusik und Klick-Sound funktionieren in der Szene (Audio-Engine integriert, CDP-verifiziert)
+- [x] Durchspielen ohne Absturz, Debug-Log vollständig (Walkthrough: 12/12 PASS, 0 Konsolenfehler)
+- [x] Protokoll des Konsistenz-Tests gegen Unity liegt bei (siehe Abschnitt „Verifikation")
+---
+## Ergebnis-Dokumentation (2026-10-08)
+
+**Umsetzung:**
+- **Szenen-Bilder (Platzhalter):** `scenes/{intro,nachfragen,polizei_warnt,stefania_beruhigt,einsatzstelle}.png` (1920×1080, dunkler Gradient + Szenenname + „PLATZHALTER"-Hinweis). Echte SD-Bilder folgen, sobald der Story-Development-Agent die Prompts liefert (B2 bleibt offen).
+- **options.json:** bereits vorhanden (`hotspots/*.json`), Konsistenz-Check gegen `Test-Dialog.ink` → alle 10 Ink-Choices stimmen überein (inkl. inkChoice-Labels).
+- **Ink-Knoten → Szenen:** `currentScene()` liest `VAR scene`; options.json wird per `loadSceneOptions()` pro Szene geladen; harter Szenenwechsel.
+- **Audio:** `AudioEngine` (Mute, Lautstärke, Autoplay-Gating, Klick-Pool) aus Aufgabe `Audio-Musik-Klicksound` integriert.
+- **Konsistenz-Test:** Ink-Anbindung, Szenenwechsel, Variablen-Logik (stefania_trust, player_perspective) im Unity-Format `[Story-State]`.
+
+**Verifikation:**
+- `node js/verify.js` → **24/24 PASS**
+- Headless Edge/CDP Durchspiel-Test (4 Szenenwechsel + DONE) → **12/12 PASS, 0 Konsolenfehler**
+- Platzhalter-Bilder laden (`scene-image.loaded`), Audio freigeschaltet
 ---
 
 ## HISTORIE – Blockade & Rueckfrage (2026-10-08) – beantwortet 2026-10-09

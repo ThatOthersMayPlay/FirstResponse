@@ -89,3 +89,7 @@ DerivedData/
 
 # Lock files
 *.lock
+
+# Blender working files (Modeling agent, outside-repo by convention)
+Modeling/*.blend
+Modeling/*.blend1

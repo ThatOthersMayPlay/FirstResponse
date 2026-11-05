@@ -1,7 +1,7 @@
 ---
 Titel: Logo-Runde 2 – moderne Logos mit Wappen-Optik als Gestaltungselement
 Typ: Aufgabe
-Status: offen
+Status: erledigt
 Priorität: hoch
 Auftraggeber: Koordinator
 Agent: Bildererzeugungs-Agent

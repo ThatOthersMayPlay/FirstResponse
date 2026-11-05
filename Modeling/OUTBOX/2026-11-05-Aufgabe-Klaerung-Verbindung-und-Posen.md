@@ -1,7 +1,7 @@
 ---
 Titel: Klärung – Verbindung LLM/MCP/Blender, OpenCode-Anbindung und optimale Render-Posen für LoRA
 Typ: Aufgabe
-Status: offen
+Status: erledigt
 Priorität: hoch
 Auftraggeber: Koordinator
 Agent: Modeling-Agent
