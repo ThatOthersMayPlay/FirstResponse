@@ -1,7 +1,7 @@
 ---
 Titel: LoRA-Vorbereitung Regina – Datensatz prüfen und dokumentieren
 Typ: Aufgabe
-Status: offen
+Status: erledigt
 Priorität: hoch
 Auftraggeber: Koordinator
 Agent: Bildererzeugungs-Agent
