@@ -41,9 +41,10 @@ Abhängigkeiten: Character-Development/Regina.md; Bildererzeugung/Trainingsdaten
 
 - **Setup:** neutraler hellgrauer Hintergrund (World Background 0.5), SUN (Energie 3.0) + AREA-Fill (200), Kamera-Abstand 3.5 m, Zielhöhe 0.85 m.
 - **Auflösung:** 1024×1024 PNG.
-- **Serie:** 8 Azimut-Winkel (0°, 45°, 90°, 135°, 180°, 225°, 270°, 315°) × 3 Höhen (Augenhöhe `auge`, leicht erhöht `hoch`, leicht gesenkt `tief`) = **24 Bilder**.
-- **Dateinamen:** `regina_<az>_<hoehe>.png` (z. B. `regina_090_hoch.png`).
-- **Ablage:** `Bildererzeugung/Trainingsdaten/Regina_3D/` (24 Dateien).
+- **Serie 1 – Ansichten:** 8 Azimut-Winkel (0°, 45°, 90°, 135°, 180°, 225°, 270°, 315°) × 3 Höhen (Augenhöhe `auge`, leicht erhöht `hoch`, leicht gesenkt `tief`) = **24 Bilder** (`regina_<az>_<hoehe>.png`).
+- **Serie 2 – Ausdrücke:** 4 Ausdrücke (professionell, besorgt, warm, nachdenklich) aus Front-Perspektive = **4 Bilder** (`regina_expr_<name>.png`). Shape Keys manuell sculptet auf `char1`.
+- **Serie 3 – Posen:** 5 Standardposen (T-Pose, A-Pose, Arms crossed, Hands on hips, Walking) × 3 Perspektiven (Front, 3/4, Seite) = **15 Bilder** (`regina_pose_<name>_<perspektive>.png`).
+- **Gesamt:** 43 Bilder in `Bildererzeugung/Trainingsdaten/Regina_3D/`.
 
 ### 4 Ausdrucksvarianten – ✅ Erledigt
 Shape Keys wurden manuell auf dem Mesh `char1` sculptet (Basis + 4 Ausdrücke). Renders aus Front-Perspektive (Augenhöhe), 1024×1024 PNG:

@@ -60,7 +60,7 @@ Ohne diese Angaben wird kein Modell erzeugt und keine Render-Serie gestartet.
 
 ## Ergebnis
 
-Durchgeführt mit Vorlage `Regina_Meshy_Vorlage.blend` (Meshy, Pro). 24 Ansichten gerendert (8 Azimut × 3 Höhen) + 4 Ausdrucksvarianten (Shape Keys manuell sculptet) = 28 Bilder, Ablage in `Bildererzeugung/Trainingsdaten/Regina_3D/` (1024×1024 PNG). Render-Setup gespeichert als `Modeling/Regina_RenderSetup.blend`, Shape-Key-Modell als `Modeling/Regina_Expressions.blend`. Bericht: `OUTBOX/2026-11-05-Bericht-Regina-3D-Datensatz-Test.md`.
+Durchgeführt mit Vorlage `Regina_Meshy_Vorlage.blend` (Meshy, Pro). 24 Ansichten + 4 Ausdrücke + 15 Posen (5 Standardposen × 3 Perspektiven) = 43 Bilder, Ablage in `Bildererzeugung/Trainingsdaten/Regina_3D/` (1024×1024 PNG). Render-Setup gespeichert als `Modeling/Regina_RenderSetup.blend`, Shape-Key-Modell als `Modeling/Regina_Expressions.blend`. Bericht: `OUTBOX/2026-11-05-Bericht-Regina-3D-Datensatz-Test.md`.
 
 ## Ergebnis (Definition of Done)
 
