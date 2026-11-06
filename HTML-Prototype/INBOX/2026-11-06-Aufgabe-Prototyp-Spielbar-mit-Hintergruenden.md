@@ -12,7 +12,7 @@ Abhängigkeiten: HTML-Prototype/OUTBOX/2026-08-15-Aufgabe-Beispielszene-Szene1.m
 
 ## Ziel
 
-Der Prototyp soll spielbar sein. Aktuell sind die Szenen-Bilder Platzhalter. Es fehlt mindestens eine Möglichkeit, Hintergrundbilder einzubinden, und die vorhandenen Platzhalter sollen als echte Hintergründe angezeigt werden.
+Der Prototyp soll spielbar sein und **intuitiv bedienbar** sein. Aktuell sind die Szenen-Bilder Platzhalter. Es fehlt mindestens eine Möglichkeit, Hintergrundbilder einzubinden, und die vorhandenen Platzhalter sollen als echte Hintergründe angezeigt werden. Der Prototyp soll mit den vorhandenen Beispielbildern (Platzhalter-PNGs in `scenes/`) eine erste spielbare Version ergeben, die ohne Anleitung nutzbar ist.
 
 ## Umfang
 
@@ -31,5 +31,6 @@ Der Prototyp soll spielbar sein. Aktuell sind die Szenen-Bilder Platzhalter. Es 
 - [ ] Szenen-Hintergründe werden beim Szenenwechsel angezeigt
 - [ ] Platzhalter-Bilder als echte Hintergründe eingebunden
 - [ ] Prototyp ist ohne Absturz spielbar
+- [ ] Prototyp ist intuitiv bedienbar (keine Anleitung nötig, klare Interaktion)
 - [ ] Gedanken-Agenda-Leiste implementiert (Testversion)
 - [ ] Bericht in der OUTBOX, Status `erledigt`
