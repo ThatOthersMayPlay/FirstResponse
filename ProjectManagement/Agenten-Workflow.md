@@ -73,6 +73,11 @@ Assets/ProjectManagement/
 │   ├── INBOX/                    # Aufträge an den Modeling-Agenten
 │   ├── OUTBOX/                   # Ergebnisse (Exporte, Berichte)
 │   └── ARCHIV/                   # Abgeschlossene Modellieraufträge
+├── Voicing/                      # Sprachaufnahmen und Voice-Over (Testphase)
+│   ├── BRIEFING.md               # Rolle, Werkzeug, Regeln
+│   ├── INBOX/                    # Aufträge an den Voicing-Agenten
+│   ├── OUTBOX/                   # Ergebnisse (Audio-Dateien, Berichte)
+│   └── ARCHIV/                   # Abgeschlossene Voicing-Aufträge
 ├── Extern/                       # Kanal für externe Stakeholder (NICHT Projekt-Agenten)
 │   ├── BRIEFING.md               # Kanal-Regeln
 │   └── EasyDiffusion/            # Stakeholder: Tool-Entwicklung (C:\EasyDiffusion, externes Git)
@@ -95,6 +100,7 @@ Assets/ProjectManagement/
 | `Bildererzeugung/` | Bildaufträge (Szenen, Charaktere, Konzept) via API an EasyDiffusion | Bildererzeugungs-Agent |
 | `Scene-Development/` | Konzeptionelle Unterstützung der Szenenentwicklung im Dialog mit dem Bediener | Scene-Development-Agent |
 | `Modeling/` | 3D-Modellierung in Blender über MVP-Schnittstelle (Testphase) | Modeling-Agent |
+| `Voicing/` | Sprachaufnahmen und Voice-Over (Testphase, Plattform noch offen) | Voicing-Agent |
 | `Extern/` | Kanal für externe Stakeholder (z. B. Tool-Entwicklung EasyDiffusion) | Koordinator (verwaltet) |
 
 > **Hinweis:** Neue Bereiche werden schrittweise ergänzt (z. B. Unity-Development, QA). Jeder neue Bereich erhält dieselbe INBOX/OUTBOX/ARCHIV-Struktur.
